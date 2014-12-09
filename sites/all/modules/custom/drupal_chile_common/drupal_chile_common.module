@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Chile Common feature.
+ */
+
+include_once 'drupal_chile_common.features.inc';

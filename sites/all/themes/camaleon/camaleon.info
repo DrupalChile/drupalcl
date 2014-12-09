@@ -1,0 +1,36 @@
+name = camaleon
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/camaleon.normalize.css
+stylesheets[all][] = css/camaleon.hacks.css
+stylesheets[all][] = css/camaleon.styles.css
+stylesheets[all][] = css/camaleon.no-query.css
+
+stylesheets[all][] = css/font-awesome.min.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/camaleon.behaviors.js
+scripts[] = js/grid.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
+regions[footer-bottom] = Footer bottom

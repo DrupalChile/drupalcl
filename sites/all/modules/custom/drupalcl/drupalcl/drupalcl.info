@@ -1,0 +1,4 @@
+name = Drupal.cl Core
+description = Modulo con funcionalidades para el sitio de drupal.cl
+package = Drupal.cl
+core = 7.x

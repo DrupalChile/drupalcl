@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Showcase feature.
+ */
+
+include_once 'drupalcl_showcase.features.inc';
