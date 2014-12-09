@@ -151,11 +151,11 @@ function drupalcl_showcase_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Showcase';
   $page->admin_description = '';
-  $page->path = 'casos-de-exito';
+  $page->path = 'casos-de-estudio';
   $page->access = array();
   $page->menu = array(
     'type' => 'normal',
-    'title' => 'Casos de éxito',
+    'title' => 'Casos de estudio',
     'name' => 'main-menu',
     'weight' => '0',
     'parent' => array(
@@ -202,7 +202,7 @@ function drupalcl_showcase_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Casos de éxito';
+  $display->title = 'Casos de estudio';
   $display->uuid = 'fb0b5a3d-4ef9-4786-80a7-a49fff8bc23d';
   $display->content = array();
   $display->panels = array();

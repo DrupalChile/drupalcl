@@ -98,6 +98,25 @@ function drupal_chile_common_default_page_manager_pages() {
     $pane->uuid = '6294e6b8-3923-4a0b-b0c1-a4f0a1b1c0fb';
     $display->content['new-6294e6b8-3923-4a0b-b0c1-a4f0a1b1c0fb'] = $pane;
     $display->panels['column3'][0] = 'new-6294e6b8-3923-4a0b-b0c1-a4f0a1b1c0fb';
+    $pane = new stdClass();
+    $pane->pid = 'new-eb91eb33-3a4b-439b-a11b-f63ceae5f9b5';
+    $pane->panel = 'header';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'common-banner_home';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'eb91eb33-3a4b-439b-a11b-f63ceae5f9b5';
+    $display->content['new-eb91eb33-3a4b-439b-a11b-f63ceae5f9b5'] = $pane;
+    $display->panels['header'][0] = 'new-eb91eb33-3a4b-439b-a11b-f63ceae5f9b5';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
