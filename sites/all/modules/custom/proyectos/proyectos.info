@@ -1,0 +1,15 @@
+name = Proyectos
+core = 7.x
+package = Drupal.cl
+version = 7.x-1.0-beta1
+project = proyectos
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = path_breadcrumbs
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = path_breadcrumbs:path_breadcrumbs:1
+features[features_api][] = api:2
+features[page_manager_handlers][] = node_view_panel_context_3
+features[page_manager_pages][] = proyectos
+features[path_breadcrumbs][] = listado_de_proyectos
+project path = sites/all/modules/custom

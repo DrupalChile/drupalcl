@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Proyectos feature.
+ */
+
+include_once 'proyectos.features.inc';
