@@ -1063,6 +1063,87 @@ ul.action-links{
 
 }
 
+/* ---------- PICEC Landing ----------- */
+
+.page-node-30{
+	.breadcrumb{
+		display: none;
+	}
+	.l-page{
+		background: url('../images/bg-picec.png') fixed center;
+	}
+	h1{
+		text-align: center;
+		text-shadow: 0px 0px 20px rgba(0,0,0,0.32);
+		color: #fff;
+	}
+	article{
+		.head{
+			background: url('../images/logo-picec-512.png') no-repeat center;
+			height: 512px;
+			width: 100%;
+			margin: auto;
+		}
+		h2{
+			text-align: center;
+			text-shadow: 0px 0px 20px rgba(0,0,0,0.32);
+			color: #fff;
+		}
+	}
+
+	.button{
+		@extend .button;
+		width: 45%;
+		float: left;
+		margin: 1em;
+	}
+	.features{
+		min-height: 30em;
+		.feature{
+			h1, h2{
+				text-align: left;
+			}
+			width: 30%;
+			float: left;
+			margin: 1em;
+			background: url('../images/bg70.png');
+			padding: 1em;
+			color: #fff;
+			p{
+				color: #ddd;
+			}
+
+			
+		}
+	}
+	.more-features{
+		background: url('../images/footer_lodyas.png');
+	}
+
+}
+
+
+	
+.button{
+	text-align: center;
+	background-color: $vivid-blue;
+	display: block;
+	padding: 15px 0;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 25px;
+	letter-spacing: 5px;
+	font-style: normal;
+	font-weight: 100;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-khtml-border-radius: 50px;
+	border-radius: 50px;
+	color: #fff !important;	
+}
+.button:hover{
+		background-color: $dark-blue;
+}
 
 
 /* ---------- Overall Specifications ---------- */
