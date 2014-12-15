@@ -227,6 +227,10 @@ $white: #fff;
 	}
 }
 
+.l-main{
+	padding-top: 70px;
+}
+
 //-----------
 
 @mixin border-radius($radius) {
@@ -319,15 +323,18 @@ input.form-submit:hover{
 	margin-top: 0;
 	width: 100%;
 	position: relative;
-	z-index: 9999;
+	z-index: 99;
 	@include breakpoint($tablet){
 		display: block !important;
 		position: relative;
-		// height: 30px !important;
 		margin-top: 0;
 		z-index: 0;
-		// width: auto !important;
-		// z-index: 1 !important;
+	}
+	@include breakpoint($desktop){
+		display: block !important;
+		position: relative;
+		margin-top: 0;
+		z-index: 0;
 	}
 
 		li.leaf{
@@ -349,6 +356,7 @@ input.form-submit:hover{
 				font-size: 2em;
 				font-weight: 100;
 				width: 100%;
+				transition-duration: 0.3s;
 				@include breakpoint($tablet){
 					width: auto;
 					font-size: 1em;
@@ -372,8 +380,11 @@ input.form-submit:hover{
 }
 
 .l-header{
-	background-color: $dark-blue;
+	background-color: rgba(0, 104, 179,0.9);
 	height: 5em;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
 
 	.site-logo img{
 		float: left;
@@ -459,7 +470,7 @@ input.form-submit:hover{
 	height: 8.5em;
 	display: block;
 	position: absolute;
-	z-index: 99999;
+	z-index: 999;
 	float: right;
 	padding: 1em;
 	right: 0;
@@ -521,7 +532,7 @@ input.form-submit:hover{
 
 .l-region--footer{
 	margin-top: 2em;
-	padding: 2em 0;
+	padding: 1em;
 
 	ul{
 		padding-left: 0.5em;
@@ -1017,13 +1028,13 @@ ul.action-links{
 							text-decoration: none;
 							text-shadow: 2px 2px 2px black;
 							color: white;
-						letter-spacing: -0.05em;
-						padding: 1em;
-						margin: 1em 0.5em;
-						font-size: 1.5em;
-						position: absolute;
-						bottom: 0;
-						background: url('../images/bg70.png');
+							letter-spacing: -0.05em;
+							padding: 1em;
+							margin: 1em 0.5em;
+							font-size: 1.5em;
+							position: absolute;
+							bottom: 0;
+							background: url('../images/bg70.png');
 
 						}
 					}
@@ -1071,6 +1082,21 @@ ul.action-links{
 	}
 	.l-page{
 		background: url('../images/bg-picec.png') fixed center;
+		background-size: auto auto;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		@include breakpoint($tablet){
+			background: url('../images/bg-picec.png') center no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		@include breakpoint($desktop){
+			background: url('../images/bg-picec.png') fixed center;
+		}
 	}
 	h1{
 		text-align: center;
@@ -1079,10 +1105,18 @@ ul.action-links{
 	}
 	article{
 		.head{
-			background: url('../images/logo-picec-512.png') no-repeat center;
-			height: 512px;
-			width: 100%;
+			// background: url('../images/logo-picec-512.png') no-repeat center;
+			height: auto;
+			display: block;
+			width: 80%;
 			margin: auto;
+			@include breakpoint($tablet){
+				width: 65%;
+
+			}
+			@include breakpoint($desktop){
+				width: 50%;
+			}
 		}
 		h2{
 			text-align: center;
@@ -1093,22 +1127,47 @@ ul.action-links{
 
 	.button{
 		@extend .button;
-		width: 45%;
+		width: 90%;
 		float: left;
 		margin: 1em;
+		@include breakpoint($tablet){
+			width: 43%;
+			float: left;
+		}
+		@include breakpoint($desktop){
+			width: 45%;
+		}
+		@include breakpoint($large-desktop){
+			width: 45%;
+		}
 	}
 	.features{
-		min-height: 30em;
+		min-height: 80em;
+		@include breakpoint($tablet){
+			min-height: 50em;
+		}
+		@include breakpoint($desktop){
+			min-height: 30em;
+		}
 		.feature{
 			h1, h2{
 				text-align: left;
 			}
-			width: 30%;
+			width: 90%;
 			float: left;
 			margin: 1em;
 			background: url('../images/bg70.png');
 			padding: 1em;
 			color: #fff;
+			@include breakpoint($tablet){
+				width: 45%;
+			}
+			@include breakpoint($desktop){
+				width: 30%;
+			}
+			@include breakpoint($large-desktop){
+				width: 30%;
+			}
 			p{
 				color: #ddd;
 			}
@@ -1143,6 +1202,14 @@ ul.action-links{
 }
 .button:hover{
 		background-color: $dark-blue;
+}
+
+.pane-disqus-disqus-comments{
+	padding: 0 1em;
+	h2.pane-title{
+		padding: 1em 0;
+		border-bottom: 2px solid $dark-blue;
+	}
 }
 
 

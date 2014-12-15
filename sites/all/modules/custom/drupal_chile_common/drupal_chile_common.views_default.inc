@@ -79,6 +79,8 @@ function drupal_chile_common_views_default_views() {
 
   /* Display: Noticia destacada */
   $handler = $view->new_display('panel_pane', 'Noticia destacada', 'noticia_destacada');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Noticias';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -127,6 +129,8 @@ function drupal_chile_common_views_default_views() {
 
   /* Display: Caso destacado */
   $handler = $view->new_display('panel_pane', 'Caso destacado', 'caso_destacado');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Casos de estudio';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -177,11 +181,21 @@ function drupal_chile_common_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Banner Home', 'banner_home');
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: URL */
+  $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
+  $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['label'] = '';
+  $handler->display->display_options['fields']['field_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_url']['type'] = 'text_plain';
   /* Campo: Contenido: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['text'] = '<a href="[field_url]" target="_blank">[field_image]</a>';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
@@ -210,6 +224,76 @@ function drupal_chile_common_views_default_views() {
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
+
+  /* Display: Banner Home Column */
+  $handler = $view->new_display('panel_pane', 'Banner Home Column', 'banner_home_column');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Destacado';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Contenido: URL */
+  $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
+  $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['label'] = '';
+  $handler->display->display_options['fields']['field_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_url']['alter']['path'] = '[field_url]';
+  $handler->display->display_options['fields']['field_url']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['field_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_url']['type'] = 'text_plain';
+  /* Campo: Contenido: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['text'] = '<a href="[field_url]" target="_blank">[field_image]</a>';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'list_thumbnail',
+    'image_link' => '',
+  );
+  /* Campo: Contenido: Título */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<a href="[field_url]" target="_blank">[title]</a>';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Criterios de filtrado: Contenido: Publicado */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Criterios de filtrado: Contenido: Tipo */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'banner' => 'banner',
+  );
+  /* Criterios de filtrado: Contenido: Tags (field_tags) */
+  $handler->display->display_options['filters']['field_tags_tid']['id'] = 'field_tags_tid';
+  $handler->display->display_options['filters']['field_tags_tid']['table'] = 'field_data_field_tags';
+  $handler->display->display_options['filters']['field_tags_tid']['field'] = 'field_tags_tid';
+  $handler->display->display_options['filters']['field_tags_tid']['value'] = array(
+    0 => '9',
+  );
+  $handler->display->display_options['filters']['field_tags_tid']['vocabulary'] = 'tags';
   $translatables['common'] = array(
     t('Master'),
     t('más'),
@@ -231,8 +315,14 @@ function drupal_chile_common_views_default_views() {
     t('Author'),
     t('View panes'),
     t('Noticia destacada'),
+    t('Noticias'),
     t('Caso destacado'),
+    t('Casos de estudio'),
     t('Banner Home'),
+    t('<a href="[field_url]" target="_blank">[field_image]</a>'),
+    t('Banner Home Column'),
+    t('Destacado'),
+    t('<a href="[field_url]" target="_blank">[title]</a>'),
   );
   $export['common'] = $view;
 

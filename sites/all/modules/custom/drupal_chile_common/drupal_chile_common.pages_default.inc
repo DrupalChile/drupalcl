@@ -61,6 +61,25 @@ function drupal_chile_common_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-a26a1915-764c-419d-bb5d-430cf6900b90';
+    $pane->panel = 'column1';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'common-banner_home_column';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'a26a1915-764c-419d-bb5d-430cf6900b90';
+    $display->content['new-a26a1915-764c-419d-bb5d-430cf6900b90'] = $pane;
+    $display->panels['column1'][0] = 'new-a26a1915-764c-419d-bb5d-430cf6900b90';
+    $pane = new stdClass();
     $pane->pid = 'new-3508a791-bba9-410f-9696-0c18ba3c207c';
     $pane->panel = 'column2';
     $pane->type = 'views_panes';

@@ -52,6 +52,13 @@ function issue_features_default_rules_configuration() {
             "from" : "no-reply@drupal.cl",
             "language" : [ "" ]
           }
+        },
+        { "flag_flagnode" : {
+            "flag" : "subscripcion_issue",
+            "node" : [ "comment:node" ],
+            "flagging_user" : [ "comment:author" ],
+            "permission_check" : 0
+          }
         }
       ]
     }
