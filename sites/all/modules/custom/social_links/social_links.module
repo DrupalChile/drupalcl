@@ -1,0 +1,40 @@
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+
+function social_links_block_info() {
+
+  $blocks = array();
+  $blocks['social_links'] = array(
+    'info' => t('Social link'),
+  );
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+
+function social_links_block_view($delta = '') {
+
+  $block = array();
+  switch ($delta) {
+    case 'social_links':
+      $block['subject'] = '';
+      $block['content'] = _social_links_content();
+      break;
+  }
+  return $block;
+}
+
+function _social_links_content() {
+  $output = 
+  '<div><p>
+        <a href="https://groups.drupal.org/chile" target="_blank"><i class="fa fa-drupal"></i></a>
+        <a href="https://github.com/DrupalChile" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.flickr.com/groups/drupalchile" target="_blank"><i class="fa fa-flickr"></i></a>
+    </a></p></div>';
+  return $output;
+}

@@ -40,4 +40,5 @@ features[variable][] = node_submitted_showcase
 features[views_view][] = showcase_list
 features_exclude[dependencies][features] = features
 features_exclude[dependencies][image] = image
+mtime = 1418100332
 project path = sites/all/modules/custom

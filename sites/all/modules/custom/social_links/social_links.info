@@ -1,0 +1,6 @@
+name = Social links
+description = Social links with icons
+core = 7.x
+package = Social
+version = 7.x-1.0-beta1
+project = social_links

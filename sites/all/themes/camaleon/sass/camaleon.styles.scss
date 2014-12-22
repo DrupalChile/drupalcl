@@ -904,7 +904,7 @@ ul.action-links{
 	margin-left: 20px;
 }
 
-.page-noticias, .page-casos-de-estudio, .page-proyectos{
+.page-noticias, .page-portafolio, .page-proyectos{
 
 	.container{
 	background: none;
@@ -1210,6 +1210,20 @@ ul.action-links{
 		padding: 1em 0;
 		border-bottom: 2px solid $dark-blue;
 	}
+}
+
+.block--social-links a .fa {
+	float: none;
+	background-color: white;
+	border-radius: 50%;
+	padding: 0.3em;
+	color: #195591;
+	width: 1.5em;
+	height: 1.5em;
+	margin: .1em;
+	font-size: 2em;
+	opacity: 1;
+	filter: alpha(opacity=100);
 }
 
 
