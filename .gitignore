@@ -4,3 +4,15 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+sites/all/modules/custom/social_links/social_links.module
+
+sites/all/modules/custom/social_links/social_links.api.php
+
+sites/all/modules/custom/social_links/social_links.providers.js
+
+sites/all/modules/custom/social_links/social_links.js
+
+sites/all/modules/custom/social_links/README.txt
+
+sites/all/modules/custom/social_links/LICENSE.txt

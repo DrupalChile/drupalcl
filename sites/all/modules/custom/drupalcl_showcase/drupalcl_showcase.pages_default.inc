@@ -53,7 +53,7 @@ function drupalcl_showcase_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'moscone_flipped';
+  $display->layout = 'radix_burr_flipped';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -78,7 +78,7 @@ function drupalcl_showcase_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'text_trimmed',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
@@ -114,7 +114,7 @@ function drupalcl_showcase_default_page_manager_handlers() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'image_style' => '300x200',
+        'image_style' => 'list_thumbnail',
         'image_link' => '',
       ),
       'context' => 'argument_entity_id:node_1',
@@ -190,7 +190,7 @@ function drupalcl_showcase_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'boxton';
+  $display->layout = 'radix_boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(

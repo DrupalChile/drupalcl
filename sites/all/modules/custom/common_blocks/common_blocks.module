@@ -1,0 +1,41 @@
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+
+function common_blocks_block_info() {
+
+  $blocks = array();
+  $blocks['common_blocks'] = array(
+    'info' => t('Copyright'),
+  );
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+
+function common_blocks_block_view($delta = '') {
+
+  $block = array();
+  switch ($delta) {
+    case 'common_blocks':
+      $block['subject'] = '';
+      $block['content'] = _common_blocks_content();
+      break;
+  }
+  return $block;
+}
+
+function _common_blocks_content() {
+
+  $output = '<div>© 2007–2014 DoneDone, LLC. All rights reserved.</div>';
+
+  return $output;
+
+}
+
+
+

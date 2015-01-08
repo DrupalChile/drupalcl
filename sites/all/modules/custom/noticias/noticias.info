@@ -28,4 +28,3 @@ features[page_manager_pages][] = noticias
 features[path_breadcrumbs][] = news
 features[path_breadcrumbs][] = news_list
 features[taxonomy][] = tags
-mtime = 1418100866

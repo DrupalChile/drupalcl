@@ -428,6 +428,16 @@ function _path_breadcrumbs_ui_form_step_basic_settings(&$form, &$form_state) {
  * @param $form_state
  */
 function _path_breadcrumbs_ui_form_step_basic_settings_validate(&$form, &$form_state) {
+  // Check for RFC 3986 URL percent-encoded sequences.
+  if (preg_match('/((%[0-9a-fA-f]{2}).*?)(\/|$)/', $form_state['values']['path'], $matches)) {
+    form_error($form['path'], t('Please rename token %token. Tokens started with %sequence are reserved.', array('%sequence' => $matches[2], '%token' => $matches[1])));
+  }
+
+  // Aliases are not supported.
+  $unaliased_path = drupal_lookup_path('source', $form_state['values']['path']);
+  if ($unaliased_path) {
+    form_error($form['path'], t('Path %alias is an alias. Use system path %path instead.', array('%alias' => $form_state['values']['path'], '%path' => $unaliased_path)));
+  }
 
   $path = explode('/', $form_state['values']['path']);
   $correct_path = array();

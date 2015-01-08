@@ -1,6 +1,14 @@
 Path Breadcrumbs 7.x-3.x, xxxx-xx-xx
 
 
+Path Breadcrumbs 7.x-3.1, 2015-01-01
+by Spleshka: Removed static caching from path_breadcrumbs_load_all(), because it is already implemented in ctools_export_load_object().
+#2354497 by perusio, Spleshka: Checking if translatable property of object exists.
+#1893878 by OnkelTem: Use $language_url just like l() does.
+by kalabro: Show error message if user inputs path alias.
+#2394337 by ekes: Restrict some percent-encoded sequences in path tokens.
+
+
 Path Breadcrumbs 7.x-3.0, 2014-06-24
 by kalabro: Fixed PHP Warning implode(): Invalid arguments passed in _path_breadcrumbs_menu_token_generate().
 #2246181 by maximpodorov, kalabro: Cache empty results to prevent heavy variant lookup process. hook_path_breadcrumbs_view_alter() now works for cached items too.
