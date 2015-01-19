@@ -134,7 +134,6 @@ function drupal_chile_common_views_default_views() {
   /* Display: Caso destacado */
   $handler = $view->new_display('panel_pane', 'Caso destacado', 'caso_destacado');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Sitios creados con Drupal en Chile';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '9';
@@ -148,12 +147,13 @@ function drupal_chile_common_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Encabezado: Global: Área de texto */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = 'Sitios creados con Drupal';
-  $handler->display->display_options['header']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Pie de página: Global: Área de texto */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<a class="button right more" href="portafolio">Ver más</a>';
+  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Campo: Contenido: Image */
@@ -337,8 +337,7 @@ function drupal_chile_common_views_default_views() {
     t('Noticia destacada'),
     t('Noticias'),
     t('Caso destacado'),
-    t('Sitios creados con Drupal en Chile'),
-    t('Sitios creados con Drupal'),
+    t('<a class="button right more" href="portafolio">Ver más</a>'),
     t('Banner Home'),
     t('<a href="[field_url]" target="_blank">[field_image]</a>'),
     t('Banner Home Column'),

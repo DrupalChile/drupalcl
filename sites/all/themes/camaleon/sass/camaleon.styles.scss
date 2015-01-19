@@ -205,6 +205,7 @@ $white: #fff;
         @include grid-span(12, 1);
     }
     @include breakpoint($large-desktop) {
+    	margin: 0 0.25em;
         @include grid-span(24, 1);
     }
 }
@@ -229,6 +230,7 @@ $white: #fff;
 
 .l-main{
 	padding-top: 70px;
+	background-color: #FFF;
 }
 
 //-----------
@@ -1002,7 +1004,7 @@ ul.action-links{
 .page-home{
 
 	.pane-common-caso-destacado{
-		padding-top: 11em;
+		// padding-top: 11em;
 		h2.pane-title{
 			text-align: center;
 		}
@@ -1294,7 +1296,7 @@ footer{
 		padding: 0;
 		margin: 0;
 		@include breakpoint($tablet){
-			padding: 1em 2em;
+			padding: 0em 2em;
 			margin: 1em 2em;
 		}
 		.flex-caption{
@@ -1314,6 +1316,84 @@ footer{
 			
 		}
 	}
+}
+
+
+/**
+* Home
+**/
+
+.page-home{
+
+	.l-page{
+		
+		background: url("../images/bg-picec.png") fixed center;
+	}
+
+	.featured{
+
+		position: relative;
+		height: 475px;
+
+		h1{
+			font-weight: 300;
+			font-size: 42px;
+			line-height: 1.2em;
+			-webkit-backface-visibility: hidden;
+			padding: 160px 0 0 0;
+			margin: 0;
+			text-align: left;
+		}
+		img{
+			position: absolute;
+			right: 100px;
+			top: 100px;
+			width: 360px;
+		}
+
+		.button{
+			width: 15em;
+		}
+	}
+
+	.wrapper{
+		max-width: 100%;
+		margin: 0 auto;
+
+		.container{
+			width: 1200px;
+		}
+		
+	}
+
+	.wrapper.portafolio{
+
+		h2{
+			color: #fff;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.view-footer{
+			p{
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.more{
+			float: right;
+			width: 7em;
+			margin: 1em;
+		}
+		
+		background: url("../images/footer_lodyas.png") fixed center;
+
+		.flexslider{
+			margin: 0;
+		}
+	}
+
 }
 
 

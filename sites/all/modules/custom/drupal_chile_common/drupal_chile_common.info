@@ -4,7 +4,6 @@ package = Drupal.cl
 version = 7.x-1.0-beta1
 project = drupal_chile_common
 dependencies[] = drupalcl_showcase
-dependencies[] = flexslider
 dependencies[] = flexslider_views
 dependencies[] = menu
 features[ctools][] = flexslider:flexslider_default_preset:1
