@@ -31,7 +31,7 @@ function common_blocks_block_view($delta = '') {
 
 function _common_blocks_content() {
 
-  $output = '<div>© 2007–2014 DoneDone, LLC. All rights reserved.</div>';
+  $output = '<div>© 2007–2014, LLC. All rights reserved.</div>';
 
   return $output;
 

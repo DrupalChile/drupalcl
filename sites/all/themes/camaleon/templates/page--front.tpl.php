@@ -122,6 +122,17 @@
     </div>
   </div>
 
+  <div class="wrapper section">
+    <div class="container">      
+      <ul>
+        <li><p><i class="fa fa-4x fa-calendar"></i></p><h3>Eventos</h3><p>Mensualmente nos juntamos a intercambiar experiencias relacionadas con Drupal.</p><p><a href="eventos" title="Ver más" class="button button-more center">Ver más</a></p></li>
+        <li><p><i class="fa fa-4x fa-folder-open"></i></p><h3>Material de apoyo</h3><p>Descarga y visualiza en línea material de apoyo para tus proyectos.</p><p><a href="material-de-apoyo" title="Ver más" class="button button-more center">Ver más</a></p></li>
+        <li><p><i class="fa fa-4x fa-users"></i></p><h3>Drupal Camp 2015</h3><p>Estamos preparando una gran reunión a nivel latinoamericano de amantes de Drupal.</p><p><a href="drupalcamp" title="Ver más" class="button button-more center">Ver más</a></p></li>
+      </ul>
+
+    </div>
+  </div>
+
 
   <!--<div class="l-main">
     <div class="l-content" role="main">

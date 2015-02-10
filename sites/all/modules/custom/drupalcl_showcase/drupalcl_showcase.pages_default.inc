@@ -151,11 +151,11 @@ function drupalcl_showcase_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Showcase';
   $page->admin_description = '';
-  $page->path = 'portafolio';
+  $page->path = 'usan-drupal';
   $page->access = array();
   $page->menu = array(
     'type' => 'normal',
-    'title' => 'Portafolio',
+    'title' => 'Usan Drupal',
     'name' => 'main-menu',
     'weight' => '0',
     'parent' => array(
@@ -202,7 +202,7 @@ function drupalcl_showcase_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Portafolio';
+  $display->title = 'Usan Drupal';
   $display->uuid = 'fb0b5a3d-4ef9-4786-80a7-a49fff8bc23d';
   $display->content = array();
   $display->panels = array();

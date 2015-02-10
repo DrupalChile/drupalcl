@@ -32,7 +32,7 @@ function drupal_chile_common_flexslider_default_presets() {
     'touch' => 1,
     'video' => 0,
     'keyboard' => 1,
-    'multipleKeyboard' => 0,
+    'multipleKeyboard' => 1,
     'mousewheel' => 0,
     'controlsContainer' => '.flex-control-nav-container',
     'sync' => '',

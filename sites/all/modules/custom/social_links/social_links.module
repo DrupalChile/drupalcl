@@ -31,10 +31,10 @@ function social_links_block_view($delta = '') {
 
 function _social_links_content() {
   $output = 
-  '<div><p>
+  '<div><span>
         <a href="https://groups.drupal.org/chile" target="_blank"><i class="fa fa-drupal"></i></a>
         <a href="https://github.com/DrupalChile" target="_blank"><i class="fa fa-github"></i></a>
         <a href="https://www.flickr.com/groups/drupalchile" target="_blank"><i class="fa fa-flickr"></i></a>
-    </a></p></div>';
+    </a></span></div>';
   return $output;
 }

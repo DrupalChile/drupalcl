@@ -14,10 +14,10 @@ function drupalcl_showcase_path_breadcrumbs_settings_info() {
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'showcase_list';
   $path_breadcrumb->name = 'Showcase list';
-  $path_breadcrumb->path = 'portafolio';
+  $path_breadcrumb->path = 'usan-drupal';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Portafolio',
+      0 => 'Usan Drupal',
     ),
     'paths' => array(
       0 => '<none>',

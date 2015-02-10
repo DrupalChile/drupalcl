@@ -152,7 +152,7 @@ function drupal_chile_common_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a class="button right more" href="portafolio">Ver más</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a class="button right button-more" href="portafolio">Ver más</a>';
   $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -337,7 +337,7 @@ function drupal_chile_common_views_default_views() {
     t('Noticia destacada'),
     t('Noticias'),
     t('Caso destacado'),
-    t('<a class="button right more" href="portafolio">Ver más</a>'),
+    t('<a class="button right button-more" href="portafolio">Ver más</a>'),
     t('Banner Home'),
     t('<a href="[field_url]" target="_blank">[field_image]</a>'),
     t('Banner Home Column'),
@@ -368,6 +368,10 @@ function drupal_chile_common_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Ordenar por';
   $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Elementos por página';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Todos -';
   $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Desplazamiento';
@@ -434,8 +438,9 @@ function drupal_chile_common_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'chile';
+  $handler->display->display_options['fields']['created']['date_format'] = 'long';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Campo: Contenido: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
@@ -490,8 +495,9 @@ function drupal_chile_common_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'chile';
+  $handler->display->display_options['fields']['created']['date_format'] = 'long';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Campo: Contenido: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
@@ -547,8 +553,9 @@ function drupal_chile_common_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'chile';
+  $handler->display->display_options['fields']['created']['date_format'] = 'long';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Campo: Contenido: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';

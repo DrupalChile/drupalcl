@@ -61,8 +61,8 @@ function drupal_chile_common_image_default_styles() {
     'label' => 'List thumbnail',
     'effects' => array(
       1 => array(
-        'label' => 'Escalar y recortar',
-        'help' => 'Escalar y recortar mantendrán la relación de proporciones de la imagen original y se desechará lo que sobre por el lado mayor. Esto es especialmente útil para crear miniaturas perfectamente cuadradas sin deformar la imagen.',
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
         'dimensions callback' => 'image_resize_dimensions',
         'form callback' => 'image_resize_form',
@@ -71,7 +71,7 @@ function drupal_chile_common_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 400,
-          'height' => 360,
+          'height' => 225,
         ),
         'weight' => 1,
       ),
