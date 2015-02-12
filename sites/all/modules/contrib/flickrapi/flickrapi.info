@@ -1,0 +1,16 @@
+name = Flickr API
+description = Use Flickr APIs with Drupal using phpFlickr.
+package = Media
+core = 7.x
+
+files[] = phpFlickr/phpFlickr.php
+dependencies[] = oauth_common
+
+configure = admin/config/media/flickrapi
+
+; Information added by Drupal.org packaging script on 2014-07-11
+version = "7.x-1.5"
+core = "7.x"
+project = "flickrapi"
+datestamp = "1405072731"
+

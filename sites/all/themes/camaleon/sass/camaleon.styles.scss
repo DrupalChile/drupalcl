@@ -179,7 +179,7 @@ h2{
 
 h2.pane-title{
 	// color: #ccc;
-	margin-top: 0;
+	// margin-top: 0;
 	text-transform: uppercase;
 }
 
@@ -491,6 +491,18 @@ body.admin-menu{
 	}
 }
 
+.block--block-1{
+	p{
+		color: #fff;
+		a{
+
+		}
+		a:hover{
+			color: #000;
+		}
+	}
+	
+}
 .footer-bottom{
 	background-color: #e2b413;
 	height: 3em;
@@ -885,7 +897,7 @@ ul.action-links{
 	margin-left: 20px;
 }
 
-.page-noticias, .page-usan-drupal, .page-proyectos{
+.page-noticias, .page-usan-drupal, .page-proyectos, .page-eventos{
 
 	.container{
 	background: none;
