@@ -1230,14 +1230,14 @@ ul.action-links{
 		float: left;
 		margin: 1em;
 		@include breakpoint($tablet){
-			width: 43%;
+			width: 19%;
 			float: left;
 		}
 		@include breakpoint($desktop){
-			width: 45%;
+			width: 20%;
 		}
 		@include breakpoint($large-desktop){
-			width: 45%;
+			width: 20%;
 		}
 	}
 	.features{

@@ -123,7 +123,7 @@
     <div class="container">
       <h1>Comercio electrónico para Chile</h1>
       <p class="intro">Perfil de Instalación de Comercio Electrónico Chileno</p>
-      <a href="https://www.drupal.org/project/picec" class="button">Más información</a>
+      <a href="picec" class="button">Más información</a>
       <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="" alt="Logo PICEC">
     </div>
   </div>

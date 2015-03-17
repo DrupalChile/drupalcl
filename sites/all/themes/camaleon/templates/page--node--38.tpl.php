@@ -127,21 +127,23 @@
           <img src="sites/all/themes/camaleon/images/logo-picec-512.png" alt="">
           <h2>Instala y personaliza tu propia tienda en línea gratis</h2>
         </div>
+        <a href="demo" title="PICEC" class="button">Demo</a>
         <a href="https://www.drupal.org/project/picec" title="PICEC" class="button">Descargar</a>
-        <a href="https://www.drupal.org/project/picec" title="Comienza a usar" class="button">Comienza a usar</a>
+        <a href="documentation/18" title="Documentos" class="button">Documentos</a>
+        <a href="node/3/issues" title="Issues" class="button">Issues</a>
         <div class="features">
           <h1>Con PICEC potencia tu negocio</h1>
           <div class="feature">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Vestibulum egestas volutpat rhoncus. Cras arcu lectus, tincidunt id tempor vel, mollis ultrices metus. Nunc faucibus turpis non nisi posuere sodales.</p>
+            <h2>¿Qué es PICEC?</h2>
+            <p>PICEC es el acrónimo de "Perfil de Instalación de Comercio Electrónico para Chile". Se trata de una distribución de                Drupal que permite crear en pocos pasos una tienda virtual que opere dentro del territorio nacional.</p>
           </div>
           <div class="feature">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Vestibulum egestas volutpat rhoncus. Cras arcu lectus, tincidunt id tempor vel, mollis ultrices metus. Nunc faucibus turpis non nisi posuere sodales.</p>
+            <h2>¿Qué es un perfil de instalación?</h2>
+            <p>Un perfil de instalación es una distribución de Drupal que contiene módulos del core, módulos contribuídos, módulos personalizados, themes así como configuración predefinida que juntos proveen las funcionalidades para un tipo específico de sitios.</p>
           </div>
           <div class="feature">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Vestibulum egestas volutpat rhoncus. Cras arcu lectus, tincidunt id tempor vel, mollis ultrices metus. Nunc faucibus turpis non nisi posuere sodales.</p>
+            <h2>¿Cuáles son las ventajas de usar PICEC?</h2>
+            <p>PICEC es una herramienta de código abierto desarrollada por miembros de la comunidad chilena de Drupal que han tenido experiencia implementando tiendas virtuales. Por lo tanto, al usar PICEC estás aprovechando esta experiencia puesta a tu disposición./p>
           </div>
         </div>
         <!--<div class="more-features">

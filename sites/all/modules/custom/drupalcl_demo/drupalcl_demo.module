@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the drupalcl_demo feature.
+ */
+
+include_once 'drupalcl_demo.features.inc';
