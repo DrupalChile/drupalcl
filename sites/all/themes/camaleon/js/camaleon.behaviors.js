@@ -10,6 +10,7 @@
    * In most cases, there is no good reason to NOT wrap your markup producing
    * JavaScript in a theme function.
    */
+
   Drupal.theme.prototype.camaleonExampleButton = function (path, title) {
     // Create an anchor element with jQuery.
     return $('<a href="' + path + '" title="' + title + '">' + title + '</a>');
@@ -68,6 +69,24 @@
         $('.block--system-main-menu').css('height', alto+'px');
 
       });
+
+      // Dropdown main menu
+
+      if(window.innerWidth > 1024){
+        $('.block--system-main-menu ul.menu li.expanded').hover(function() {
+          $('.block--system-main-menu ul.menu li.expanded ul.menu').show();
+          $('.fa.fa-chevron-down.fa-lg').addClass('active');
+          $(this).addClass('active');
+        }, function() {
+          $('.block--system-main-menu ul.menu li.expanded ul.menu').hide();
+          $('.fa.fa-chevron-down.fa-lg').removeClass('active');
+          $(this).removeClass('active');
+        });
+      }else{
+        $('.fa.fa-chevron-down.fa-lg').click(function(event) {
+          $('.block--system-main-menu ul.menu li.expanded ul.menu').toggle();
+        });
+      }
 
     }
 

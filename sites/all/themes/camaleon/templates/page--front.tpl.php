@@ -96,15 +96,12 @@
     <?php print render($page['navigation']); ?>
   </header>
 
-  <div class="wrapper featured">
+  <div class="wrapper community">
     <div class="container">
-      <h1>
-        Con PICEC <br>
-        potencia tu negocio
-      </h1>
-      <p class="intro">Instala y personaliza tu propia tienda en línea gratis.</p>
-      <a href="https://www.drupal.org/project/picec" class="button">Descargar</a>
-      <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="" alt="Logo PICEC">
+      <h1>Únete y participa en nuestra comunidad Drupal</h1>
+      <p class="intro">"Drupal Chile", sitio web de la comunidad de usuarios y usuarias Drupal en Chile.</p>
+      <a href="node/293" class="button">Más información</a>
+      <!-- <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="" alt="Logo PICEC"> -->
     </div>
   </div>
 
@@ -122,12 +119,21 @@
     </div>
   </div>
 
+  <div class="wrapper featured">
+    <div class="container">
+      <h1>Comercio electrónico para Chile</h1>
+      <p class="intro">Perfil de Instalación de Comercio Electrónico Chileno</p>
+      <a href="https://www.drupal.org/project/picec" class="button">Más información</a>
+      <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="" alt="Logo PICEC">
+    </div>
+  </div>
+
   <div class="wrapper section">
     <div class="container">      
       <ul>
         <li><p><i class="fa fa-4x fa-calendar"></i></p><h3>Eventos</h3><p>Mensualmente nos juntamos a intercambiar experiencias relacionadas con Drupal.</p><p><a href="eventos" title="Ver más" class="button button-more center">Ver más</a></p></li>
         <li><p><i class="fa fa-4x fa-folder-open"></i></p><h3>Material de apoyo</h3><p>Descarga y visualiza en línea material de apoyo para tus proyectos.</p><p><a href="material-de-apoyo" title="Ver más" class="button button-more center">Ver más</a></p></li>
-        <li><p><i class="fa fa-4x fa-users"></i></p><h3>Drupal Camp 2015</h3><p>Estamos preparando una gran reunión a nivel latinoamericano de amantes de Drupal.</p><p><a href="drupalcamp" title="Ver más" class="button button-more center">Ver más</a></p></li>
+        <li><p><i class="fa fa-4x fa-users"></i></p><h3>Proyectos</h3><p>Conoce, participa y colabora en los proyectos de la comunidad</p><p><a href="proyectos" title="Ver más" class="button button-more center">Ver más</a></p></li>
       </ul>
 
     </div>
