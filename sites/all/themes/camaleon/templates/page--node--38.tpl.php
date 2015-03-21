@@ -143,7 +143,7 @@
           </div>
           <div class="feature">
             <h2>¿Cuáles son las ventajas de usar PICEC?</h2>
-            <p>PICEC es una herramienta de código abierto desarrollada por miembros de la comunidad chilena de Drupal que han tenido experiencia implementando tiendas virtuales. Por lo tanto, al usar PICEC estás aprovechando esta experiencia puesta a tu disposición./p>
+            <p>PICEC es una herramienta de código abierto desarrollada por miembros de la comunidad chilena de Drupal que han tenido experiencia implementando tiendas virtuales. Por lo tanto, al usar PICEC estás aprovechando esta experiencia puesta a tu disposición.</p>
           </div>
         </div>
         <!--<div class="more-features">
