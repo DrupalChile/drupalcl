@@ -1,40 +1,150 @@
 <?php
 
 /**
-* Implements hook_block_info().
-*/
+ * Implements hook_field_extra_fields().
+ */
+function social_links_field_extra_fields() {
+  $info = entity_get_info();
 
-function social_links_block_info() {
+  foreach ($info as $entity_type => $entity_info) {
+    foreach (array_keys($entity_info['bundles']) as $bundle) {
+      $extra[$entity_type][$bundle]['display'] = array(
+        'social_links' => array(
+          'label' => t('Social links'),
+          'description' => t('Displaying social links linking to the entity url'),
+          'weight' => 0,
+        ),
+      );
+    }
+  }
 
-  $blocks = array();
-  $blocks['social_links'] = array(
-    'info' => t('Social link'),
-  );
-  return $blocks;
+  return $extra;
 }
 
 /**
-* Implements hook_block_view().
-*/
+ * Implements hook_entity_view().
+ */
+function social_links_entity_view($entity, $type, $view_mode, $langcode) {
 
-function social_links_block_view($delta = '') {
+  // We only support these entity types for now.
+  if (in_array($type, array('node', 'profile2'))) {
+    $providers = social_links_get_info();
 
-  $block = array();
-  switch ($delta) {
-    case 'social_links':
-      $block['subject'] = '';
-      $block['content'] = _social_links_content();
-      break;
+    // Add standard JS
+    drupal_add_js(drupal_get_path('module', 'social_links') . '/social_links.js');
+    drupal_add_js(drupal_get_path('module', 'social_links') . '/social_links.providers.js');
+
+    // Piggy-back on theme_field to output our content
+    $links = array(
+      '#theme' => 'field',
+      '#title' => "Social links",
+      '#label_display' => 'hidden',
+      '#field_type' => 'social_links',
+      '#field_name' => 'social_links',
+      '#entity_type' => $type,
+      '#bundle' => $entity->type,
+      '#view_mode' => $view_mode,
+    );
+
+    $uri = entity_uri($type, $entity);
+    $url = url($uri['path'], array('absolute' => TRUE));
+
+    foreach ($providers as $provider => $provider_info) {
+      $class_provider = 'social-link-' . $provider;
+      $icon_name = 'social_link_' . $provider;
+
+      $text = $provider;
+
+      if (module_exists('fonticon')) {
+        $text = theme('fonticon_icon', array('icon' => $icon_name));
+      }
+
+      $link = array(
+        '#theme' => 'link',
+        '#path' => $url,
+        '#text' => $text,
+        '#options' => array(
+          'attributes' => array('class' => array('social-link', $class_provider, $provider)),
+          'html' => TRUE,
+        ),
+      );
+
+      if (isset($provider_info['callback'])) {
+        $provider_info['callback']($link, $entity, $type);
+      }
+
+      // @todo why do we need to add it twice here?
+      $links[] = $link;
+      $links['#items'][] = $link;
+    }
+
+    $entity->content['social_links'] = $links;
   }
-  return $block;
 }
 
-function _social_links_content() {
-  $output = 
-  '<div><span>
-        <a href="https://groups.drupal.org/chile" target="_blank"><i class="fa fa-drupal"></i></a>
-        <a href="https://github.com/DrupalChile" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="https://www.flickr.com/groups/drupalchile" target="_blank"><i class="fa fa-flickr"></i></a>
-    </a></span></div>';
-  return $output;
+/**
+ * Get all available social links providers.
+ */
+function social_links_get_info($provider = NULL) {
+  static $drupal_static_fast;
+  if (!isset($drupal_static_fast)) {
+    $drupal_static_fast['social_links_info'] = &drupal_static(__FUNCTION__);
+  }
+  $info = &$drupal_static_fast['social_links_info'];
+
+  if (empty($info)) {
+    if ($cache = cache_get('social_links_info')) {
+      $info = $cache->data;
+    }
+    else {
+      $info = module_invoke_all('social_links_info');
+
+      // Let other modules alter the $info.
+      drupal_alter('social_links_info', $info);
+
+      cache_set("social_links_info", $info);
+    }
+  }
+
+  if (empty($provider)) {
+    return $info;
+  }
+  elseif (isset($info[$provider])) {
+    return $info[$provider];
+  }
+}
+
+function social_links_provider_mail(&$link, $entity, $type) {
+  $wrapper = entity_metadata_wrapper($type, $entity);
+  $subject = variable_get('site_name') . ': ' . check_plain($wrapper->label());
+  $body = $subject . '%0D' . $link['#path'];
+  $link['#path'] = 'mailto:?subject=' . $subject . '&body=' . $body;
+}
+
+function social_links_provider_popup(&$link, $entity, $type) {
+  $wrapper = entity_metadata_wrapper($type, $entity);
+  $link['#options']['attributes']['class'][] = 'social-link-popup';
+  $link['#options']['attributes']['title'] = variable_get('site_name') . ': ' . check_plain($wrapper->label());
+}
+
+/**
+ * Implements hook_social_links_info() to return the default social link providers.
+ *
+ * @return array
+ */
+function social_links_social_links_info() {
+  return array(
+    'twitter' => array(
+      'callback' => 'social_links_provider_popup',
+    ),
+    'facebook' => array(
+      'callback' => 'social_links_provider_popup',
+    ),
+    'googleplus' => array(
+      'callback' => 'social_links_provider_popup',
+    ),
+    'mail' => array(
+      'callback' => 'social_links_provider_mail',
+    ),
+  );
 }

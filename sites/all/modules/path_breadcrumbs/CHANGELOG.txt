@@ -1,6 +1,10 @@
 Path Breadcrumbs 7.x-3.x, xxxx-xx-xx
 
 
+Path Breadcrumbs 7.x-3.2, 2015-02-04
+by kalabro: Added new option to enable Path Breadcrumbs on 403/404 pages.
+
+
 Path Breadcrumbs 7.x-3.1, 2015-01-01
 by Spleshka: Removed static caching from path_breadcrumbs_load_all(), because it is already implemented in ctools_export_load_object().
 #2354497 by perusio, Spleshka: Checking if translatable property of object exists.
