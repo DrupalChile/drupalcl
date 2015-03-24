@@ -984,7 +984,67 @@ ul.action-links{
 	margin-left: 20px;
 }
 
-.page-noticias, .page-usan-drupal, .page-proyectos, .page-eventos{
+// Blog List
+
+.section-blog{
+	.views-field-name{
+		font-family: Montserrat-Light;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin: 0;
+		padding: 6px 10px 5px;
+		overflow: hidden;
+		white-space: nowrap;
+		position: absolute;
+		display: inline-block;
+		left: 15px;
+		top: 160px;
+		z-index: 600;
+		background: #fff;
+	}
+}
+
+.page-miembros{
+	.views-field-picture{
+		background-color: $dark-blue;
+		-webkit-transition: color 0.5s linear, opacity 0.25s linear;
+		   -moz-transition: color 0.5s linear, opacity 0.25s linear;
+		    -ms-transition: color 0.5s linear, opacity 0.25s linear;
+		     -o-transition: color 0.5s linear, opacity 0.25s linear;
+		     	transition: color 0.5s linear, opacity 0.25s linear;
+		img{
+			// opacity: .8;
+			width: 100%;
+			display: block;
+			height: auto;
+
+		}
+		img:hover{
+			// opacity: 1;
+		}
+	}
+	.views-field-name{
+
+		background-color: $dark-blue;
+		font-family: 'Montserrat-Light';
+		text-transform: uppercase;
+		font-size: 0.75em;
+		a{
+			text-decoration: none;
+			color: white;
+			bottom: 0;
+			padding: 1em;
+			position: relative;
+			display: block;
+			
+
+		}
+	}
+}
+
+.page-noticias, .page-usan-drupal, .page-proyectos, .page-eventos, .section-blog, .page-miembros{
 
 	.container{
 	background: none;
@@ -1453,11 +1513,12 @@ div.flexslider div.field-content {
 
 		position: relative;
 		height: 475px;
-		background: url("../images/bg-picec.png") fixed center;
+		background: url("../images/bg-picec.png") center center;
 		background-size: 500%;
 		background-position: 50% 0%;
 		clear: both;
-		z-index: 99;
+		display: block;
+		z-index: 9999;
 
 		@include breakpoint($tablet){
 			background-size: 175%;
@@ -1550,6 +1611,7 @@ div.flexslider div.field-content {
 			line-height: 1.2em;
 			-webkit-backface-visibility: hidden;
 			padding: 160px 0 0 0;
+			color: #fff;
 			margin: 0;
 			text-align: left;
 			font-size: 32px;
@@ -1570,9 +1632,12 @@ div.flexslider div.field-content {
 
 			@include breakpoint($desktop){
 				right: 100px;
-				width: 360px;
+				width: 300px;
 				top: 110px;
 			}
+		}
+		p{
+			color: #ddd;
 		}
 
 		.button{

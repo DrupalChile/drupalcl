@@ -98,10 +98,10 @@
 
   <div class="wrapper community">
     <div class="container">
-      <h1>Únete y participa en nuestra comunidad Drupal</h1>
-      <p class="intro">"Drupal Chile", sitio web de la comunidad de usuarios y usuarias Drupal en Chile.</p>
+      <h1>La comunidad de Drupal en Chile</h1>
+      <p class="intro">Unete y participa en nuestros eventos.</p>
       <a href="node/293" class="button">Más información</a>
-      <!-- <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="" alt="Logo PICEC"> -->
+      <img src="sites/all/themes/camaleon/images/logo-drupalcl-512.png" class="" alt="Logo PICEC">
     </div>
   </div>
 
