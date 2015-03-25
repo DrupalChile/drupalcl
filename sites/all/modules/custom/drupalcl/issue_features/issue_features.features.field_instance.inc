@@ -61,6 +61,51 @@ function issue_features_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-issue-field_flickr_tags'
+  $field_instances['node-issue-field_flickr_tags'] = array(
+    'bundle' => 'issue',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Grab Flickr photos with these tags only. Comma separated.',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 10,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_flickr_tags',
+    'label' => 'Flickr tags',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-issue-field_issue_archivos'
   $field_instances['node-issue-field_issue_archivos'] = array(
     'bundle' => 'issue',
@@ -399,6 +444,51 @@ function issue_features_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-proyecto-field_flickr_tags'
+  $field_instances['node-proyecto-field_flickr_tags'] = array(
+    'bundle' => 'proyecto',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Grab Flickr photos with these tags only. Comma separated.',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 10,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_flickr_tags',
+    'label' => 'Flickr tags',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-proyecto-field_image'
   $field_instances['node-proyecto-field_image'] = array(
     'bundle' => 'proyecto',
@@ -491,6 +581,7 @@ function issue_features_field_default_field_instances() {
     'label' => 'Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -504,6 +595,7 @@ function issue_features_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'Link del Proyecto',
       'url' => 0,
@@ -551,6 +643,7 @@ function issue_features_field_default_field_instances() {
     'label' => 'Documentación',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -564,6 +657,7 @@ function issue_features_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'value',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => 'Documentación',
       'url' => 0,
@@ -586,6 +680,8 @@ function issue_features_field_default_field_instances() {
   t('Categoria');
   t('Documentación');
   t('Estado');
+  t('Flickr tags');
+  t('Grab Flickr photos with these tags only. Comma separated.');
   t('Image');
   t('Issue');
   t('Link');

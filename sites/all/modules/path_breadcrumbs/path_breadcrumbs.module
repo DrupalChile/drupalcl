@@ -23,6 +23,16 @@ define('PATH_BREADCRUMBS_CACHE_STORAGE', 'cache_path_breadcrumbs');
  * Implements hook_page_alter().
  */
 function path_breadcrumbs_page_alter() {
+  // Do not show breadcrumbs on error pages.
+  if (!variable_get('path_breadcrumbs_enable_on_error_pages', FALSE)) {
+    $bad_statuses = array('404 Not Found', '403 Forbidden');
+    $http_headers = drupal_get_http_header();
+    $status = isset($http_headers['status']) ? $http_headers['status'] : '200 OK';
+    if (in_array($status, $bad_statuses)) {
+      return;
+    }
+  }
+
   path_breadcrumbs_set_breadcrumb();
 }
 

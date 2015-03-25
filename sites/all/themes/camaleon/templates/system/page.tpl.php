@@ -96,8 +96,7 @@
     <?php print render($page['navigation']); ?>
   </header>
 
-  <div class="l-main">
-    <div class="l-content" role="main">
+    <div class="page-header">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -112,6 +111,11 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+    </div>
+
+  <div class="l-main">
+    <div class="l-content" role="main">
+
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
