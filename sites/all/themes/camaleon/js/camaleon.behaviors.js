@@ -74,7 +74,7 @@
 
       // Dropdown main menu
 
-      if(window.innerWidth > 1024 && window.innerWidth < 769){
+      if(window.innerWidth > 769){
 
         $('.block--system-main-menu ul.menu li.expanded').hover(function() {
 
