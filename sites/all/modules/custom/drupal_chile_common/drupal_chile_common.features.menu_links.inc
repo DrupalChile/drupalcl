@@ -10,6 +10,27 @@
 function drupal_chile_common_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: main-menu_acerca-de:node/293
+  $menu_links['main-menu_acerca-de:node/293'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/293',
+    'router_path' => 'node/%',
+    'link_title' => 'Acerca de',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_acerca-de:node/293',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_la-comunidad:node/293',
+  );
   // Exported menu link: main-menu_blog:blog
   $menu_links['main-menu_blog:blog'] = array(
     'menu_name' => 'main-menu',
@@ -184,6 +205,7 @@ function drupal_chile_common_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Acerca de');
   t('Blog');
   t('Contacto');
   t('Eventos');
