@@ -56,7 +56,7 @@ function drupalcl_showcase_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => -4,
+      'weight' => 1,
     ),
   );
 
@@ -101,7 +101,7 @@ function drupalcl_showcase_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -157,12 +157,12 @@ function drupalcl_showcase_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => -2,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-showcase-field_url'
-  $field_instances['node-showcase-field_url'] = array(
+  // Exported field_instance: 'node-showcase-field_link'
+  $field_instances['node-showcase-field_link'] = array(
     'bundle' => 'showcase',
     'default_value' => NULL,
     'deleted' => 0,
@@ -170,10 +170,10 @@ function drupalcl_showcase_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'type' => 'link_default',
+        'weight' => 11,
       ),
       'featured' => array(
         'label' => 'above',
@@ -189,21 +189,38 @@ function drupalcl_showcase_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_url',
-    'label' => 'URL',
+    'field_name' => 'field_link',
+    'label' => 'Link',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
       'user_register_form' => FALSE,
+      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => -1,
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 4,
     ),
   );
 
@@ -213,7 +230,7 @@ function drupalcl_showcase_field_default_field_instances() {
   t('Flickr tags');
   t('Grab Flickr photos with these tags only. Comma separated.');
   t('Image');
-  t('URL');
+  t('Link');
 
   return $field_instances;
 }

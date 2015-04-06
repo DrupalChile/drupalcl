@@ -108,9 +108,11 @@ function issue_features_path_breadcrumbs_settings_info() {
   $path_breadcrumb->data = array(
     'titles' => array(
       0 => 'Proyectos',
+      1 => '%node:title',
     ),
     'paths' => array(
       0 => 'proyectos',
+      1 => '<none>',
     ),
     'home' => 1,
     'translatable' => 0,

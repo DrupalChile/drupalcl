@@ -56,7 +56,7 @@ function drupalcl_showcase_views_default_views() {
   $handler->display->display_options['fields']['field_url']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_url']['type'] = 'text_plain';
-  /* Campo: Contenido: Image */
+  /* Campo: Campo: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';

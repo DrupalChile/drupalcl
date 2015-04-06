@@ -70,8 +70,8 @@
  * @see omega_preprocess_page()
  */
 ?>
-<div class="l-page">
-  <header class="l-header" role="banner">
+<div class="l-page" >
+  <header class="l-header wow fadeInDownBig" role="banner">
     <div class="l-branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -97,16 +97,16 @@
   </header>
 
   <div class="wrapper community">
-    <div class="container">
+    <div class="container wow bounceInLeft">
       <h1>La comunidad de Drupal en Chile</h1>
       <p class="intro">Unete y participa en nuestros eventos.</p>
-      <a href="node/293" class="button">Más información</a>
+      <div class="eventime_button"><a href="node/293" class="btn-white" role="button">Más información</a></div>
       <img src="sites/all/themes/camaleon/images/logo-drupalcl-512.png" class="" alt="Logo PICEC">
     </div>
   </div>
 
   <div class="wrapper portafolio">
-    <div class="container">
+    <div class="container wow bounceInRight">
       <h2>Sitios creados con Drupal</h2>
       
       <?php
@@ -123,17 +123,17 @@
     <div class="container">
       <h1>Comercio electrónico para Chile</h1>
       <p class="intro">Perfil de Instalación de Comercio Electrónico Chileno</p>
-      <a href="picec" class="button">Más información</a>
-      <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="" alt="Logo PICEC">
+      <div class="eventime_button"><a href="picec" class="" role="button">Más información</a></div>
+      <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="wow bounceInDown" alt="Logo PICEC">
     </div>
   </div>
 
   <div class="wrapper section">
-    <div class="container">      
+    <div class="container wow bounceInUp">      
       <ul>
-        <li><p><i class="fa fa-4x fa-calendar"></i></p><h3>Eventos</h3><p>Mensualmente nos juntamos a intercambiar experiencias relacionadas con Drupal.</p><p><a href="eventos" title="Ver más" class="button button-more center">Ver más</a></p></li>
-        <li><p><i class="fa fa-4x fa-folder-open"></i></p><h3>Material de apoyo</h3><p>Descarga y visualiza en línea material de apoyo para tus proyectos.</p><p><a href="material-de-apoyo" title="Ver más" class="button button-more center">Ver más</a></p></li>
-        <li><p><i class="fa fa-4x fa-users"></i></p><h3>Proyectos</h3><p>Conoce, participa y colabora en los proyectos de la comunidad</p><p><a href="proyectos" title="Ver más" class="button button-more center">Ver más</a></p></li>
+        <li><p><i class="fa fa-4x fa-calendar"></i></p><h3>Eventos</h3><p>Mensualmente nos juntamos a intercambiar experiencias relacionadas con Drupal.</p><p><div class="eventime_button"><a href="eventos" class="btn btn-featured" role="button">Ver más</a></div></p></li>
+        <li><p><i class="fa fa-4x fa-folder-open"></i></p><h3>Material de apoyo</h3><p>Descarga y visualiza en línea material de apoyo para tus proyectos.</p><p><div class="eventime_button"><a href="material-de-apoyo" title="Ver más" class="btn btn-featured">Ver más</a></div></p></li>
+        <li><p><i class="fa fa-4x fa-users"></i></p><h3>Proyectos</h3><p>Conoce, participa y colabora en los proyectos de la comunidad</p><p><div class="eventime_button"><a href="proyectos" title="Ver más" class="btn btn-featured">Ver más</a></div></p></li>
       </ul>
 
     </div>

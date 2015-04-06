@@ -53,7 +53,7 @@ function drupalcl_showcase_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'radix_burr_flipped';
+  $display->layout = 'radix_moscone';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -62,6 +62,8 @@ function drupalcl_showcase_default_page_manager_handlers() {
       'sidebar' => NULL,
       'contentmain' => NULL,
       'footer' => NULL,
+      'column1' => NULL,
+      'column2' => NULL,
     ),
   );
   $display->cache = array();
@@ -102,6 +104,39 @@ function drupalcl_showcase_default_page_manager_handlers() {
     $display->panels['contentmain'][0] = 'new-48364d40-b49c-4952-a578-8c412929a3e9';
     $pane = new stdClass();
     $pane->pid = 'new-0c824d2f-b5e4-48e7-84a5-b29dcba2eb27';
+    $pane->panel = 'header';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_image';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'image',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'image_style' => 'image_big',
+        'image_link' => '',
+      ),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '0c824d2f-b5e4-48e7-84a5-b29dcba2eb27';
+    $display->content['new-0c824d2f-b5e4-48e7-84a5-b29dcba2eb27'] = $pane;
+    $display->panels['header'][0] = 'new-0c824d2f-b5e4-48e7-84a5-b29dcba2eb27';
+    $pane = new stdClass();
+    $pane->pid = 'new-b564418f-8a23-4459-9798-7bf483296822';
     $pane->panel = 'sidebar';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_image';
@@ -120,6 +155,7 @@ function drupalcl_showcase_default_page_manager_handlers() {
       'context' => 'argument_entity_id:node_1',
       'override_title' => 0,
       'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -129,9 +165,41 @@ function drupalcl_showcase_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '0c824d2f-b5e4-48e7-84a5-b29dcba2eb27';
-    $display->content['new-0c824d2f-b5e4-48e7-84a5-b29dcba2eb27'] = $pane;
-    $display->panels['sidebar'][0] = 'new-0c824d2f-b5e4-48e7-84a5-b29dcba2eb27';
+    $pane->uuid = 'b564418f-8a23-4459-9798-7bf483296822';
+    $display->content['new-b564418f-8a23-4459-9798-7bf483296822'] = $pane;
+    $display->panels['sidebar'][0] = 'new-b564418f-8a23-4459-9798-7bf483296822';
+    $pane = new stdClass();
+    $pane->pid = 'new-efa79616-a482-457a-866b-94a062511ddf';
+    $pane->panel = 'sidebar';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_link';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'link_domain',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'strip_www' => 1,
+      ),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'efa79616-a482-457a-866b-94a062511ddf';
+    $display->content['new-efa79616-a482-457a-866b-94a062511ddf'] = $pane;
+    $display->panels['sidebar'][1] = 'new-efa79616-a482-457a-866b-94a062511ddf';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-48364d40-b49c-4952-a578-8c412929a3e9';
   $handler->conf['display'] = $display;

@@ -68,7 +68,13 @@ function drupalcl_showcase_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
+        ),
+        'locations' => array(
+          'weight' => '6',
+        ),
+        'path' => array(
+          'weight' => '7',
         ),
       ),
       'display' => array(),

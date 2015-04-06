@@ -13,6 +13,7 @@ stylesheets[all][] = css/camaleon.hacks.css
 stylesheets[all][] = css/camaleon.styles.css
 stylesheets[all][] = css/camaleon.no-query.css
 
+stylesheets[all][] = css/animate.css
 stylesheets[all][] = css/font-awesome.min.css
 
 ; ========================================
@@ -20,6 +21,7 @@ stylesheets[all][] = css/font-awesome.min.css
 ; ========================================
 scripts[] = js/camaleon.behaviors.js
 scripts[] = js/grid.js
+scripts[] = js/wow.min.js
 
 ; ========================================
 ; Regions

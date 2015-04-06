@@ -102,9 +102,9 @@
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
+<!--       <?php if ($title): ?>
         <h1><?php print $title; ?></h1>
-      <?php endif; ?>
+      <?php endif; ?> -->
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
@@ -124,13 +124,16 @@
         <?php endif; ?>
 
         <div class="head">
-          <img src="sites/all/themes/camaleon/images/logo-picec-512.png" alt="">
+          <img src="sites/all/themes/camaleon/images/logo-picec-512.png" alt="" class="wow fadeInDownBig">
           <h2>Instala y personaliza tu propia tienda en línea gratis</h2>
         </div>
-        <a href="demo" title="PICEC" class="button">Demo</a>
-        <a href="https://www.drupal.org/project/picec" title="PICEC" class="button">Descargar</a>
-        <a href="documentation/18" title="Documentos" class="button">Documentos</a>
-        <a href="node/3/issues" title="Issues" class="button">Issues</a>
+        <div class="buttons">
+          <div class="eventime_button center f-left"><a href="demo" class="btn-white" role="button">Demo</a></div>
+          <div class="eventime_button center f-left"><a href="https://www.drupal.org/project/picec" class="btn-white" role="button">Descargar</a></div>
+          <div class="eventime_button center f-left"><a href="documentation/18" class="btn-white" role="button">Documentos</a></div>
+          <div class="eventime_button center f-left"><a href="node/3/issues" class="btn-white" role="button">Issues</a></div>
+        </div>
+
         <div class="features">
           <h1>Con PICEC potencia tu negocio</h1>
           <div class="feature">

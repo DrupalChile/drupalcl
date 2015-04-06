@@ -32,6 +32,36 @@ function drupal_chile_common_views_api($module = NULL, $api = NULL) {
 function drupal_chile_common_image_default_styles() {
   $styles = array();
 
+  // Exported image style: 100x100.
+  $styles['100x100'] = array(
+    'label' => '100x100',
+    'effects' => array(
+      3 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 100,
+          'height' => 100,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: image_big.
+  $styles['image_big'] = array(
+    'label' => 'Image big 1200x675',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 1200,
+          'height' => 675,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: image_content.
   $styles['image_content'] = array(
     'label' => 'Image content',

@@ -53,7 +53,7 @@ function proyectos_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'moscone_flipped';
+  $display->layout = 'radix_moscone';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -86,6 +86,7 @@ function proyectos_default_page_manager_handlers() {
       'context' => 'argument_entity_id:node_1',
       'override_title' => 0,
       'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -98,35 +99,6 @@ function proyectos_default_page_manager_handlers() {
     $pane->uuid = 'e3c57706-e585-4e7d-920c-704bf3307469';
     $display->content['new-e3c57706-e585-4e7d-920c-704bf3307469'] = $pane;
     $display->panels['contentmain'][0] = 'new-e3c57706-e585-4e7d-920c-704bf3307469';
-    $pane = new stdClass();
-    $pane->pid = 'new-5754c5e9-c00c-4225-9cfb-febc4c95ad9c';
-    $pane->panel = 'contentmain';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_link_proyecto';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'link_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '5754c5e9-c00c-4225-9cfb-febc4c95ad9c';
-    $display->content['new-5754c5e9-c00c-4225-9cfb-febc4c95ad9c'] = $pane;
-    $display->panels['contentmain'][1] = 'new-5754c5e9-c00c-4225-9cfb-febc4c95ad9c';
     $pane = new stdClass();
     $pane->pid = 'new-174e1cf5-d74e-49a9-b498-8351b3ccfc77';
     $pane->panel = 'sidebar';
@@ -159,6 +131,73 @@ function proyectos_default_page_manager_handlers() {
     $pane->uuid = '174e1cf5-d74e-49a9-b498-8351b3ccfc77';
     $display->content['new-174e1cf5-d74e-49a9-b498-8351b3ccfc77'] = $pane;
     $display->panels['sidebar'][0] = 'new-174e1cf5-d74e-49a9-b498-8351b3ccfc77';
+    $pane = new stdClass();
+    $pane->pid = 'new-5754c5e9-c00c-4225-9cfb-febc4c95ad9c';
+    $pane->panel = 'sidebar';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_link_proyecto';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'link_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '5754c5e9-c00c-4225-9cfb-febc4c95ad9c';
+    $display->content['new-5754c5e9-c00c-4225-9cfb-febc4c95ad9c'] = $pane;
+    $display->panels['sidebar'][1] = 'new-5754c5e9-c00c-4225-9cfb-febc4c95ad9c';
+    $pane = new stdClass();
+    $pane->pid = 'new-0640eff8-29dd-4791-8738-b1e0bc18d7e9';
+    $pane->panel = 'sidebar';
+    $pane->type = 'views';
+    $pane->subtype = 'issues_estados';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '0',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'context' => array(
+        0 => '',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '0640eff8-29dd-4791-8738-b1e0bc18d7e9';
+    $display->content['new-0640eff8-29dd-4791-8738-b1e0bc18d7e9'] = $pane;
+    $display->panels['sidebar'][2] = 'new-0640eff8-29dd-4791-8738-b1e0bc18d7e9';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
