@@ -25,7 +25,6 @@ features[image][] = image_big
 features[image][] = image_content
 features[image][] = list_thumbnail
 features[menu_custom][] = main-menu
-features[menu_links][] = main-menu_acerca-de:node/293
 features[menu_links][] = main-menu_blog:blog
 features[menu_links][] = main-menu_contacto:contact
 features[menu_links][] = main-menu_eventos:eventos
