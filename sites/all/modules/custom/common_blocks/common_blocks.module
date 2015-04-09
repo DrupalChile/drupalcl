@@ -53,6 +53,7 @@ function _common_blocks_content_social() {
   <li><a href="https://github.com/DrupalChile" target="_blank" title="Organización en GitHub"><i class="fa fa-github-square"></i> GitHub</a></li>
   <li><a href="http://www.meetup.com/Drupal-Chile" target="_blank" title="Grupo en Meetup"><i class="fa fa-calendar"></i> Meetup</a></li>
   <li><a href="https://twitter.com/drupalcl" target="_blank" title="Perfil en Twitter"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+  <li><a href="https://google.com/+DrupalchileOrg" target="_blank" title="Pagina en Google+"><i class="fa fa-google-plus-square"></i> Google+</a></li>
   </ul>';
 
   return $output;

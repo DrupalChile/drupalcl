@@ -4165,12 +4165,12 @@ footer,
 .navbar_bg .active a,
 .schedule_reservation,
 .panel-collapse p b {
-  color: #000;
+  color: #00599a;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.34-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033969}}
 .eventime_button:hover {
-  color: #000 !important;
+  color: #00599a !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.34-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033985}}

@@ -105,6 +105,26 @@
     </div>
   </div>
 
+  <div class="wrapper section">
+    <div class="container wow bounceInUp">      
+      <ul>
+        <li><p><i class="fa fa-4x fa-calendar"></i></p><h3>Eventos</h3><p>Mensualmente nos juntamos a intercambiar experiencias relacionadas con Drupal.</p><p><div class="eventime_button"><a href="eventos" class="btn btn-featured" role="button">Ver más</a></div></p></li>
+        <li><p><i class="fa fa-4x fa-folder-open"></i></p><h3>Material de apoyo</h3><p>Descarga y visualiza en línea material de apoyo para tus proyectos.</p><p><div class="eventime_button"><a href="material-de-apoyo" title="Ver más" class="btn btn-featured">Ver más</a></div></p></li>
+        <li><p><i class="fa fa-4x fa-users"></i></p><h3>Proyectos</h3><p>Conoce, participa y colabora en los proyectos de la comunidad</p><p><div class="eventime_button"><a href="proyectos" title="Ver más" class="btn btn-featured">Ver más</a></div></p></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="wrapper featured">
+    <div class="container">
+      <h1>Comercio electrónico para Chile</h1>
+      <p class="intro">Perfil de Instalación de Comercio Electrónico Chileno</p>
+      <div class="eventime_button"><a href="picec" class="" role="button">Más información</a></div>
+      <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="wow bounceInDown" alt="Logo PICEC">
+    </div>
+  </div>
+
   <div class="wrapper portafolio">
     <div class="container wow bounceInRight">
       <h2>Sitios creados con Drupal</h2>
@@ -118,27 +138,6 @@
       ?>
     </div>
   </div>
-
-  <div class="wrapper featured">
-    <div class="container">
-      <h1>Comercio electrónico para Chile</h1>
-      <p class="intro">Perfil de Instalación de Comercio Electrónico Chileno</p>
-      <div class="eventime_button"><a href="picec" class="" role="button">Más información</a></div>
-      <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="wow bounceInDown" alt="Logo PICEC">
-    </div>
-  </div>
-
-  <div class="wrapper section">
-    <div class="container wow bounceInUp">      
-      <ul>
-        <li><p><i class="fa fa-4x fa-calendar"></i></p><h3>Eventos</h3><p>Mensualmente nos juntamos a intercambiar experiencias relacionadas con Drupal.</p><p><div class="eventime_button"><a href="eventos" class="btn btn-featured" role="button">Ver más</a></div></p></li>
-        <li><p><i class="fa fa-4x fa-folder-open"></i></p><h3>Material de apoyo</h3><p>Descarga y visualiza en línea material de apoyo para tus proyectos.</p><p><div class="eventime_button"><a href="material-de-apoyo" title="Ver más" class="btn btn-featured">Ver más</a></div></p></li>
-        <li><p><i class="fa fa-4x fa-users"></i></p><h3>Proyectos</h3><p>Conoce, participa y colabora en los proyectos de la comunidad</p><p><div class="eventime_button"><a href="proyectos" title="Ver más" class="btn btn-featured">Ver más</a></div></p></li>
-      </ul>
-
-    </div>
-  </div>
-
 
   <!--<div class="l-main">
     <div class="l-content" role="main">
