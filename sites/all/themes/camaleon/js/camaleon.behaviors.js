@@ -74,7 +74,7 @@
 
       // Dropdown main menu
 
-      if(window.innerWidth > 769){
+      if(window.innerWidth > 1025){
 
         $('.block--system-main-menu ul.menu li.expanded').hover(function() {
 
@@ -90,7 +90,7 @@
 
         });
 
-      }else if(window.innerWidth < 768) {
+      }else if(window.innerWidth < 1024) {
 
         $('.block--system-main-menu ul.menu li.expanded ul.menu').show();
 

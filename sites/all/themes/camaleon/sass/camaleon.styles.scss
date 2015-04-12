@@ -209,9 +209,11 @@ h1{
 	font-size: 5rem;
 	font-family: BebasNeue Bold;
 	text-transform: uppercase;
-	// letter-spacing: -0.05em;
+	letter-spacing: -0.01em;
 	text-rendering: optimizeLegibility;
-	
+	@include breakpoint($tablet){
+		letter-spacing: 0em;
+	}
 	// text-transform: uppercase;
 }
 
@@ -244,7 +246,7 @@ p{
 	line-height: 1.5;
 	color: #3e3e3e;
 	// text-align: justify;
-	font: 300 2rem/3rem Source Sans Pro, Helvetica, Arial, sans-serif;
+	font: 400 2rem/3rem Source Sans Pro, Helvetica, Arial, sans-serif;
 
 	text-rendering: optimizeLegibility;
 	// font-family: Lato-Italic;
@@ -256,7 +258,9 @@ a{
 }
 
 a:hover{
-	color: $vivid-blue;
+	@include breakpoint($desktop){
+		color: $vivid-blue;
+	}
 }
 
 .link-azul{
@@ -330,12 +334,12 @@ body.admin-menu{
 	width: 100%;
 	position: relative;
 	z-index: 99;
-	@include breakpoint($tablet){
-		display: block !important;
-		position: relative;
-		margin-top: 0;
-		z-index: 0;
-	}
+	// @include breakpoint($tablet){
+	// 	display: none;
+	// 	position: relative;
+	// 	margin-top: 0;
+	// 	z-index: 0;
+	// }
 	@include breakpoint($desktop){
 		display: block !important;
 		position: relative;
@@ -348,7 +352,7 @@ body.admin-menu{
 	padding: 0;
 	margin: 0;
 
-	@include breakpoint($tablet){
+	@include breakpoint($desktop){
 
 		padding: 0;
 
@@ -357,7 +361,7 @@ body.admin-menu{
 	li.expanded{
 		position: relative;
 		display: block;
-		@include breakpoint($tablet){
+		@include breakpoint($desktop){
 			display: flex;
 		}
 		a{
@@ -366,7 +370,7 @@ body.admin-menu{
 		}
 
 		a:hover{
-			@include breakpoint($tablet){
+			@include breakpoint($desktop){
 				background-color: #3d8ddd !important;
 				color: #fff !important;
 			}
@@ -389,7 +393,7 @@ body.admin-menu{
 			padding: 1.57em;
 			border-bottom: 1px solid $white;
 			//background-color: #79a9e5;
-			@include breakpoint($tablet){
+			@include breakpoint($desktop){
 				padding: 0.35em;
 				//background-color: #195591;
 				position: relative;
@@ -406,31 +410,32 @@ body.admin-menu{
 			width: 100%;
 			margin: 0;
 			padding: 0;
-			@include breakpoint($tablet){
-				width: 15em;
-				top: 2.15em;
+			// @include breakpoint($tablet){
+			// 	width: 15em;
+			// 	top: 2.15em;
+			// 	left: 0em;
+			// 	position: absolute;
+			// }
+			@include breakpoint($desktop){
+				top: 4.9em;
 				left: 0em;
 				position: absolute;
 			}
-			@include breakpoint($desktop){
-				top: 5em;
-				left: 0em;
-			}
 			
 			li{
-				width: 100%;
+				width: 15em;
 				
 				border-bottom: 1px solid #79a9e5;
 				a{
 					padding: 1em 3em;
 					margin: 0;
-					@include breakpoint($tablet){
+					@include breakpoint($desktop){
 						padding: 1em 1.5em;
 						background-color: #3d8ddd;
 					}
 				}
 				a:hover{
-					@include breakpoint($tablet){
+					@include breakpoint($desktop){
 						background-color: #79a9e5 !important;
 						color: #fff !important;
 					}
@@ -448,7 +453,7 @@ body.admin-menu{
 			margin: 0;
 			width: 100%;
 			border-bottom: 1px solid #79a9e5;
-			@include breakpoint($tablet){
+			@include breakpoint($desktop){
 				width: auto;
 				margin: 0;
 				border-bottom: none;
@@ -466,7 +471,7 @@ body.admin-menu{
 				transition-duration: 0.3s;
 				display: block;
 				text-align: left;
-				@include breakpoint($tablet){
+				@include breakpoint($desktop){
 					width: auto;
 					font-size: .9em;
 					padding: 31px 15px;
@@ -481,7 +486,7 @@ body.admin-menu{
 			a.active{
 				background-color: $vivid-blue;
 				color: #fff;
-				@include breakpoint($tablet){
+				@include breakpoint($desktop){
 					background-color: #00599a;
 					color: #fff;
 				}
@@ -574,9 +579,9 @@ body.admin-menu{
 	padding: 1em;
 	right: 0;
 	cursor: pointer;
-	@include breakpoint($tablet){
-		display: none;
-	}
+	// @include breakpoint($tablet){
+	// 	display: none;
+	// }
 	@include breakpoint($desktop){
 		display: none;
 	}
@@ -1011,20 +1016,47 @@ body.admin-menu{
 
 .node-type-showcase{
 	.radix-layouts-sidebar{
-		.field--type-image{
+		.field--type-image img{
 			margin: 1.5em 0 0 1em;
+			width: 95%;
+			display: block;
+			height: auto;
+			@include breakpoint($tablet){
+				width: 50%;
+				float: left;
+				margin: 0 1em;
+			}
+			@include breakpoint($desktop){
+				width: 100%;
+				margin: 1.5em 0 0 1em;
+			}
 		}
 
 	}
 	.radix-layouts-header .field--type-image{
 		position: absolute;
 		// opacity: .25;
+		display: none;
+
+		@include breakpoint($tablet){
+			display: none;
+		}
+		@include breakpoint($desktop){
+			display: block;
+		}
 		
 	}
 	
 	.radix-layouts-sidebar, .radix-layouts-content{
-		background: rgba(255,255,255,0.8);
-		min-height: 675px;
+		// background: rgba(255,255,255,0.8);
+		
+		@include breakpoint($tablet){
+
+		}
+		@include breakpoint($desktop){
+			min-height: 675px;
+			background: rgba(255,255,255,0.8);
+		}
 
 			// background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
 			// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
@@ -1036,6 +1068,16 @@ body.admin-menu{
 	}
 	.pane-node-field-link{
 		margin: 0 0 0 1em;
+		width: 95%;
+		@include breakpoint($tablet){
+			width: 50%;
+			float: left;
+			margin: 0 1em;
+		}
+		@include breakpoint($desktop){
+			width: 100%;
+			margin: 0 0 0 1em;
+		}
 	}
 }
 
@@ -1442,6 +1484,7 @@ body.admin-menu{
 		}
 		@include breakpoint($desktop){
 			background: url('../images/bg-picec.png') fixed center;
+			background-size: 300%;
 		}
 		.l-main{
 			background: none;
@@ -1449,7 +1492,7 @@ body.admin-menu{
 	}
 	h1{
 		text-align: center;
-		text-shadow: 0px 0px 20px rgba(0,0,0,0.32);
+		// text-shadow: 0px 0px 20px rgba(0,0,0,0.32);
 		color: #fff;
 	}
 	article{
@@ -1474,14 +1517,23 @@ body.admin-menu{
 		}
 		h2{
 			text-align: center;
-			text-shadow: 0px 0px 20px rgba(0,0,0,0.32);
+			// text-shadow: 0px 0px 20px rgba(0,0,0,0.32);
 			color: #fff;
 		}
 	}
 
 	.eventime_button{
-		width: 215px;
-		margin: 0 1em;
+		width: 90%;
+		margin: 1em;
+		@include breakpoint($tablet){
+			width: 345px;
+			margin: 1em;
+		}
+
+		@include breakpoint($desktop){
+			width: 215px;
+			margin: 0 1em;
+		}
 	}
 
 	.button{
@@ -1502,10 +1554,16 @@ body.admin-menu{
 	}
 	.buttons{
 		margin: 0 auto;
-		  width: 1024px;
+		  width: 100%;
+		  @include breakpoint($tablet){
+		  	width: 768px;
+		  }
+		  @include breakpoint($desktop){
+		  	width: 1024px;
+		  }
 	}
 	.features{
-		min-height: 80em;
+		min-height: 90em;
 		@include breakpoint($tablet){
 			min-height: 50em;
 		}
@@ -1523,7 +1581,7 @@ body.admin-menu{
 			padding: 1em;
 			color: #fff;
 			@include breakpoint($tablet){
-				width: 45%;
+				width: 29%;
 			}
 			@include breakpoint($desktop){
 				width: 30%;
@@ -1637,6 +1695,13 @@ footer{
 	border: 0;
 	background: none;
 	box-shadow: none;
+
+	.slides{
+		@include breakpoint($tablet){
+			width: 100%;
+		}
+
+	}
 	.slides > li{
 
 		.flex-caption{
@@ -1714,7 +1779,7 @@ div.flexslider div.field-content {
 	.featured{
 
 		position: relative;
-		height: 475px;
+		height: 550px;
 		background: url("../images/bg-picec.png") center center;
 		background-size: 500%;
 		background-position: 50% 0%;
@@ -1723,8 +1788,9 @@ div.flexslider div.field-content {
 		z-index: 99;
 
 		@include breakpoint($tablet){
-			background-size: 175%;
+			background-size: 300%;
 			background-position: 50% 0%;
+			height: 550px;
 			
 		}
 
@@ -1749,15 +1815,17 @@ div.flexslider div.field-content {
 			margin: 0;
 			text-align: left;
 			// font-size: 32px;
-			@include breakpoint($tablet){
-				font-size: 42px;
+			width: 50%;
+			@include breakpoint($desktop){
+				// font-size: 42px;
+				width: 100%;
 			}
 		}
 		img{
 			position: absolute;
 			top: 150px;
 			right: 0px;
-			width: 132px;
+			width: 45%;
 			@include breakpoint($tablet){
 				// right: 0px;
 				width: 300px;
@@ -1784,7 +1852,7 @@ div.flexslider div.field-content {
 	.community{
 
 		position: relative;
-		height: 475px;
+		height: 550px;
 		background: url("../images/bg-community.png") fixed center;
 		background-size: 500%;
 		background-position: 50% 0%;
@@ -1792,6 +1860,7 @@ div.flexslider div.field-content {
 		@include breakpoint($tablet){
 			background-size: 175%;
 			background-position: 50% 0%;
+			height: 475px;
 			
 		}
 
@@ -1816,24 +1885,25 @@ div.flexslider div.field-content {
 			color: #fff;
 			margin: 0;
 			text-align: left;
-			// font-size: 32px;
+			width: 50%;
 			@include breakpoint($tablet){
-				// font-size: 42px;
+				width: 50%;
+			}
+			@include breakpoint($desktop){
+				width: 100%;
 			}
 		}
 		img{
 			position: absolute;
 			top: 150px;
 			right: 0px;
-			width: 132px;
+			width: 50%;
 			@include breakpoint($tablet){
-				// right: 0px;
 				width: 300px;
 				top: 120px;
 			}
 
 			@include breakpoint($desktop){
-				// right: 100px;
 				width: 300px;
 				top: 120px;
 			}
@@ -1867,6 +1937,20 @@ div.flexslider div.field-content {
 
 	.wrapper.portafolio{
 
+		height: 300px;
+
+		@include breakpoint($tablet){
+
+			height: 350px;
+
+		}
+
+		@include breakpoint($large-desktop){
+			
+			height: 400px;
+
+		}
+
 		h2{
 			color: #fff;
 			text-align: center;
@@ -1891,7 +1975,10 @@ div.flexslider div.field-content {
 		}
 		.view-footer{
 			.eventime_button{
-				margin: 1em 2em;
+				margin: 0em;
+				@include breakpoint($tablet){
+					margin: 1em 2em;
+				}
 			}
 		}
 	}
@@ -1923,9 +2010,12 @@ div.flexslider div.field-content {
 					text-align: center;
 					
 					i{
-						padding: 0.75em;
+						padding: 0.35em;
 						background-color: #fafafa;
 						@include border-radius(2em);
+						@include breakpoint($tablet){
+							padding: 0.75em;
+						}
 
 					}
 					/*i:hover{
@@ -3695,7 +3785,7 @@ div.admin-panel .description {
 
     overflow: hidden;
 
-    width: 255px;
+    width: 100%;
 
     -webkit-transition: border-color 0.3s, color 0.3s;
 
@@ -3706,6 +3796,20 @@ div.admin-panel .description {
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 
     z-index: 9;
+
+    text-align: center;
+
+    @include breakpoint($tablet){
+
+    	width: 200px;
+
+    }
+
+    @include breakpoint($desktop){
+
+    	width: 255px;
+
+    }
 
 }
 
@@ -3741,15 +3845,19 @@ div.admin-panel .description {
 
 .eventime_button:hover::before {
 
-    opacity: 1;
+	@include breakpoint($desktop){
 
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+	    opacity: 1;
 
-    transform: rotate3d(0, 0, 1, 0deg);
+	    -webkit-transform: rotate3d(0, 0, 1, 0deg);
 
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	    transform: rotate3d(0, 0, 1, 0deg);
 
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+
+	    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+
+	}
 
 }
 
@@ -3803,7 +3911,11 @@ a.navbar-brand:hover,
 
 .copyright span{
 
-    color: #ff4949;
+    @include breakpoint($desktop){
+
+    	color: #ff4949;
+
+    }
 
 }
 
@@ -3962,13 +4074,21 @@ footer,
 
 .panel-collapse p b {
 
-    color: #00599a;
+	@include breakpoint($desktop){
+
+		color: #00599a;
+
+	}
 
 }
 
 .eventime_button:hover {
 
-    color: #00599a !important;
+    @include breakpoint($desktop){
+
+    	color: #00599a !important;
+
+    }
 
 }
 
@@ -4122,7 +4242,9 @@ a.btn-featured{
 	text-align: center;
 	color: #ff4949;
 	&:hover{
-		color: white;
+		@include breakpoint($desktop){
+			color: white;
+		}
 	}
 }
 

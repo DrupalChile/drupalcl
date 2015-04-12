@@ -1,27 +1,27 @@
 <?php
 /**
  * @file
- * drupalcl_showcase.path_breadcrumbs.inc
+ * eventos.path_breadcrumbs.inc
  */
 
 /**
  * Implements hook_path_breadcrumbs_settings_info().
  */
-function drupalcl_showcase_path_breadcrumbs_settings_info() {
+function eventos_path_breadcrumbs_settings_info() {
   $export = array();
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
-  $path_breadcrumb->machine_name = 'showcase';
-  $path_breadcrumb->name = 'Showcase';
+  $path_breadcrumb->machine_name = 'evento';
+  $path_breadcrumb->name = 'Evento';
   $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Usan Drupal',
+      0 => 'Eventos',
       1 => '%node:title',
     ),
     'paths' => array(
-      0 => 'usan-drupal',
+      0 => 'eventos',
       1 => '<none>',
     ),
     'home' => 1,
@@ -41,7 +41,7 @@ function drupalcl_showcase_path_breadcrumbs_settings_info() {
           'name' => 'node_type',
           'settings' => array(
             'type' => array(
-              'showcase' => 'showcase',
+              'event' => 'event',
             ),
           ),
           'context' => 'node',
@@ -60,16 +60,16 @@ function drupalcl_showcase_path_breadcrumbs_settings_info() {
     ),
   );
   $path_breadcrumb->weight = 0;
-  $export['showcase'] = $path_breadcrumb;
+  $export['evento'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
-  $path_breadcrumb->machine_name = 'showcase_list';
-  $path_breadcrumb->name = 'Showcase list';
-  $path_breadcrumb->path = 'usan-drupal';
+  $path_breadcrumb->machine_name = 'events_list';
+  $path_breadcrumb->name = 'Lista de eventos';
+  $path_breadcrumb->path = 'eventos';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Usan Drupal',
+      0 => 'Eventos',
     ),
     'paths' => array(
       0 => '<none>',
@@ -80,7 +80,7 @@ function drupalcl_showcase_path_breadcrumbs_settings_info() {
     'access' => array(),
   );
   $path_breadcrumb->weight = 0;
-  $export['showcase_list'] = $path_breadcrumb;
+  $export['events_list'] = $path_breadcrumb;
 
   return $export;
 }

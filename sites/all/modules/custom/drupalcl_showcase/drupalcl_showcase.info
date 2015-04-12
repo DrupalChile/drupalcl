@@ -28,6 +28,7 @@ features[field_instance][] = node-showcase-field_link
 features[node][] = showcase
 features[page_manager_handlers][] = node_view_panel_context_2
 features[page_manager_pages][] = showcase
+features[path_breadcrumbs][] = showcase
 features[path_breadcrumbs][] = showcase_list
 features[variable][] = comment_anonymous_showcase
 features[variable][] = comment_default_mode_showcase
