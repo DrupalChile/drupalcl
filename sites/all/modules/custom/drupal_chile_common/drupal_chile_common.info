@@ -28,6 +28,7 @@ features[image][] = 100x100
 features[image][] = image_big
 features[image][] = image_content
 features[image][] = list_thumbnail
+features[image][] = user_big
 features[menu_custom][] = main-menu
 features[node][] = banner
 features[page_manager_pages][] = home

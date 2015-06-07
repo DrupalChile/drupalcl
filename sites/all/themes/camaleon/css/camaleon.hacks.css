@@ -1,9 +1,9 @@
 @media all and (max-width: 800px) {
-  /* line 3, ../sass/camaleon.hacks.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.hacks\.scss}line{font-family:\000033}}
   #toolbar, #admin-menu {
     display: none; }
 
-  /* line 8, ../sass/camaleon.hacks.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.hacks\.scss}line{font-family:\000038}}
   html body.toolbar, html body.admin-menu {
     padding-top: 0 !important;
     margin-top: 0 !important; } }

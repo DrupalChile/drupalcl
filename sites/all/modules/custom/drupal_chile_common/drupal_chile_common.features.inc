@@ -92,6 +92,21 @@ function drupal_chile_common_image_default_styles() {
     ),
   );
 
+  // Exported image style: user_big.
+  $styles['user_big'] = array(
+    'label' => 'User big',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 420,
+          'height' => 420,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 

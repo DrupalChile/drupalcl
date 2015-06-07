@@ -4254,3 +4254,53 @@ a.btn-featured{
 		text-align: center;
 	}
 }
+
+
+/****************************************************
+* BOOK CONTENTS
+*****************************************************/
+.book-navigation{
+
+	ul.menu{
+
+		li{
+			list-style: none;
+			a{
+				background-color: #eee;
+				padding: 1em;
+				color: #13a9e2;
+				display: block;
+				&:hover{
+					background-color: #dfdfdf;
+				}
+			}
+		}
+
+	}
+
+	.book-navigation__links{
+
+		a{
+			background-color: #eee;
+			padding: 1em;
+			color: #13a9e2;
+			
+			&:hover{
+				background-color: #dfdfdf;
+			}
+		}
+
+		a.book-navigation__previous{
+
+		}
+		a.book-navigation__up{
+
+		}
+		a.book-navigation__next{
+
+		}
+
+
+
+	}
+}
