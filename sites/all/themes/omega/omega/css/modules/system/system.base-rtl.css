@@ -10,12 +10,10 @@
  */
 /* Animated throbber */
 html.js .form-autocomplete {
-  background-position: 0% 2px;
-}
+  background-position: 0% 2px; }
 
 html.js .throbbing {
-  background-position: 0% -18px;
-}
+  background-position: 0% -18px; }
 
 /**
  * @file
@@ -25,21 +23,17 @@ html.js .throbbing {
  */
 .draggable .tabledrag-handle {
   float: right;
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 .indentation {
-  float: right;
-}
+  float: right; }
 
 .tree-child,
 .tree-child-last {
-  background-position: -65px center;
-}
+  background-position: -65px center; }
 
 .tabledrag-toggle-weight-wrapper {
-  text-align: left;
-}
+  text-align: left; }
 
 /**
  * @file
@@ -49,17 +43,15 @@ html.js .throbbing {
  */
 /* Bar */
 .progress .percentage {
-  float: left;
-}
+  float: left; }
 
 .progress-disabled {
-  float: right;
-}
+  float: right; }
 
 .ajax-progress {
-  float: right;
-}
+  float: right; }
 
 .ajax-progress .throbber {
-  float: right;
-}
+  float: right; }
+
+/*# sourceMappingURL=system.base-rtl.css.map */

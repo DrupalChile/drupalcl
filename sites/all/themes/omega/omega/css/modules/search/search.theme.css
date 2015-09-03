@@ -7,12 +7,10 @@
  */
 .search-result__snippet {
   padding-left: 1em;
-  /* LTR */
-}
+  /* LTR */ }
 
 .search-result__info {
-  font-size: 0.85em;
-}
+  font-size: 0.85em; }
 
 /**
  * Advanced Search Form
@@ -21,11 +19,11 @@
   float: left;
   /* LTR */
   margin-right: 2em;
-  /* LTR */
-}
+  /* LTR */ }
 .search-advanced .action {
   float: left;
   /* LTR */
   clear: left;
-  /* LTR */
-}
+  /* LTR */ }
+
+/*# sourceMappingURL=search.theme.css.map */

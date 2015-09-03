@@ -8,16 +8,14 @@
   display: block;
   width: 45%;
   text-align: left;
-  /* LTR */
-}
+  /* LTR */ }
 
 .book-navigation__up {
   float: left;
   /* LTR */
   display: block;
   width: 10%;
-  text-align: center;
-}
+  text-align: center; }
 
 .book-navigation__next {
   float: right;
@@ -25,5 +23,6 @@
   display: block;
   width: 45%;
   text-align: right;
-  /* LTR */
-}
+  /* LTR */ }
+
+/*# sourceMappingURL=book.theme.css.map */

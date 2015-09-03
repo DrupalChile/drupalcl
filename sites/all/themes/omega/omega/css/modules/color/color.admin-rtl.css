@@ -4,53 +4,44 @@
  */
 #placeholder {
   left: 0;
-  right: auto;
-}
+  right: auto; }
 
 /* Palette */
 .color-form .form-item {
   padding-left: 0;
-  padding-right: 1em;
-}
+  padding-right: 1em; }
 
 .color-form label {
   float: right;
-  clear: right;
-}
+  clear: right; }
 
 .color-form .form-text,
 .color-form .form-select {
-  float: right;
-}
+  float: right; }
 
 .color-form .form-text {
   margin-right: 0;
-  margin-left: 5px;
-}
+  margin-left: 5px; }
 
 #palette .hook {
-  float: right;
-}
+  float: right; }
 
 #palette .down,
 #palette .up,
 #palette .both {
-  background: url('../../../images/modules/color/hook-rtl.png?1379458577') no-repeat 0 0;
-}
+  background: image-url("modules/color/hook-rtl.png") no-repeat 0 0; }
 
 #palette .up {
-  background-position: 0 -27px;
-}
+  background-position: 0 -27px; }
 
 #palette .both {
-  background-position: 0 -54px;
-}
+  background-position: 0 -54px; }
 
 #palette .lock {
   float: right;
-  right: -10px;
-}
+  right: -10px; }
 
 html.js #preview {
-  float: right;
-}
+  float: right; }
+
+/*# sourceMappingURL=color.admin-rtl.css.map */

@@ -6,9 +6,9 @@
  *'Manage fields' and 'Manage display' overviews.
  */
 .field-ui-overview {
-  /* Add New Row */
-}
-.field-ui-overview .add-new .label-input {
-  float: right;
-  /* LTR */
-}
+  /* Add New Row */ }
+  .field-ui-overview .add-new .label-input {
+    float: right;
+    /* LTR */ }
+
+/*# sourceMappingURL=field_ui.admin-rtl.css.map */

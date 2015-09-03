@@ -6,24 +6,21 @@
  * Book outline on book edit form.
  */
 .js .book-outline-form .form-submit {
-  display: none;
-}
+  display: none; }
 
 /**
  * Book form for administering a single book's hierarchy.
  */
 .book-admin-edit select {
-  margin-right: 24px;
-}
+  margin-right: 24px; }
 
 .book-admin-edit .progress-disabled {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 .book-admin-edit .ajax-new-content {
-  background-color: #ffd;
-}
+  background-color: #ffd; }
 
 .book-admin-edit .form-item {
-  float: left;
-}
+  float: left; }
+
+/*# sourceMappingURL=book.admin.css.map */

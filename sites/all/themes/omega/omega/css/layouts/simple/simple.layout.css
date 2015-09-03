@@ -1,142 +1,57 @@
-/*******************************************************************************
- * simple.layout.scss
- *
- * Styling of the "simple" layout demonstrating the Compass grid extension Susy
- * and building mobile first layouts.
- ******************************************************************************/
-.l-header,
-.l-main,
-.l-footer {
-  *zoom: 1;
-  max-width: 1190px;
-  _width: 1190px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-.l-header:after,
-.l-main:after,
-.l-footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+/*
+Error: File to import not found or unreadable: susy.
+       Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/layouts/simple
+        on line 7 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\layouts\simple\simple.layout.scss
 
-.l-region--highlighted,
-.l-region--help,
-.l-region--sidebar-first,
-.l-region--sidebar-second {
-  margin-bottom: 20px;
-}
+2:  * simple.layout.scss
+3:  *
+4:  * Styling of the "simple" layout demonstrating the Compass grid extension Susy
+5:  * and building mobile first layouts.
+6:  ******************************************************************************\/
+7: @import "susy";
+8: 
+9: // Susy Variables
+10: 
+11: // Set consistent vertical and horizontal spacing units.
+12: $vert-spacing-unit: 20px;
 
-@media (min-width: 44em) {
-  .l-header,
-  .l-main,
-  .l-footer {
-    max-width: 1190px;
-  }
-
-  .l-branding {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-
-  .l-region--header {
-    width: 66.10169%;
-    float: right;
-    margin-right: 0;
-  }
-
-  .l-region--navigation {
-    clear: both;
-  }
-
-  .has-sidebar-first .l-content,
-  .has-sidebar-second .l-content,
-  .has-two-sidebars .l-content {
-    width: 66.10169%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-  .has-sidebar-first .l-region--sidebar-first,
-  .has-sidebar-first .l-region--sidebar-second,
-  .has-sidebar-second .l-region--sidebar-first,
-  .has-sidebar-second .l-region--sidebar-second,
-  .has-two-sidebars .l-region--sidebar-first,
-  .has-two-sidebars .l-region--sidebar-second {
-    width: 32.20339%;
-    float: right;
-    margin-right: 0;
-  }
-  .has-sidebar-first .l-region--sidebar-second,
-  .has-sidebar-second .l-region--sidebar-second,
-  .has-two-sidebars .l-region--sidebar-second {
-    clear: right;
-  }
-}
-@media (min-width: 70em) {
-  .l-header,
-  .l-main,
-  .l-footer {
-    max-width: 1190px;
-  }
-
-  .l-branding {
-    width: 36.70886%;
-    float: left;
-    margin-right: 1.26582%;
-  }
-
-  .l-region--header {
-    width: 62.02532%;
-    float: right;
-    margin-right: 0;
-  }
-
-  .has-sidebar-first .l-content {
-    width: 74.68354%;
-    float: right;
-    margin-right: 0;
-  }
-  .has-sidebar-first .l-region--sidebar-first {
-    width: 24.05063%;
-    float: left;
-    margin-right: 1.26582%;
-  }
-
-  .has-sidebar-second .l-content {
-    width: 74.68354%;
-    float: left;
-    margin-right: 1.26582%;
-  }
-  .has-sidebar-second .l-region--sidebar-second {
-    width: 24.05063%;
-    float: right;
-    margin-right: 0;
-    clear: none;
-  }
-
-  .has-two-sidebars .l-content {
-    width: 49.36709%;
-    float: left;
-    margin-right: 1.26582%;
-    margin-left: 25.31646%;
-  }
-  .has-two-sidebars .l-region--sidebar-first,
-  .has-two-sidebars .l-region--sidebar-second {
-    width: 24.05063%;
-    float: left;
-    margin-right: 1.26582%;
-  }
-  .has-two-sidebars .l-region--sidebar-first {
-    margin-left: -75.94937%;
-  }
-  .has-two-sidebars .l-region--sidebar-second {
-    float: right;
-    margin-right: 0;
-    clear: none;
-  }
-}
+Backtrace:
+C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\layouts\simple\simple.layout.scss:7
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: susy.\A        Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/layouts/simple\A         on line 7 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\layouts\simple\simple.layout.scss\A \A 2:  * simple.layout.scss\A 3:  *\A 4:  * Styling of the \"simple\" layout demonstrating the Compass grid extension Susy\A 5:  * and building mobile first layouts.\A 6:  ******************************************************************************/\A 7: @import \"susy\";\A 8: \A 9: // Susy Variables\A 10: \A 11: // Set consistent vertical and horizontal spacing units.\A 12: $vert-spacing-unit: 20px;"; }

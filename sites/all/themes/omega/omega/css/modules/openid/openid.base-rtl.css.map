@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;AAKA;gCACiC;EAC/B,YAAY,EAAE,CAAC",
+"sources": ["../../../sass/modules/openid/openid.base-rtl.scss"],
+"names": [],
+"file": "openid.base-rtl.css"
+}

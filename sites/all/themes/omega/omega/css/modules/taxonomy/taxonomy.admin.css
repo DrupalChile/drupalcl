@@ -3,9 +3,9 @@
  * Administrative styling for the taxonomy module.
  */
 .taxonomy-term-divider-top {
-  border-bottom: none;
-}
+  border-bottom: none; }
 
 .taxonomy-term-divider-bottom {
-  border-top: 1px dotted #ccc;
-}
+  border-top: 1px dotted #ccc; }
+
+/*# sourceMappingURL=taxonomy.admin.css.map */

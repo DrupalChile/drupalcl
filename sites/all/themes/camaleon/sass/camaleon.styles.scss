@@ -1935,6 +1935,19 @@ div.flexslider div.field-content {
 		
 	}
 
+	.wrapper.camp{
+		background: url("../images/banner-1920x180.png") center;
+		height: 180px;
+		h1{
+			text-align: center;
+			a{
+				color: #fff;
+				text-shadow: 2px 2px #000000;
+				text-decoration: none;
+			}
+		}
+	}
+
 	.wrapper.portafolio{
 
 		height: 300px;

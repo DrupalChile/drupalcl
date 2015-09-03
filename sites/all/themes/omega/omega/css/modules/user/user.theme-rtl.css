@@ -6,23 +6,19 @@
  * Password Strength Indicator.
  */
 .password-strength {
-  float: left;
-}
+  float: left; }
 
 .password-strength-title {
-  float: right;
-}
+  float: right; }
 
 .password-strength-text {
-  float: left;
-}
+  float: left; }
 
 /**
  * Password Confirm.
  */
 .password-confirm {
-  float: left;
-}
+  float: left; }
 
 /*
  * User Profile
@@ -31,5 +27,6 @@
  */
 .profile .user-picture {
   float: left;
-  margin: 0 0 1em 1em;
-}
+  margin: 0 0 1em 1em; }
+
+/*# sourceMappingURL=user.theme-rtl.css.map */

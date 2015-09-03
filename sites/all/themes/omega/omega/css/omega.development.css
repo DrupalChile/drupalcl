@@ -1,44 +1,52 @@
-.omega-browser-width {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  background: url('../images/rgbapng/000000bf-5.png?1390172917');
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 1000;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-  font-size: 13px;
-  color: #fff;
-  max-width: 100%;
-  margin: 5px;
-  padding: 5px 10px;
-}
+/*
+Error: File to import not found or unreadable: rgbapng.
+       Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass
+        on line 1 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\omega.development.scss
 
-.region--debug {
-  background: url('../images/rgbapng/0000001a-5.png?1390172917');
-  background: rgba(0, 0, 0, 0.1);
-  position: relative;
-  min-height: 29px;
-  outline: 1px dashed #ccc;
-}
-.region--debug:before {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  background: url('../images/rgbapng/077dc3bf-5.png?1390172917');
-  background: rgba(7, 125, 195, 0.75);
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-  font-size: 11px;
-  z-index: 50;
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  padding: 3px 6px;
-  color: #fff;
-}
+1: @import "rgbapng";
+2: @import "compass";
+3: 
+4: .omega-browser-width {
+5:   @include border-radius(5px);
+6:   @include rgba-background(rgba(0, 0, 0, 0.75));
+
+Backtrace:
+C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\omega.development.scss:1
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: rgbapng.\A        Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass\A         on line 1 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\omega.development.scss\A \A 1: @import \"rgbapng\";\A 2: @import \"compass\";\A 3: \A 4: .omega-browser-width {\A 5:   @include border-radius(5px);\A 6:   @include rgba-background(rgba(0, 0, 0, 0.75));"; }

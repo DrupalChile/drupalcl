@@ -3,12 +3,11 @@
  * Styles for the block admin page.
  */
 .blocks-admin .region-title {
-  font-weight: bold;
-}
+  font-weight: bold; }
 .blocks-admin .region-message {
   font-weight: normal;
-  color: #999;
-}
+  color: #999; }
 .blocks-admin .region-populated {
-  display: none;
-}
+  display: none; }
+
+/*# sourceMappingURL=block.admin.css.map */

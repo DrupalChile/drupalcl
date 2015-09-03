@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;AAQA,kBAAmB;;EAEjB,wCAAsB;IACpB,KAAK,EAAE,KAAK",
+"sources": ["../../../sass/modules/field_ui/field_ui.admin-rtl.scss"],
+"names": [],
+"file": "field_ui.admin-rtl.css"
+}

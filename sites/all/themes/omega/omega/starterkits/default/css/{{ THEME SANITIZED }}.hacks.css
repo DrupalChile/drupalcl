@@ -1,10 +1,9 @@
 @media all and (max-width: 800px) {
   #toolbar, #admin-menu {
-    display: none;
-  }
+    display: none; }
 
   html body.toolbar, html body.admin-menu {
     padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-}
+    margin-top: 0 !important; } }
+
+/*# sourceMappingURL=%7B%7B%20THEME%20SANITIZED%20%7D%7D.hacks.css.map */

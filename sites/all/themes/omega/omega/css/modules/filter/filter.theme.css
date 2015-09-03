@@ -8,42 +8,35 @@
  * formatting guidelines.
  */
 .text-format-wrapper .form-item {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 .text-format-wrapper .description {
-  margin-top: 0.5em;
-}
+  margin-top: 0.5em; }
 
 /* Filter Format Wrapper. */
 .filter-wrapper {
   border-top: 0;
-  margin: 0;
-}
-.filter-wrapper .form-item {
-  float: left;
-  padding: 0 0 0.5em 1.5em;
-}
-.filter-wrapper .form-item label {
-  display: inline;
-}
+  margin: 0; }
+  .filter-wrapper .form-item {
+    float: left;
+    padding: 0 0 0.5em 1.5em; }
+    .filter-wrapper .form-item label {
+      display: inline; }
 
 /* More Information Link. */
 .filter-help {
   float: right;
-  padding: 0 1.5em 0.5em;
-}
-.filter-help a {
-  background: transparent url('../../../images/misc/help.png?1379458577') right center no-repeat;
-  padding: 0 20px;
-}
+  padding: 0 1.5em 0.5em; }
+  .filter-help a {
+    background: transparent image-url("misc/help.png") right center no-repeat;
+    padding: 0 20px; }
 
 /* Filter Guidelines */
 .filter-guidelines {
   clear: left;
-  padding: 0 1.5em;
-}
+  padding: 0 1.5em; }
 
 /* Filter formatting tips. */
 .tips {
-  font-size: 0.9em;
-}
+  font-size: 0.9em; }
+
+/*# sourceMappingURL=filter.theme.css.map */

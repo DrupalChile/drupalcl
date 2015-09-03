@@ -6,15 +6,12 @@
  * User Permissions Page
  */
 .user-admin-permissions .module {
-  font-weight: bold;
-}
+  font-weight: bold; }
 .user-admin-permissions .permission {
   padding-left: 1.5em;
-  /* LTR */
-}
+  /* LTR */ }
 .user-admin-permissions .form-item {
-  white-space: normal;
-}
+  white-space: normal; }
 
 /**
  * User Roles Page
@@ -23,11 +20,11 @@
  * the input textfield.
  */
 .user-admin-roles .edit-name {
-  clear: both;
-}
+  clear: both; }
 .user-admin-roles .form-item-name {
   float: left;
   /* LTR */
   margin-right: 1em;
-  /* LTR */
-}
+  /* LTR */ }
+
+/*# sourceMappingURL=user.admin.css.map */

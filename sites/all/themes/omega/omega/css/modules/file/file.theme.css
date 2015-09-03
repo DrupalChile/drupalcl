@@ -7,18 +7,16 @@
  */
 .form-managed-file .progress-disabled {
   float: none;
-  display: inline;
-}
+  display: inline; }
 .form-managed-file .ajax-progress,
 .form-managed-file .throbber {
-  float: none;
-}
+  float: none; }
 .form-managed-file .ajax-progress-bar {
   display: none;
   width: 28em;
   margin-top: 4px;
-  padding: 0;
-}
-.form-managed-file .ajax-progress-bar .bar {
-  margin: 0;
-}
+  padding: 0; }
+  .form-managed-file .ajax-progress-bar .bar {
+    margin: 0; }
+
+/*# sourceMappingURL=file.theme.css.map */

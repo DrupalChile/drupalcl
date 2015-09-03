@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,iCAAkC;EAChC,qBAAsB;IACpB,OAAO,EAAE,IAAI;;EAIb,uCAA8B;IAC5B,WAAW,EAAE,YAAY;IACzB,UAAU,EAAE,YAAY",
+"sources": ["../sass/%7B%7B%20THEME%20SANITIZED%20%7D%7D.hacks.scss"],
+"names": [],
+"file": "%7B%7B%20THEME%20SANITIZED%20%7D%7D.hacks.css"
+}

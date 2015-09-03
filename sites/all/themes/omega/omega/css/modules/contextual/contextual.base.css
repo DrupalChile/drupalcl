@@ -8,34 +8,31 @@
 .contextual-links-wrapper,
 .contextual-links-trigger,
 .contextual-links {
-  display: none !important;
-}
+  display: none !important; }
 
 html.js .contextual-links-wrapper,
 .contextual-links-region:hover .contextual-links-trigger,
 .contextual-links-active .contextual-links-trigger,
 .contextual-links-active .contextual-links {
-  display: block !important;
-}
+  display: block !important; }
 
 /**
  * Contextual links structure.
  */
 .contextual-links-region {
   outline: none;
-  position: relative;
-}
+  position: relative; }
 
 .contextual-links-wrapper {
   position: absolute;
   z-index: 999;
   right: 5px;
   /* LTR */
-  top: 2px;
-}
+  top: 2px; }
 
 .contextual-links-trigger {
   overflow: hidden;
   text-align: right;
-  /* LTR */
-}
+  /* LTR */ }
+
+/*# sourceMappingURL=contextual.base.css.map */

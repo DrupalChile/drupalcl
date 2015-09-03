@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;AAIA,0BAA2B;EACzB,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,KAAK;;AAEnB,oBAAqB;EACnB,KAAK,EAAE,KAAK;;AAEd,sBAAuB;EACrB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI",
+"sources": ["../../../sass/modules/book/book.theme-rtl.scss"],
+"names": [],
+"file": "book.theme-rtl.css"
+}

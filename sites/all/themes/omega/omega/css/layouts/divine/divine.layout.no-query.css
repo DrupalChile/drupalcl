@@ -1,87 +1,65 @@
-/*******************************************************************************
- * divine.layout.scss
- *
- * Styling of the "divine" layout demonstrating the golden rule and asymmetric
- * grids with Singularity.
- ******************************************************************************/
-.l-page {
-  width: 95%;
-  max-width: 110em;
-  margin: 0 auto;
-}
+/*
+Error: File to import not found or unreadable: compass.
+       Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/layouts/divine
+        on line 7 of C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/layouts/divine/divine.layout.scss
+        from line 5 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\layouts\divine\divine.layout.no-query.scss
 
-.l-header,
-.l-main {
-  *zoom: 1;
-  margin-bottom: 20px;
-}
-.l-header:after,
-.l-main:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+2: $breakpoint-no-query-fallbacks: true;
+3: 
+4: // Re-import everything from divine.layout.scss but without media queries.
+5: @import "divine.layout";
 
-/* Header Area */
-.l-header {
-  *zoom: 1;
-}
-.l-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.l-branding {
-  width: 50.33557%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0%;
-  clear: none;
-}
-
-.l-region--header {
-  width: 48.99329%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-
-.l-region--navigation {
-  clear: both;
-}
-
-/* Content Area */
-.l-content {
-  width: 50.33557%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0%;
-  clear: none;
-}
-
-/* Sidebars */
-.has-one-sidebar .l-region--sidebar-first,
-.has-one-sidebar .l-region--sidebar-second {
-  width: 48.99329%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-
-.has-two-sidebars .l-region--sidebar-first {
-  width: 30.20134%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 51.00671%;
-  clear: none;
-}
-.has-two-sidebars .l-region--sidebar-second {
-  width: 18.12081%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
+Backtrace:
+C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/layouts/divine/divine.layout.scss:7
+C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\layouts\divine\divine.layout.no-query.scss:5
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass.\A        Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/layouts/divine\A         on line 7 of C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/layouts/divine/divine.layout.scss\A         from line 5 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\layouts\divine\divine.layout.no-query.scss\A \A 2: $breakpoint-no-query-fallbacks: true;\A 3: \A 4: // Re-import everything from divine.layout.scss but without media queries.\A 5: @import \"divine.layout\";"; }

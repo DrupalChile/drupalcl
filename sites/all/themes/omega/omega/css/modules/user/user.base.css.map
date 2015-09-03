@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;AAIA,oBAAqB;EACnB,UAAU,EAAE,MAAM",
+"sources": ["../../../sass/modules/user/user.base.scss"],
+"names": [],
+"file": "user.base.css"
+}

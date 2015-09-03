@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;AAKA;gCACiC;EAC/B,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,CAAC;;;AAEhB;gDACiD;EAC/C,OAAO,EAAE,IAAI",
+"sources": ["../../../sass/modules/openid/openid.base.scss"],
+"names": [],
+"file": "openid.base.css"
+}

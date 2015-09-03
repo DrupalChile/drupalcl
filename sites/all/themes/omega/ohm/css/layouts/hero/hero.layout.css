@@ -1,146 +1,57 @@
-/*******************************************************************************
- * hero.layout.scss
- *
- * Styles for the Hero layout.
- ******************************************************************************/
-.l-constrained, .l-region--highlighted, .l-region--footer {
-  width: 95%;
-  margin: 0 auto;
-  *zoom: 1;
-}
-.l-constrained:after, .l-region--highlighted:after, .l-region--footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+/*
+Error: File to import not found or unreadable: compass.
+       Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/ohm/sass/layouts/hero
+        on line 6 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\ohm\sass\layouts\hero\hero.layout.scss
 
-/* Header */
-.l-region--header {
-  padding: 18px 0;
-}
-.l-region--header .block {
-  float: right;
-}
+1: /*******************************************************************************
+2:  * hero.layout.scss
+3:  *
+4:  * Styles for the Hero layout.
+5:  ******************************************************************************\/
+6: @import "compass";
+7: @import "breakpoint";
+8: @import "singularitygs";
+9: 
+10: // Globbing from within sub-folders only works with relative paths.
+11: @import "../../variables/**\/*";
 
-/* Content Area */
-.l-highlighted-wrapper {
-  padding: 18px 0;
-}
-
-.l-region--help {
-  margin-bottom: 18px;
-}
-
-.l-main {
-  margin-top: 36px;
-  margin-bottom: 36px;
-}
-
-/* Sidebars */
-.l-region--sidebar-first,
-.l-region--sidebar-second {
-  padding: 18px 1em;
-}
-
-/* Footer */
-.l-footer-wrapper {
-  padding: 18px 0;
-}
-
-@media (min-width: 44em) {
-  .l-constrained, .l-region--highlighted, .l-region--footer {
-    width: 90%;
-  }
-
-  /* Header */
-  .l-branding {
-    width: 23.40426%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-  }
-
-  .l-region--navigation {
-    width: 48.93617%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 25.53191%;
-    clear: none;
-  }
-
-  .l-region--header {
-    width: 23.40426%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-
-  /* Sidebars */
-  .has-two-sidebars .l-content,
-  .has-one-sidebar .l-content {
-    width: 65.95745%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-  }
-  .has-two-sidebars .l-region--sidebar-first,
-  .has-two-sidebars .l-region--sidebar-second,
-  .has-one-sidebar .l-region--sidebar-first,
-  .has-one-sidebar .l-region--sidebar-second {
-    width: 31.91489%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-    clear: right;
-  }
-}
-@media (min-width: 70em) {
-  .l-constrained, .l-region--highlighted, .l-region--footer {
-    width: 80%;
-  }
-
-  /* Sidebars */
-  .has-one-sidebar .l-content {
-    width: 65.95745%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-  }
-  .has-one-sidebar .l-region--sidebar-first {
-    width: 31.91489%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-    clear: none;
-  }
-
-  .has-two-sidebars .l-content {
-    width: 48.93617%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-  }
-  .has-two-sidebars .l-region--sidebar-first,
-  .has-two-sidebars .l-region--sidebar-second {
-    width: 23.40426%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 51.06383%;
-    clear: none;
-    clear: none;
-  }
-  .has-two-sidebars .l-region--sidebar-second {
-    width: 23.40426%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-}
+Backtrace:
+C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\ohm\sass\layouts\hero\hero.layout.scss:6
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass.\A        Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/ohm/sass/layouts/hero\A         on line 6 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\ohm\sass\layouts\hero\hero.layout.scss\A \A 1: /*******************************************************************************\A 2:  * hero.layout.scss\A 3:  *\A 4:  * Styles for the Hero layout.\A 5:  ******************************************************************************/\A 6: @import \"compass\";\A 7: @import \"breakpoint\";\A 8: @import \"singularitygs\";\A 9: \A 10: // Globbing from within sub-folders only works with relative paths.\A 11: @import \"../../variables/**/*\";"; }

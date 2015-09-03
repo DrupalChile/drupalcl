@@ -1,67 +1,52 @@
-.fieldset-description {
-  margin-bottom: 15px;
-}
+/*
+Error: File to import not found or unreadable: compass.
+       Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass
+        on line 1 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\omega.admin.scss
 
-/* Extension Settings */
-.omega-extension-settings {
-  border: 1px solid #ccc;
-  padding: 2.5em 0 0 0;
-  margin: 1em 0;
-}
-.omega-extension-settings legend {
-  display: block;
-}
+1: @import "compass";
+2: 
+3: 
+4: .fieldset-description {
+5:   margin-bottom: 15px;
+6: }
 
-/* Layouts */
-.omega-layout-selection-wrapper {
-  margin-bottom: 20px;
-  min-height: 75px;
-  position: relative;
-}
-.omega-layout-selection-wrapper .form-item .option,
-.omega-layout-selection-wrapper .form-item .description {
-  padding-left: 80px;
-}
-.omega-layout-selection-wrapper img {
-  height: 75px;
-  width: 64px;
-  position: absolute;
-  top: 8px;
-  margin-left: 1.5em;
-}
-
-/* Assets - Namespace Tokens Helptext */
-.omega-assets-namespace-tokens .description {
-  margin-top: 0;
-}
-.item-list .omega-assets-namespace-tokens {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-.item-list .omega-assets-namespace-tokens li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-}
-.item-list .omega-assets-namespace-tokens li {
-  margin-bottom: 14px;
-}
-
-/* Assets - Missing Requirements */
-.omega-assets-missing-files {
-  color: #8c2e0b;
-  margin: 1em 0 1em 1.5em;
-}
-
-/* Assets - Options */
-.omega-asset-options {
-  margin: 1em 0;
-  padding: 2.5em 0 0 0;
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-}
-.omega-asset-options legend {
-  display: block;
-}
+Backtrace:
+C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\omega.admin.scss:1
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass.\A        Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass\A         on line 1 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\omega.admin.scss\A \A 1: @import \"compass\";\A 2: \A 3: \A 4: .fieldset-description {\A 5:   margin-bottom: 15px;\A 6: }"; }

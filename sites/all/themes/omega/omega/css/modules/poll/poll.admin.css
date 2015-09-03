@@ -5,9 +5,9 @@
 /* Poll choice form on node form. */
 .poll-choice-table .form-text {
   display: inline;
-  width: auto;
-}
+  width: auto; }
 .poll-choice-table .choice-flag {
   white-space: nowrap;
-  width: 4em;
-}
+  width: 4em; }
+
+/*# sourceMappingURL=poll.admin.css.map */

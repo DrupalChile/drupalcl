@@ -7,8 +7,7 @@
  */
 .search-result__snippet {
   padding-left: 0;
-  padding-right: 1em;
-}
+  padding-right: 1em; }
 
 /**
  * Advanced Search Form
@@ -16,9 +15,9 @@
 .search-advanced .criterion {
   float: right;
   margin-right: 0;
-  margin-left: 2em;
-}
+  margin-left: 2em; }
 .search-advanced .action {
   float: right;
-  clear: right;
-}
+  clear: right; }
+
+/*# sourceMappingURL=search.theme-rtl.css.map */

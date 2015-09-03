@@ -9,13 +9,12 @@
   float: left;
   /* LTR */
   padding: 0 10px 10px 0;
-  /* LTR */
-}
+  /* LTR */ }
 
 .image-widget-data {
   float: left;
-  /* LTR */
-}
-.image-widget-data .text-field {
-  width: auto;
-}
+  /* LTR */ }
+  .image-widget-data .text-field {
+    width: auto; }
+
+/*# sourceMappingURL=image.theme.css.map */

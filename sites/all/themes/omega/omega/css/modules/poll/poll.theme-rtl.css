@@ -4,13 +4,12 @@
  */
 /* Poll Bars */
 .poll-bars__bar .foreground {
-  float: right;
-}
+  float: right; }
 
 .poll-bars__text {
-  text-align: right;
-}
+  text-align: right; }
 
 .poll-bars__percent {
-  text-align: left;
-}
+  text-align: left; }
+
+/*# sourceMappingURL=poll.theme-rtl.css.map */

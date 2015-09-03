@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;AAOA,mCAAoC;EAClC,OAAO,EAAE,IAAI;;;;;AAKf,uBAAwB;EACtB,YAAY,EAAE,IAAI;;AAEpB,mCAAoC;EAClC,YAAY,EAAE,CAAC;;AAEjB,kCAAmC;EACjC,gBAAgB,EAAE,IAAI;;AAExB,2BAA4B;EAC1B,KAAK,EAAE,IAAI",
+"sources": ["../../../sass/modules/book/book.admin.scss"],
+"names": [],
+"file": "book.admin.css"
+}

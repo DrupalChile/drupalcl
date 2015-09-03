@@ -105,6 +105,12 @@
     </div>
   </div>
 
+  <div class="wrapper camp">
+    <div class="container wow bounceInUp">
+      <h1><a target="_blank" href="http://camp.drupalchile.org">DRUPALCAMP CHILE 10 - 12 DICIEMBRE 2015</a></h1>
+    </div>
+  </div>
+
   <div class="wrapper section">
     <div class="container wow bounceInUp">      
       <ul>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;AAKA,WAAY;EACV,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,KAAK",
+"sources": ["../../../sass/modules/forum/forum.theme-rtl.scss"],
+"names": [],
+"file": "forum.theme-rtl.css"
+}
