@@ -2,6 +2,7 @@
  * @file
  * Basic theming for the book navigation component.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/book\/book\.theme\.scss}line{font-family:\000035}}
 .book-navigation__previous {
   float: left;
   /* LTR */
@@ -10,6 +11,7 @@
   text-align: left;
   /* LTR */ }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/book\/book\.theme\.scss}line{font-family:\0000311}}
 .book-navigation__up {
   float: left;
   /* LTR */
@@ -17,6 +19,7 @@
   width: 10%;
   text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/book\/book\.theme\.scss}line{font-family:\0000317}}
 .book-navigation__next {
   float: right;
   /* LTR */
@@ -24,5 +27,3 @@
   width: 45%;
   text-align: right;
   /* LTR */ }
-
-/*# sourceMappingURL=book.theme.css.map */

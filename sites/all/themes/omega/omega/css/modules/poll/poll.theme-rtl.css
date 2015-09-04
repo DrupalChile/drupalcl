@@ -3,13 +3,14 @@
  * Right to left theme for the poll voting form and results display.
  */
 /* Poll Bars */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/poll\/poll\.theme-rtl\.scss}line{font-family:\000037}}
 .poll-bars__bar .foreground {
   float: right; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/poll\/poll\.theme-rtl\.scss}line{font-family:\0000310}}
 .poll-bars__text {
   text-align: right; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/poll\/poll\.theme-rtl\.scss}line{font-family:\0000313}}
 .poll-bars__percent {
   text-align: left; }
-
-/*# sourceMappingURL=poll.theme-rtl.css.map */

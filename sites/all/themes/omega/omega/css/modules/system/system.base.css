@@ -1,71 +1,289 @@
-/*
-Error: File to import not found or unreadable: compass.
-       Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/modules/system
-        on line 8 of C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/modules/system/resizable/_resizable.base.scss
-        from line 8 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\modules\system\system.base.scss
+/**
+ * @file
+ * System wide base styles.
+ */
+/**
+ * @file
+ * Base styles for autocomplete functionality.
+ *
+ * @see autocomplete.js
+ */
+/* Suggestion list */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/autocomplete\/_autocomplete\.base\.scss}line{font-family:\000039}}
+#autocomplete {
+  position: absolute;
+  z-index: 100;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/autocomplete\/_autocomplete\.base\.scss}line{font-family:\0000314}}
+  #autocomplete ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/autocomplete\/_autocomplete\.base\.scss}line{font-family:\0000320}}
+  #autocomplete li {
+    cursor: default;
+    white-space: pre;
+    zoom: 1;
+    /* IE7 */ }
 
-3:  * System wide base styles.
-4:  *\/
-5: 
-6: @import "autocomplete/autocomplete.base";
-7: @import "collapsible/collapsible.base";
-8: @import "resizable/resizable.base";
-9: @import "tabledrag/tabledrag.base";
-10: @import "tableheader/tableheader.base";
-11: @import "progress/progress.base";
-12: @import "utilities/utilities.base";
+/* Animated throbber */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/autocomplete\/_autocomplete\.base\.scss}line{font-family:\0000328}}
+html.js .form-autocomplete {
+  background-image: url('../../../images/misc/throbber.gif?1432693563');
+  background-position: 100% 2px;
+  /* LTR */
+  background-repeat: no-repeat; }
 
-Backtrace:
-C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/modules/system/resizable/_resizable.base.scss:8
-C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\modules\system\system.base.scss:8
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:18:in `load'
-C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass.\A        Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/modules/system\A         on line 8 of C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/omega/omega/sass/modules/system/resizable/_resizable.base.scss\A         from line 8 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\omega\omega\sass\modules\system\system.base.scss\A \A 3:  * System wide base styles.\A 4:  */\A 5: \A 6: @import \"autocomplete/autocomplete.base\";\A 7: @import \"collapsible/collapsible.base\";\A 8: @import \"resizable/resizable.base\";\A 9: @import \"tabledrag/tabledrag.base\";\A 10: @import \"tableheader/tableheader.base\";\A 11: @import \"progress/progress.base\";\A 12: @import \"utilities/utilities.base\";"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/autocomplete\/_autocomplete\.base\.scss}line{font-family:\0000333}}
+html.js .throbbing {
+  background-position: 100% -18px;
+  /* LTR */ }
+
+/**
+ * @file
+ * Base styles for collapsible fieldset functionality.
+ *
+ * @see collapse.js
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/collapsible\/_collapsible\.base\.scss}line{font-family:\000038}}
+html.js fieldset.collapsed {
+  height: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/collapsible\/_collapsible\.base\.scss}line{font-family:\0000311}}
+html.js fieldset.collapsed .fieldset-wrapper {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/collapsible\/_collapsible\.base\.scss}line{font-family:\0000314}}
+fieldset.collapsible {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/collapsible\/_collapsible\.base\.scss}line{font-family:\0000317}}
+fieldset.collapsible .fieldset-legend {
+  display: block; }
+
+/**
+ * @file
+ * Base styles for the resizable textareas functionality.
+ *
+ * @see textarea.js
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/resizable\/_resizable\.base\.scss}line{font-family:\0000310}}
+.form-textarea-wrapper textarea {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/resizable\/_resizable\.base\.scss}line{font-family:\0000316}}
+.resizable-textarea .grippie {
+  height: 9px;
+  background: #eeeeee url('../../../images/misc/grippie.png?1432693563') no-repeat center 2px;
+  border: 1px solid #ddd;
+  border-top-width: 0;
+  cursor: s-resize;
+  overflow: hidden; }
+
+/**
+ * @file
+ * Base styling for the tabledrag behavior.
+ *
+ * @see tabledrag.js
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\000038}}
+body.drag {
+  cursor: move; }
+
+/* Tabledrag Handle */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000312}}
+.tabledrag-handle {
+  float: left;
+  /* LTR */
+  overflow: hidden;
+  text-decoration: none;
+  cursor: move; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000318}}
+  .tabledrag-handle .handle {
+    height: 15px;
+    width: 15px;
+    margin: -0.4em 0;
+    padding: 0.4em;
+    background: url('../../../images/misc/draggable.png?1432693563') no-repeat 6px 9px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000325}}
+  .tabledrag-handle:hover {
+    text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000329}}
+.tabledrag-handle-hover .handle {
+  background-position: 6px -11px; }
+
+/* Indentation */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000334}}
+.indentation {
+  float: left;
+  /* LTR */
+  width: 20px; }
+
+/* Tree Images */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000340}}
+.tree-child {
+  background: url('../../../images/misc/tree.png?1432693563') no-repeat 12px center;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000343}}
+.tree-child-last {
+  background: url('../../../images/misc/tree-bottom.png?1432693563') no-repeat 12px center;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000346}}
+.tree-child-horizontal {
+  background: url('../../../images/misc/tree.png?1432693563') no-repeat -12px center; }
+
+/* Toggle Weight Link */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tabledrag\/_tabledrag\.base\.scss}line{font-family:\0000351}}
+.tabledrag-toggle-weight-wrapper {
+  text-align: right;
+  /* LTR */ }
+
+/**
+ * @file
+ * Base styling for the tableheader behavior.
+ *
+ * @see tableheader.js
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/tableheader\/_tableheader\.base\.scss}line{font-family:\000038}}
+.sticky-header {
+  margin-top: 0;
+  background-color: #fff; }
+
+/**
+ * @file
+ * Base styles for the progress behavior.
+ *
+ * @see progress.js
+ */
+/* Bar */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/progress\/_progress\.base\.scss}line{font-family:\0000310}}
+.progress .bar {
+  background-color: #fff;
+  border: 1px solid; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/progress\/_progress\.base\.scss}line{font-family:\0000314}}
+.progress .filled {
+  height: 1.5em;
+  width: 5px;
+  background-color: #000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/progress\/_progress\.base\.scss}line{font-family:\0000319}}
+.progress .percentage {
+  float: right;
+  /* LTR */ }
+
+/* Throbber */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/progress\/_progress\.base\.scss}line{font-family:\0000325}}
+.ajax-progress {
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/progress\/_progress\.base\.scss}line{font-family:\0000328}}
+  .ajax-progress .throbber {
+    float: left;
+    /* LTR */
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    background: transparent url('../../../images/misc/throbber.gif?1432693563') no-repeat 0px -18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/progress\/_progress\.base\.scss}line{font-family:\0000335}}
+  .ajax-progress .message {
+    padding-left: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/progress\/_progress\.base\.scss}line{font-family:\0000340}}
+tr .ajax-progress .throbber {
+  margin: 0 2px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/progress\/_progress\.base\.scss}line{font-family:\0000343}}
+.ajax-progress-bar {
+  width: 16em; }
+
+/**
+ * @file
+ * System utility classes.
+ */
+/**
+ * Inline items.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/utilities\/_utilities\.base\.scss}line{font-family:\0000312}}
+.container-inline div,
+.container-inline label {
+  display: inline; }
+
+/* Fieldset contents always need to be rendered as block. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/utilities\/_utilities\.base\.scss}line{font-family:\0000316}}
+.container-inline .fieldset-wrapper {
+  display: block; }
+
+/**
+ * Prevent text wrapping.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/utilities\/_utilities\.base\.scss}line{font-family:\0000323}}
+.nowrap {
+  white-space: nowrap; }
+
+/**
+ * For anything you want to hide on page load when JS is enabled, so
+ * that you can use the JS to control visibility and avoid flicker.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/utilities\/_utilities\.base\.scss}line{font-family:\0000331}}
+html.js .js-hide {
+  display: none; }
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/utilities\/_utilities\.base\.scss}line{font-family:\0000343}}
+.element-hidden {
+  display: none; }
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user.
+ * "!important" is used to prevent unintentional overrides.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/utilities\/_utilities\.base\.scss}line{font-family:\0000355}}
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px; }
+
+/**
+ * The .element-focusable class extends the .element-invisible class to allow
+ * the element to be focusable when navigated to via the keyboard.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/utilities\/_utilities\.base\.scss}line{font-family:\0000368}}
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: static !important;
+  clip: auto;
+  overflow: visible;
+  height: auto; }
+
+/**
+ * Use the clearfix from Compass.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/system\/utilities\/_utilities\.base\.scss}line{font-family:\0000378}}
+.clearfix {
+  *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }

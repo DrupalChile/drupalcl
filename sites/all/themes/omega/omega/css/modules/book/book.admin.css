@@ -5,22 +5,25 @@
 /**
  * Book outline on book edit form.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/book\/book\.admin\.scss}line{font-family:\000038}}
 .js .book-outline-form .form-submit {
   display: none; }
 
 /**
  * Book form for administering a single book's hierarchy.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/book\/book\.admin\.scss}line{font-family:\0000314}}
 .book-admin-edit select {
   margin-right: 24px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/book\/book\.admin\.scss}line{font-family:\0000317}}
 .book-admin-edit .progress-disabled {
   margin-right: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/book\/book\.admin\.scss}line{font-family:\0000320}}
 .book-admin-edit .ajax-new-content {
   background-color: #ffd; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/book\/book\.admin\.scss}line{font-family:\0000323}}
 .book-admin-edit .form-item {
   float: left; }
-
-/*# sourceMappingURL=book.admin.css.map */

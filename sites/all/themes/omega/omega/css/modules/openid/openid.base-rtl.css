@@ -2,8 +2,7 @@
  * @file
  * Right to left base styles for the Open ID module.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/openid\/openid\.base-rtl\.scss}line{font-family:\000037}}
 html.js .user-login-form .openid-link,
 html.js .user-login .openid-link {
   margin-right: 0; }
-
-/*# sourceMappingURL=openid.base-rtl.css.map */

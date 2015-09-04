@@ -1,66 +1,3326 @@
+@import url("http://fonts.googleapis.com/css?family=Montserrat:100,400,700");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic");
+@import url("http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister");
+/* No files to import found in abstractions/**\/* */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/base\/_media\.scss}line{font-family:\000031}}
+img, media {
+  max-width: 100%;
+  height: auto; }
+
+/**
+*     Layout and grid sizing
+**/
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url("../fonts/lato/Lato-RegIta-webfont.eot");
+  src: url("../fonts/lato/Lato-RegIta-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/Lato-RegIta-webfont.woff") format("woff"), url("../fonts/lato/Lato-RegIta-webfont.ttf") format("truetype"), url("../fonts/lato/Lato-RegIta-webfont.svg#LatoItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url("../fonts/montserrat/Montserrat-Light.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/lato-ext/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/lato-ext/Lato-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BebasNeue Thin';
+  src: url("../fonts/bebas/ttf/BebasNeue-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BebasNeue Light';
+  src: url("../fonts/bebas/ttf/BebasNeue-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BebasNeue Regular';
+  src: url("../fonts/bebas/ttf/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BebasNeue Bold';
+  src: url("../fonts/bebas/ttf/BebasNeue-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /*
-Error: File to import not found or unreadable: compass.
-       Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/camaleon/sass
-        on line 3 of C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/camaleon/sass/camaleon.styles.scss
-        from line 5 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\camaleon\sass\camaleon.no-query.scss
-
-1: $breakpoint-no-queries: true;
-2: $breakpoint-no-query-fallbacks: true;
-3: 
-4: // Re-render everything from styles.scss but without media queries.
-5: @import "camaleon.styles";
-
-Backtrace:
-C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/camaleon/sass/camaleon.styles.scss:3
-C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\camaleon\sass\camaleon.no-query.scss:5
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:18:in `load'
-C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+* Colors
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass.\A        Load path: C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/camaleon/sass\A         on line 3 of C:/Bitnami/wampstack-5.4.29-0/apache2/htdocs/drupalcl/sites/all/themes/camaleon/sass/camaleon.styles.scss\A         from line 5 of C:\Bitnami\wampstack-5.4.29-0\apache2\htdocs\drupalcl\sites\all\themes\camaleon\sass\camaleon.no-query.scss\A \A 1: $breakpoint-no-queries: true;\A 2: $breakpoint-no-query-fallbacks: true;\A 3: \A 4: // Re-render everything from styles.scss but without media queries.\A 5: @import \"camaleon.styles\";"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003135}}
+.l-page {
+  margin: 0 0.25em;
+  background: url("../images/bright_squares/bright_squares.png") repeat repeat;
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003153}}
+.l-content, .l-branding, nav, .l-region--footer, .page-header {
+  margin: auto;
+  padding: 0 .5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003171}}
+.l-main {
+  padding: 10px 0;
+  background-color: #FFF;
+  border-top: .5em solid #eee; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003187}}
+html {
+  font-size: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003191}}
+body {
+  font-family: Source Sans Pro;
+  font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003194}}
+  body ::selection {
+    background: #f30;
+    color: #fff;
+    text-shadow: 0 0 0 transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003201}}
+img, media {
+  max-width: 100%;
+  height: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003206}}
+h1 {
+  color: #3e3e3e;
+  font-size: 5rem;
+  font-family: BebasNeue Bold;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  text-rendering: optimizeLegibility; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003221}}
+h2 a {
+  text-decoration: none;
+  color: #3e3e3e; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003230}}
+h2.pane-title {
+  text-transform: uppercase;
+  color: #3e3e3e; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003241}}
+p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+  color: #3e3e3e;
+  font: 400 2rem/3rem Source Sans Pro, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003254}}
+a {
+  color: #00599a; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003265}}
+.link-azul, .action-links a {
+  text-decoration: none;
+  color: white;
+  bottom: 0;
+  padding: 1em;
+  position: relative;
+  display: block;
+  background-color: #00599a;
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  font-size: 0.75em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003278}}
+input, textarea {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  color: #00599a;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003285}}
+input:focus, textarea:focus {
+  border: 1px solid #13a9e2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003289}}
+input.form-submit {
+  background-color: #00599a;
+  color: white;
+  border: 0;
+  width: 100%;
+  margin: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003297}}
+input.form-submit:hover {
+  background-color: #13a9e2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003301}}
+.center {
+  text-align: center;
+  margin: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003306}}
+.f-left {
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003310}}
+.right {
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003316}}
+body.admin-menu {
+  margin-top: 29px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003320}}
+.page-header {
+  margin-top: 100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003329}}
+.block--system-main-menu {
+  background-color: #195591;
+  display: none;
+  margin-top: 0;
+  width: 100%;
+  position: relative;
+  z-index: 99; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003349}}
+  .block--system-main-menu ul {
+    padding: 0;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003360}}
+    .block--system-main-menu ul li.expanded {
+      position: relative;
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003366}}
+      .block--system-main-menu ul li.expanded a {
+        /*width: 100%;
+        float: left;*/ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003380}}
+      .block--system-main-menu ul li.expanded i {
+        color: white;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        padding: 0 0.5em;
+        display: inline-block;
+        padding: 0em;
+        width: 20%;
+        text-align: center;
+        float: left;
+        padding: 1.57em;
+        border-bottom: 1px solid white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003404}}
+      .block--system-main-menu ul li.expanded ul.menu {
+        display: none;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003424}}
+        .block--system-main-menu ul li.expanded ul.menu li {
+          width: 15em;
+          border-bottom: 1px solid #79a9e5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003428}}
+          .block--system-main-menu ul li.expanded ul.menu li a {
+            padding: 1em 3em;
+            margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003449}}
+    .block--system-main-menu ul li.leaf, .block--system-main-menu ul li.expanded {
+      list-style: none;
+      float: left;
+      margin: 0;
+      width: 100%;
+      border-bottom: 1px solid #79a9e5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003461}}
+      .block--system-main-menu ul li.leaf a, .block--system-main-menu ul li.expanded a {
+        padding: 1em 15px;
+        color: #fff;
+        text-decoration: none;
+        font-family: Montserrat-Light;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 100;
+        width: 100%;
+        transition-duration: 0.3s;
+        display: block;
+        text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003480}}
+      .block--system-main-menu ul li.leaf a:hover, .block--system-main-menu ul li.expanded a:hover {
+        background-color: #13a9e2;
+        color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003485}}
+      .block--system-main-menu ul li.leaf a.active, .block--system-main-menu ul li.expanded a.active {
+        background-color: #13a9e2;
+        color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003497}}
+.l-header {
+  background-color: rgba(0, 104, 179, 0.9);
+  height: 5em;
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003504}}
+  .l-header .site-logo img {
+    float: left;
+    margin-right: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003510}}
+.l-page {
+  background-color: #dfdfdf; }
+
+/*.l-header{
+	position: fixed;
+	opacity: .85;
+	.l-branding, nav{
+		opacity: 1;
+		z-index: 99;
+	}
+}*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003523}}
+.breadcrumb {
+  width: 100%;
+  float: left;
+  margin-bottom: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003528}}
+  .breadcrumb span {
+    list-style: none;
+    padding: 0;
+    float: left;
+    margin-right: 0.5em;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 0.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003537}}
+    .breadcrumb span a, .breadcrumb span .delimiter {
+      text-decoration: none;
+      color: #13a9e2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003544}}
+  .breadcrumb span.delimiter {
+    color: #3e3e3e; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003550}}
+.slider img {
+  border-bottom: 0.5em solid #13a9e2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003554}}
+.slider p {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #13a9e2;
+  padding-top: 3em;
+  margin: 0;
+  letter-spacing: .25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003565}}
+.general-block, .view-id-proyectos li, .block--views-issues-activos-block {
+  background-color: #fff;
+  padding: 0.25em;
+  border-radius: 3px;
+  margin: 1em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003572}}
+.nav-mobile {
+  height: 8.5em;
+  display: block;
+  position: absolute;
+  z-index: 999;
+  float: right;
+  padding: 1em;
+  right: 0;
+  cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003587}}
+  .nav-mobile .fa {
+    color: white;
+    font-size: 3em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003594}}
+.burr-flipped-content-region.panel-panel.span8 {
+  background-color: #fff;
+  padding: 0;
+  margin: 1em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003599}}
+.burr-flipped-content-region.panel-panel.span4 {
+  background-color: #eee;
+  padding: 0;
+  margin: 1em 0;
+  padding: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003606}}
+.view-id-proyectos li {
+  border: 0;
+  margin: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003617}}
+.page-events .view-content-list, .page-tutorials .view-content-list {
+  padding: 1em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003619}}
+  .page-events .view-content-list li, .page-tutorials .view-content-list li {
+    list-style-type: none;
+    list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003622}}
+    .page-events .view-content-list li a, .page-tutorials .view-content-list li a {
+      margin: .5em 0;
+      line-height: 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003631}}
+.l-footer {
+  background-color: #13a9e2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003635}}
+.l-region--footer {
+  padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003639}}
+  .l-region--footer ul {
+    padding-left: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003641}}
+    .l-region--footer ul li.leaf {
+      list-style: none;
+      list-style-image: none;
+      list-style-type: none;
+      margin: 1em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003646}}
+      .l-region--footer ul li.leaf a {
+        text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003655}}
+.block--block-1 p {
+  text-decoration: none;
+  color: white;
+  bottom: 0;
+  padding: 1em;
+  position: relative;
+  display: block;
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  font-size: 0.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003668}}
+  .block--block-1 p a:hover {
+    color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003674}}
+.footer-bottom {
+  background-color: #e2b413;
+  height: 3em; }
+
+/*
+* Home blocks
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003683}}
+.front .view-content-list {
+  box-shadow: none;
+  background-color: none;
+  padding: 0;
+  border-radius: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003692}}
+.view-display-id-events .views-field-field-date, .view-display-id-events .views-field-field-date-1 {
+  font-size: 3em;
+  background-color: #13a9e2;
+  font-weight: bold;
+  color: #fff;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003700}}
+.view-display-id-events .views-field-field-date-1 {
+  font-size: 1em; }
+
+/*
+* Author block
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003715}}
+.pane-contents-blocks-author .views-field-name {
+  margin: 1em 0 0 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003718}}
+  .pane-contents-blocks-author .views-field-name a {
+    text-decoration: none;
+    color: #aaa; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003726}}
+.pane-contents-blocks-author .views-field-signature p {
+  text-align: left;
+  font-size: .8em;
+  color: #484848; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003733}}
+.pane-contents-blocks-author .views-field-picture {
+  margin: 1em;
+  float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003738}}
+  .pane-contents-blocks-author .views-field-picture img {
+    border-radius: 5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003744}}
+.panel-pane.pane-node-created {
+  margin-top: 1em; }
+
+/*
+* Taxonomies
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003752}}
+.field--name-field-tags, .field--name-field-issue-categoria, .field--name-field-issue-responsable, .field--name-field-issue-estado {
+  margin-top: 1em;
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003755}}
+  .field--name-field-tags .field__item, .field--name-field-issue-categoria .field__item, .field--name-field-issue-responsable .field__item, .field--name-field-issue-estado .field__item {
+    margin: .5em .25em;
+    text-transform: uppercase;
+    float: left;
+    padding: .75em;
+    font-size: .75em;
+    background-color: #0068b3;
+    color: #ddd; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003763}}
+    .field--name-field-tags .field__item a, .field--name-field-issue-categoria .field__item a, .field--name-field-issue-responsable .field__item a, .field--name-field-issue-estado .field__item a {
+      color: #fff;
+      text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003768}}
+  .field--name-field-tags .field__label, .field--name-field-issue-categoria .field__label, .field--name-field-issue-responsable .field__label, .field--name-field-issue-estado .field__label {
+    margin: .5em .25em;
+    text-transform: uppercase;
+    float: left;
+    padding: .75em;
+    font-size: .75em;
+    background-color: #ccc;
+    color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003780}}
+.block--system-powered-by {
+  margin: 1em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003784}}
+  .block--system-powered-by .block__content span {
+    padding: 1em;
+    background-color: #0E98CD;
+    font-size: .75em;
+    color: #fff;
+    font-family: 'Lato-Bold'; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003795}}
+.block--aggregator-feed-1 .block__title {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 1em;
+  color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003802}}
+.block--aggregator-feed-1 .block__content {
+  margin: 0 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003804}}
+  .block--aggregator-feed-1 .block__content ul {
+    padding: 0;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003807}}
+    .block--aggregator-feed-1 .block__content ul li {
+      list-style-type: none;
+      list-style: none;
+      text-transform: capitalize; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003813}}
+      .block--aggregator-feed-1 .block__content ul li a {
+        font-size: .75em;
+        color: #fff;
+        font-family: 'Lato-Bold';
+        background-color: #0E98CD;
+        padding: 1em;
+        float: left;
+        margin: 0.25em 0em;
+        width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003832}}
+.block--aggregator-feed-1 .more-link a {
+  font-size: .75em;
+  color: #fff;
+  font-family: 'Lato-Bold';
+  float: left;
+  clear: both;
+  background-color: #ec3942;
+  margin: 0.25em 0em;
+  padding: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003847}}
+.block--common-blocks-common-blocks-social {
+  padding: 0 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003851}}
+  .block--common-blocks-common-blocks-social .block__title {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 1em;
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003857}}
+  .block--common-blocks-common-blocks-social ul {
+    padding: 0;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003860}}
+    .block--common-blocks-common-blocks-social ul li {
+      list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003865}}
+  .block--common-blocks-common-blocks-social a {
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003869}}
+  .block--common-blocks-common-blocks-social i {
+    font-size: 2em;
+    padding: 0.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003875}}
+.field--name-field-issues-tipo {
+  margin-top: 1em;
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003878}}
+  .field--name-field-issues-tipo .field__item {
+    margin: .5em .25em;
+    text-transform: uppercase;
+    float: left;
+    padding: .75em;
+    font-size: .75em;
+    background-color: #00b550;
+    color: #ddd; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003887}}
+  .field--name-field-issues-tipo .field__label {
+    margin: .5em .25em;
+    text-transform: uppercase;
+    float: left;
+    padding: .75em;
+    font-size: .75em;
+    background-color: #ccc;
+    color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003898}}
+.messages, .messages--error, .messages--status, .messages--warning {
+  margin: 1em 0;
+  padding: 10px 10px 10px 50px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+  border: none;
+  color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003907}}
+  .messages a, .messages--error a, .messages--status a, .messages--warning a {
+    color: #ccc; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003913}}
+.messages--error {
+  background-color: #e92b42;
+  background-image: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003919}}
+.messages--status {
+  background-color: #00b550;
+  background-image: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003925}}
+.messages--warning {
+  background-color: #b5aa00;
+  background-image: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003933}}
+.tabs.tabs--primary {
+  border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003937}}
+  .tabs.tabs--primary li a {
+    padding: 0.5em;
+    font-family: Montserrat;
+    text-transform: uppercase; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003947}}
+.view-display-id-list_blog ul {
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003950}}
+  .view-display-id-list_blog ul li {
+    width: 32%;
+    float: left;
+    list-style: none;
+    margin: 0.25em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003957}}
+.view-display-id-list_blog img {
+  border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003960}}
+.view-display-id-list_blog .views-field-name span {
+  margin: .5em .25em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid #0068b3;
+  float: right;
+  padding: 0 .25em;
+  font-size: .75em;
+  background-color: #0068b3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003969}}
+  .view-display-id-list_blog .views-field-name span a {
+    color: #fff;
+    text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003977}}
+.view-showcase-list .views-field-title {
+  width: 100%;
+  margin-top: -75px;
+  opacity: 0.9;
+  position: absolute;
+  background-color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003984}}
+  .view-showcase-list .views-field-title a {
+    color: #484848;
+    font-family: 'Montserrat-Light';
+    text-decoration: none;
+    padding: 1em;
+    display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\00003998}}
+.pane-node-field-link a, .pane-node-field-link-proyecto a {
+  text-decoration: none;
+  color: white;
+  bottom: 0;
+  padding: 1em;
+  position: relative;
+  display: block;
+  background-color: #00599a;
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  font-size: 0.75em; }
+
+/*
+* NODE TYPE SHOWCASE 
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031018}}
+.node-type-showcase .radix-layouts-sidebar .field--type-image img {
+  margin: 1.5em 0 0 1em;
+  width: 95%;
+  display: block;
+  height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031035}}
+.node-type-showcase .radix-layouts-header .field--type-image {
+  position: absolute;
+  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031068}}
+.node-type-showcase .pane-node-field-link {
+  margin: 0 0 0 1em;
+  width: 95%; }
+
+/*
+* NODE TYPE PROYECTO
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031088}}
+.node-type-proyecto .pane-node-field-image {
+  padding: 1.5em 0 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031091}}
+.node-type-proyecto .pane-issues-estados {
+  text-decoration: none;
+  color: #00599a;
+  bottom: 0;
+  padding: 1em;
+  position: relative;
+  display: block;
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  font-size: 0.75em; }
+
+/*
+* NODE TYPE ISSUE
+*/
+/*
+* PAGER
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031120}}
+.pager {
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #fff;
+  padding: 2em 0;
+  text-decoration: none;
+  line-height: 3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031126}}
+  .pager li {
+    padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031131}}
+  .pager a {
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031138}}
+  .pager .pager__item {
+    color: #fff;
+    padding: 0.5em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031144}}
+    .pager .pager__item a {
+      color: #fff;
+      padding: 1.5em 2em;
+      text-decoration: none;
+      background-color: #0068b3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031153}}
+    .pager .pager__item a:hover {
+      background-color: #0068b3;
+      color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031160}}
+  .pager .pager__item--ellipsis {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031164}}
+  .pager .pager__item--first, .pager .pager__item--previous, .pager .pager__item--next, .pager .pager__item--last {
+    color: #fff;
+    padding: 0.5em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031168}}
+    .pager .pager__item--first a, .pager .pager__item--previous a, .pager .pager__item--next a, .pager .pager__item--last a {
+      color: #fff;
+      padding: 1.5em 2em;
+      background-color: #0068b3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031174}}
+    .pager .pager__item--first a:hover, .pager .pager__item--previous a:hover, .pager .pager__item--next a:hover, .pager .pager__item--last a:hover {
+      background-color: #0068b3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031180}}
+  .pager .pager__item--current {
+    background-color: #e2b413;
+    color: #fff;
+    padding: 1.5em 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031188}}
+.view-id-list_content ul {
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031190}}
+  .view-id-list_content ul li {
+    list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031195}}
+.field--name-body.field--type-text-with-summary, .pane-sharethis-sharethis-block {
+  margin: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031203}}
+.node-type-news .moscone-flipped-content-inner {
+  margin-left: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031230}}
+.page-miembros .views-field-picture {
+  background-color: #00599a;
+  -webkit-transition: color 0.5s linear, opacity 0.25s linear;
+  -moz-transition: color 0.5s linear, opacity 0.25s linear;
+  -ms-transition: color 0.5s linear, opacity 0.25s linear;
+  -o-transition: color 0.5s linear, opacity 0.25s linear;
+  transition: color 0.5s linear, opacity 0.25s linear; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031237}}
+  .page-miembros .views-field-picture img {
+    width: 100%;
+    display: block;
+    height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031248}}
+.page-miembros .views-field-name {
+  background-color: #00599a;
+  font-family: 'Montserrat-Light';
+  text-transform: uppercase;
+  font-size: 0.75em;
+  text-decoration: none;
+  color: white;
+  bottom: 0;
+  padding: 1em;
+  position: relative;
+  display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031260}}
+  .page-miembros .views-field-name a {
+    text-decoration: none;
+    color: white;
+    bottom: 0;
+    padding: 1em;
+    position: relative;
+    display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031275}}
+.page-noticias .container, .page-usan-drupal .container, .page-proyectos .container, .page-eventos .container, .section-blog .container, .page-miembros .container {
+  background: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031282}}
+.page-noticias .view-list-of-contents .item-list ul, .page-noticias .view-user-list .item-list ul, .page-usan-drupal .view-list-of-contents .item-list ul, .page-usan-drupal .view-user-list .item-list ul, .page-proyectos .view-list-of-contents .item-list ul, .page-proyectos .view-user-list .item-list ul, .page-eventos .view-list-of-contents .item-list ul, .page-eventos .view-user-list .item-list ul, .section-blog .view-list-of-contents .item-list ul, .section-blog .view-user-list .item-list ul, .page-miembros .view-list-of-contents .item-list ul, .page-miembros .view-user-list .item-list ul {
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031284}}
+  .page-noticias .view-list-of-contents .item-list ul li.views-row, .page-noticias .view-user-list .item-list ul li.views-row, .page-usan-drupal .view-list-of-contents .item-list ul li.views-row, .page-usan-drupal .view-user-list .item-list ul li.views-row, .page-proyectos .view-list-of-contents .item-list ul li.views-row, .page-proyectos .view-user-list .item-list ul li.views-row, .page-eventos .view-list-of-contents .item-list ul li.views-row, .page-eventos .view-user-list .item-list ul li.views-row, .section-blog .view-list-of-contents .item-list ul li.views-row, .section-blog .view-user-list .item-list ul li.views-row, .page-miembros .view-list-of-contents .item-list ul li.views-row, .page-miembros .view-user-list .item-list ul li.views-row {
+    padding: 1em;
+    width: 100%;
+    float: left;
+    list-style: none;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031299}}
+    .page-noticias .view-list-of-contents .item-list ul li.views-row .views-field-field-image, .page-noticias .view-user-list .item-list ul li.views-row .views-field-field-image, .page-usan-drupal .view-list-of-contents .item-list ul li.views-row .views-field-field-image, .page-usan-drupal .view-user-list .item-list ul li.views-row .views-field-field-image, .page-proyectos .view-list-of-contents .item-list ul li.views-row .views-field-field-image, .page-proyectos .view-user-list .item-list ul li.views-row .views-field-field-image, .page-eventos .view-list-of-contents .item-list ul li.views-row .views-field-field-image, .page-eventos .view-user-list .item-list ul li.views-row .views-field-field-image, .section-blog .view-list-of-contents .item-list ul li.views-row .views-field-field-image, .section-blog .view-user-list .item-list ul li.views-row .views-field-field-image, .page-miembros .view-list-of-contents .item-list ul li.views-row .views-field-field-image, .page-miembros .view-user-list .item-list ul li.views-row .views-field-field-image {
+      background-color: #00599a;
+      -webkit-transition: color 0.5s linear, opacity 0.25s linear;
+      -moz-transition: color 0.5s linear, opacity 0.25s linear;
+      -ms-transition: color 0.5s linear, opacity 0.25s linear;
+      -o-transition: color 0.5s linear, opacity 0.25s linear;
+      transition: color 0.5s linear, opacity 0.25s linear; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031306}}
+      .page-noticias .view-list-of-contents .item-list ul li.views-row .views-field-field-image img, .page-noticias .view-user-list .item-list ul li.views-row .views-field-field-image img, .page-usan-drupal .view-list-of-contents .item-list ul li.views-row .views-field-field-image img, .page-usan-drupal .view-user-list .item-list ul li.views-row .views-field-field-image img, .page-proyectos .view-list-of-contents .item-list ul li.views-row .views-field-field-image img, .page-proyectos .view-user-list .item-list ul li.views-row .views-field-field-image img, .page-eventos .view-list-of-contents .item-list ul li.views-row .views-field-field-image img, .page-eventos .view-user-list .item-list ul li.views-row .views-field-field-image img, .section-blog .view-list-of-contents .item-list ul li.views-row .views-field-field-image img, .section-blog .view-user-list .item-list ul li.views-row .views-field-field-image img, .page-miembros .view-list-of-contents .item-list ul li.views-row .views-field-field-image img, .page-miembros .view-user-list .item-list ul li.views-row .views-field-field-image img {
+        width: 100%;
+        display: block;
+        height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031318}}
+    .page-noticias .view-list-of-contents .item-list ul li.views-row .views-field-created, .page-noticias .view-user-list .item-list ul li.views-row .views-field-created, .page-usan-drupal .view-list-of-contents .item-list ul li.views-row .views-field-created, .page-usan-drupal .view-user-list .item-list ul li.views-row .views-field-created, .page-proyectos .view-list-of-contents .item-list ul li.views-row .views-field-created, .page-proyectos .view-user-list .item-list ul li.views-row .views-field-created, .page-eventos .view-list-of-contents .item-list ul li.views-row .views-field-created, .page-eventos .view-user-list .item-list ul li.views-row .views-field-created, .section-blog .view-list-of-contents .item-list ul li.views-row .views-field-created, .section-blog .view-user-list .item-list ul li.views-row .views-field-created, .page-miembros .view-list-of-contents .item-list ul li.views-row .views-field-created, .page-miembros .view-user-list .item-list ul li.views-row .views-field-created {
+      padding: 0.5em;
+      color: #2a2a2a;
+      font-size: .75em;
+      z-index: 100;
+      background-color: #dfdfdf;
+      font-family: 'Montserrat';
+      text-transform: uppercase;
+      border-bottom: 5px solid #6e6e6e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031330}}
+    .page-noticias .view-list-of-contents .item-list ul li.views-row .views-field-title, .page-noticias .view-user-list .item-list ul li.views-row .views-field-title, .page-usan-drupal .view-list-of-contents .item-list ul li.views-row .views-field-title, .page-usan-drupal .view-user-list .item-list ul li.views-row .views-field-title, .page-proyectos .view-list-of-contents .item-list ul li.views-row .views-field-title, .page-proyectos .view-user-list .item-list ul li.views-row .views-field-title, .page-eventos .view-list-of-contents .item-list ul li.views-row .views-field-title, .page-eventos .view-user-list .item-list ul li.views-row .views-field-title, .section-blog .view-list-of-contents .item-list ul li.views-row .views-field-title, .section-blog .view-user-list .item-list ul li.views-row .views-field-title, .page-miembros .view-list-of-contents .item-list ul li.views-row .views-field-title, .page-miembros .view-user-list .item-list ul li.views-row .views-field-title {
+      background-color: #00599a;
+      font-family: 'Montserrat-Light';
+      text-transform: uppercase;
+      font-size: 0.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031336}}
+      .page-noticias .view-list-of-contents .item-list ul li.views-row .views-field-title a, .page-noticias .view-user-list .item-list ul li.views-row .views-field-title a, .page-usan-drupal .view-list-of-contents .item-list ul li.views-row .views-field-title a, .page-usan-drupal .view-user-list .item-list ul li.views-row .views-field-title a, .page-proyectos .view-list-of-contents .item-list ul li.views-row .views-field-title a, .page-proyectos .view-user-list .item-list ul li.views-row .views-field-title a, .page-eventos .view-list-of-contents .item-list ul li.views-row .views-field-title a, .page-eventos .view-user-list .item-list ul li.views-row .views-field-title a, .section-blog .view-list-of-contents .item-list ul li.views-row .views-field-title a, .section-blog .view-user-list .item-list ul li.views-row .views-field-title a, .page-miembros .view-list-of-contents .item-list ul li.views-row .views-field-title a, .page-miembros .view-user-list .item-list ul li.views-row .views-field-title a {
+        text-decoration: none;
+        color: white;
+        bottom: 0;
+        padding: 1em;
+        position: relative;
+        display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031348}}
+  .page-noticias .view-list-of-contents .item-list ul li.views-row .views-field-field-image:hover, .page-noticias .view-user-list .item-list ul li.views-row .views-field-field-image:hover, .page-usan-drupal .view-list-of-contents .item-list ul li.views-row .views-field-field-image:hover, .page-usan-drupal .view-user-list .item-list ul li.views-row .views-field-field-image:hover, .page-proyectos .view-list-of-contents .item-list ul li.views-row .views-field-field-image:hover, .page-proyectos .view-user-list .item-list ul li.views-row .views-field-field-image:hover, .page-eventos .view-list-of-contents .item-list ul li.views-row .views-field-field-image:hover, .page-eventos .view-user-list .item-list ul li.views-row .views-field-field-image:hover, .section-blog .view-list-of-contents .item-list ul li.views-row .views-field-field-image:hover, .section-blog .view-user-list .item-list ul li.views-row .views-field-field-image:hover, .page-miembros .view-list-of-contents .item-list ul li.views-row .views-field-field-image:hover, .page-miembros .view-user-list .item-list ul li.views-row .views-field-field-image:hover {
+    opacity: 0.75;
+    background-color: #00599a; }
+
+/*.page-home{
+
+	.pane-common-caso-destacado{
+		// padding-top: 11em;
+		h2.pane-title{
+			text-align: center;
+		}
+		.view-header{
+			text-align: center;
+		}
+	}
+
+	.item-list{
+		ul{
+			padding: 0;
+			li.views-row{
+
+				width: 100%;
+				float: left;
+				list-style: none;
+				padding: 0;
+				position: relative;
+
+					.views-field-field-image{
+						background-color: #000;
+						img{
+							// opacity: .8;
+							width: 100%;
+							display: block;
+							height: auto;
+
+						}
+						img:hover{
+							// opacity: 1;
+						}
+					}
+
+					.views-field-created{
+						position: absolute;
+						padding: 0.5em;
+						color: #fff;
+						font-family: Arial;
+						font-size: .75em;
+						z-index: 100;
+						background-color: #3e3e3e;
+						margin: .5em;
+						font-family: Lato-Bold;
+						border-bottom: 5px solid #6e6e6e;
+					}
+
+
+					.views-field-title{
+
+
+						a{
+							text-decoration: none;
+							text-shadow: 2px 2px 2px black;
+							color: white;
+							letter-spacing: -0.05em;
+							padding: 1em;
+							margin: 1em 0.5em;
+							font-size: 1.5em;
+							position: absolute;
+							bottom: 0;
+							background: url('../images/bg70.png');
+
+						}
+					}
+			}
+		}
+	}
+}*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031436}}
+.page-contact .contact-form label {
+  padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031439}}
+.page-contact .contact-form input.form-text {
+  height: 3em;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031447}}
+.page-contact .contact-form .grippie, .page-contact .contact-form textarea {
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031454}}
+.page-contact input.form-submit {
+  width: 25%;
+  height: 3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031458}}
+.page-contact input.form-submit:hover {
+  background-color: #13a9e2; }
+
+/* ---------- PICEC Landing ----------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031467}}
+.section-picec .breadcrumb {
+  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031470}}
+.section-picec .l-page {
+  background: url("../images/bg-picec.png") fixed center;
+  background-size: auto auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031488}}
+  .section-picec .l-page .l-main {
+    background: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031492}}
+.section-picec h1 {
+  text-align: center;
+  color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031497}}
+.section-picec article {
+  padding-top: 4em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031499}}
+  .section-picec article .head {
+    height: auto;
+    display: block;
+    width: 80%;
+    margin: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031513}}
+  .section-picec article .features {
+    clear: both;
+    padding-top: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031517}}
+  .section-picec article h2 {
+    text-align: center;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031524}}
+.section-picec .eventime_button {
+  width: 90%;
+  margin: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031538}}
+.section-picec .button {
+  width: 90%;
+  float: left;
+  margin: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031554}}
+.section-picec .buttons {
+  margin: 0 auto;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031564}}
+.section-picec .features {
+  min-height: 90em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031572}}
+  .section-picec .features .feature {
+    width: 90%;
+    float: left;
+    margin: 1em;
+    background: url("../images/bg70.png");
+    padding: 1em;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031573}}
+    .section-picec .features .feature h1, .section-picec .features .feature h2 {
+      text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031591}}
+    .section-picec .features .feature p {
+      color: #ddd; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031598}}
+.section-picec .more-features {
+  background: url("../images/footer_lodyas.png"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031604}}
+.button, .section-picec .button {
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 100;
+  color: #fff !important;
+  font-family: 'BebasNeue Bold';
+  border: 3px solid #13a9e2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031620}}
+.button:hover {
+  background-color: #00599a; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031624}}
+.button-more {
+  width: 10em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031630}}
+.pane-disqus-disqus-comments {
+  padding: 0 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031632}}
+  .pane-disqus-disqus-comments h2.pane-title {
+    padding: 1em 0;
+    border-bottom: 2px solid #00599a; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031641}}
+.block--social-links a .fa {
+  float: none;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.3em;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0.1em;
+  font-size: 2em;
+  opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031652}}
+.block--social-links a .fa:hover {
+  opacity: 0.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031655}}
+.block--social-links a .fa-drupal {
+  color: #195591; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031658}}
+.block--social-links a .fa-github {
+  color: #000000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031661}}
+.block--social-links a .fa-flickr {
+  color: #ff2086; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031664}}
+.block--social-links a .fa-twitter-square {
+  color: #4dacf0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031670}}
+footer {
+  height: 55em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031679}}
+  footer .block {
+    width: 100%;
+    float: left; }
+
+/* ---------- Flexslider ---------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031693}}
+.flexslider {
+  border: 0;
+  background: none;
+  box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031706}}
+  .flexslider .slides > li .flex-caption {
+    padding: 0.25em;
+    z-index: 100;
+    margin: 0em;
+    bottom: 0;
+    font-family: 'Montserrat-Light';
+    text-transform: uppercase;
+    font-size: 0.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031720}}
+    .flexslider .slides > li .flex-caption a {
+      font-family: Lato-Bold;
+      text-decoration: none;
+      color: white;
+      bottom: 0;
+      padding: 0.5em 1em;
+      position: relative;
+      display: block; }
+
+/* Flexslider */
+/* This makes the navigation buttons permanently visible. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031738}}
+.flexslider .flex-direction-nav a,
+.flexslider .flex-direction-nav a {
+  display: block;
+  color: #FFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031739}}
+.flex-direction-nav .flex-next {
+  right: 0 !important;
+  margin-right: 12px;
+  opacity: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031748}}
+.flex-direction-nav .flex-prev {
+  left: 0 !important;
+  opacity: 0;
+  margin-left: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031757}}
+div.flexslider div.field-content {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+/**
+* Home
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031778}}
+.page-home .featured {
+  position: relative;
+  height: 550px;
+  background: url("../images/bg-picec.png") center center;
+  background-size: 500%;
+  background-position: 50% 0%;
+  clear: both;
+  display: block;
+  z-index: 99; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031809}}
+  .page-home .featured h1 {
+    font-weight: 300;
+    line-height: 1.2em;
+    -webkit-backface-visibility: hidden;
+    padding: 160px 0 0 0;
+    margin: 0;
+    text-align: left;
+    width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031823}}
+  .page-home .featured img {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    width: 45%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031841}}
+  .page-home .featured .button {
+    width: 10em;
+    margin: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031851}}
+.page-home .community {
+  position: relative;
+  height: 550px;
+  background: url("../images/bg-community.png") fixed center;
+  background-size: 500%;
+  background-position: 50% 0%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031879}}
+  .page-home .community h1 {
+    font-weight: 300;
+    line-height: 1.2em;
+    -webkit-backface-visibility: hidden;
+    padding: 160px 0 0 0;
+    color: #fff;
+    margin: 0;
+    text-align: left;
+    width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031895}}
+  .page-home .community img {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031910}}
+  .page-home .community p {
+    color: #ddd; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031914}}
+  .page-home .community .button {
+    width: 10em;
+    margin: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031925}}
+.page-home .wrapper {
+  max-width: 100%;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031929}}
+  .page-home .wrapper .container {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031937}}
+.page-home .wrapper.camp {
+  background: url("../images/banner-1920x180.png") center;
+  height: 180px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031940}}
+  .page-home .wrapper.camp h1 {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031942}}
+    .page-home .wrapper.camp h1 a {
+      color: #fff;
+      text-shadow: 2px 2px #000000;
+      text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031950}}
+.page-home .wrapper.portafolio {
+  height: 300px;
+  background: url("../images/footer_lodyas.png") fixed center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031966}}
+  .page-home .wrapper.portafolio h2 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031973}}
+  .page-home .wrapper.portafolio .view-footer p {
+    margin: 0;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031977}}
+    .page-home .wrapper.portafolio .view-footer p a {
+      margin: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031985}}
+  .page-home .wrapper.portafolio .flexslider {
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000031989}}
+  .page-home .wrapper.portafolio .view-footer .eventime_button {
+    margin: 0em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032000}}
+.page-home .wrapper.section ul {
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032004}}
+  .page-home .wrapper.section ul li {
+    float: left;
+    list-style: none;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032015}}
+    .page-home .wrapper.section ul li h3 {
+      text-align: center;
+      font-size: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032020}}
+    .page-home .wrapper.section ul li p {
+      text-align: center;
+      /*i:hover{
+      	-webkit-transform: rotate(360deg);
+      	transform: rotate(360deg);
+      	-webkit-animation: fa-spin .5s linear;
+      	animation: fa-spin .5s linear;
+      }*/ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032024}}
+      .page-home .wrapper.section ul li p i {
+        padding: 0.35em;
+        background-color: #fafafa;
+        -webkit-border-radius: 2em;
+        -moz-border-radius: 2em;
+        -ms-border-radius: 2em;
+        border-radius: 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032047}}
+.view-id-common.view-display-id-panel_pane_1 ul {
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032050}}
+  .view-id-common.view-display-id-panel_pane_1 ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032054}}
+    .view-id-common.view-display-id-panel_pane_1 ul li .views-field-name {
+      margin: .5em .25em;
+      text-transform: uppercase;
+      float: left;
+      padding: .75em;
+      font-size: .75em;
+      font-weight: bold;
+      color: #3e3e3e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032063}}
+      .view-id-common.view-display-id-panel_pane_1 ul li .views-field-name a {
+        color: #fff;
+        text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032068}}
+    .view-id-common.view-display-id-panel_pane_1 ul li .views-field-field-image {
+      float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032077}}
+.node-type-article .pane-node-created, .node-type-blog .pane-node-created {
+  margin: .5em .25em;
+  text-transform: uppercase;
+  float: left;
+  padding: .75em;
+  font-size: .75em;
+  color: #3e3e3e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032085}}
+  .node-type-article .pane-node-created a, .node-type-blog .pane-node-created a {
+    color: #fff;
+    text-decoration: none; }
+
+/* ---------- Overall Specifications ---------- */
+/* ------------------ Fonts ------------------ */
+/* ------------------ Reset Styles ------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032227}}
+caption {
+  text-align: left;
+  /* LTR */
+  font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032231}}
+blockquote {
+  background: #f7f7f7;
+  border-left: 1px solid #bbb;
+  font-style: italic;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032238}}
+blockquote:before {
+  color: #bbb;
+  content: "\201C";
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -.4em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032246}}
+blockquote:after {
+  color: #bbb;
+  content: "\201D";
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -.45em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032253}}
+blockquote > p:first-child {
+  display: inline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032256}}
+a.feed-icon {
+  display: inline-block;
+  padding: 15px 0 0 0; }
+
+/* ------------------ Table Styles ------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032263}}
+table {
+  border: 0;
+  border-spacing: 0;
+  font-size: 0.857em;
+  margin: 10px 0;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032270}}
+table table {
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032273}}
+#footer-wrapper table {
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032276}}
+table tr th {
+  background: #757575;
+  background: rgba(0, 0, 0, 0.51);
+  border-bottom-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032283}}
+table tr th,
+table tr th a,
+table tr th a:hover {
+  color: #FFF;
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032287}}
+table tbody tr th {
+  vertical-align: top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032291}}
+tr td,
+tr th {
+  padding: 1em;
+  text-align: left;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032297}}
+#footer-wrapper tr td,
+#footer-wrapper tr th {
+  border-color: #555;
+  border-color: rgba(255, 255, 255, 0.18); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032301}}
+tr.odd {
+  background: #e4e4e4;
+  background: rgba(0, 0, 0, 0.105); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032306}}
+tr,
+tr.even {
+  background: #efefef;
+  background: rgba(0, 0, 0, 0.063); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032310}}
+table ul.links {
+  margin: 0;
+  padding: 0;
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032315}}
+table ul.links li {
+  padding: 0 1em 0 0; }
+
+/* ------------------ List Styles ------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032326}}
+.contextual-links-wrapper {
+  font-size: small !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032329}}
+ul.contextual-links {
+  font-size: 0.923em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032332}}
+.contextual-links-wrapper a {
+  text-shadow: 0 0 0 !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032335}}
+.item-list .pager {
+  font-size: 0.929em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032338}}
+ul.menu li {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032342}}
+.region-content ul,
+.region-content ol {
+  margin: 1em 0;
+  padding: 0 0 0.25em 2.5em;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032346}}
+.item-list ul li {
+  margin: 0;
+  padding: 0.2em 0.5em 0 0;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032350}}
+ul.tips {
+  padding: 0 0 0 1.25em;
+  /* LTR */ }
+
+/* ------------------ Header ------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032355}}
+#skip-link {
+  left: 50%;
+  margin-left: -5.25em;
+  margin-top: 0;
+  position: absolute;
+  width: auto;
+  z-index: 50; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032365}}
+#skip-link a,
+#skip-link a:link,
+#skip-link a:visited {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: block;
+  font-size: 0.94em;
+  line-height: 1.7;
+  padding: 1px 10px 2px 10px;
+  text-decoration: none;
+  -khtml-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-radius: 0 0 10px 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032384}}
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+  outline: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032387}}
+#logo {
+  float: left;
+  /* LTR */
+  padding: 15px 15px 15px 10px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032391}}
+#name-and-slogan {
+  float: left;
+  /* LTR */
+  padding-top: 34px;
+  margin: 0 0 30px 15px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032396}}
+#site-name {
+  font-size: 1.821em;
+  color: #686868;
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032401}}
+h1#site-name {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032404}}
+#site-name a {
+  font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032407}}
+#site-slogan {
+  font-size: 0.929em;
+  margin-top: 7px;
+  word-spacing: 0.1em;
+  font-style: italic; }
+
+/* Region header blocks. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032414}}
+.region-header .block {
+  font-size: 0.857em;
+  float: left;
+  /* LTR */
+  margin: 0 10px;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032420}}
+.region-header .block .content {
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032424}}
+.region-header .block ul {
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032428}}
+.region-header .block li {
+  list-style: none;
+  list-style-image: none;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032433}}
+.region-header .form-text {
+  background: #fefefe;
+  background: rgba(255, 255, 255, 0.7);
+  border-color: #ccc;
+  border-color: rgba(255, 255, 255, 0.3);
+  margin-right: 2px;
+  /* LTR */
+  width: 120px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032443}}
+.region-header .form-text:hover,
+.region-header .form-text:focus,
+.region-header .form-text:active {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032447}}
+.region-header .form-required {
+  color: #eee;
+  color: rgba(255, 255, 255, 0.7); }
+
+/* Region header block menus. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032452}}
+.region-header .block-menu {
+  border: 1px solid;
+  border-color: #eee;
+  border-color: rgba(255, 255, 255, 0.2);
+  padding: 0;
+  width: 208px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032459}}
+.region-header .block-menu li a {
+  display: block;
+  border-bottom: 1px solid;
+  border-bottom-color: #eee;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  padding: 3px 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032468}}
+.region-header .block-menu li a:hover,
+.region-header .block-menu li a:focus,
+.region-header .block-menu li a:active {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032472}}
+.region-header .block-menu li.last a {
+  border-bottom: 0; }
+
+/* User Login block in the header region */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032476}}
+.region-header #block-user-login {
+  width: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032479}}
+.region-header #block-user-login .content {
+  margin-top: 2px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032482}}
+.region-header #block-user-login .form-item {
+  float: left;
+  /* LTR */
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032488}}
+.region-header #block-user-login div.item-list,
+.region-header #block-user-login div.description {
+  font-size: 0.916em;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032492}}
+.region-header #block-user-login div.item-list {
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032495}}
+.region-header #block-user-login div.description {
+  display: inline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032498}}
+.region-header #block-user-login .item-list ul {
+  padding: 0;
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032502}}
+.region-header #block-user-login .item-list li {
+  list-style: none;
+  float: left;
+  /* LTR */
+  padding: 3px 0 1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032507}}
+.region-header #block-user-login .item-list li.last {
+  padding-left: 0.5em;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032510}}
+.region-header #block-user-login ul.openid-links li.last {
+  padding-left: 0;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032514}}
+.region-header #user-login-form li.openid-link a,
+.region-header #user-login li.openid-link a {
+  padding-left: 20px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032517}}
+.region-header #block-user-login .form-actions {
+  margin: 4px 0 0;
+  padding: 0;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032522}}
+.region-header #block-user-login input.form-submit {
+  border: 1px solid;
+  border-color: #ccc;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: #eee;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 4px 0;
+  padding: 3px 8px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032532}}
+.region-header #block-user-login input.form-submit:hover,
+.region-header #block-user-login input.form-submit:focus {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9); }
+
+/* Search block in region header. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032537}}
+.region-header #block-search-form {
+  width: 208px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032540}}
+.region-header #block-search-form .form-text {
+  width: 154px; }
+
+/* Language switcher block in region header. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032544}}
+.region-header .block-locale ul li {
+  display: inline;
+  padding: 0 0.5em; }
+
+/* --------------- Main Menu ------------ */
+/* --------------- Secondary Menu ------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032604}}
+#secondary-menu-links {
+  float: right;
+  /* LTR */
+  font-size: 0.929em;
+  margin: 10px 10px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032610}}
+#secondary-menu-links a:hover,
+#secondary-menu-links a:focus {
+  text-decoration: underline; }
+
+/* ------------------- Main ------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032616}}
+#main {
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+/* ----------------- Featured ----------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032623}}
+#featured {
+  text-align: center;
+  font-size: 1.643em;
+  font-weight: normal;
+  line-height: 1.4;
+  padding: 20px 0 45px;
+  margin: 0;
+  background: #f0f0f0;
+  background: rgba(30, 50, 10, 0.08);
+  border-bottom: 1px solid #e7e7e7;
+  text-shadow: 1px 1px #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032635}}
+#featured h2 {
+  font-size: 1.174em;
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032639}}
+#featured p {
+  margin: 0;
+  padding: 0; }
+
+/* --------------- Highlighted ---------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032646}}
+#highlighted {
+  border-bottom: 1px solid #d3d7d9;
+  font-size: 120%; }
+
+/* ------------------- Help ------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032653}}
+.region-help {
+  border: 1px solid #d3d7d9;
+  padding: 0 1.5em;
+  margin-bottom: 30px; }
+
+/* ----------------- Content ------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032661}}
+.content {
+  margin-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032664}}
+h1#page-title {
+  font-size: 2em;
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032668}}
+#content h2 {
+  margin-bottom: 2px;
+  font-size: 1.429em;
+  line-height: 1.4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032673}}
+.node .content {
+  font-size: 1.071em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032676}}
+.node-teaser .content {
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032679}}
+.node-teaser h2 {
+  margin-top: 0;
+  padding-top: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032683}}
+.node-teaser h2 a {
+  color: #181818; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032686}}
+.node-teaser {
+  border-bottom: 1px solid #d3d7d9;
+  margin-bottom: 30px;
+  padding-bottom: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032691}}
+.node-sticky {
+  background: #f9f9f9;
+  background: rgba(0, 0, 0, 0.024);
+  border: 1px solid #d3d7d9;
+  padding: 0 15px 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032697}}
+.node-full {
+  background: none;
+  border: none;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032702}}
+.node-teaser .content {
+  clear: none;
+  line-height: 1.6; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032706}}
+.meta {
+  font-size: 0.857em;
+  color: #68696b;
+  margin-bottom: -5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032711}}
+.submitted .user-picture img {
+  float: left;
+  /* LTR */
+  height: 20px;
+  margin: 1px 5px 0 0;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032716}}
+.field-type-taxonomy-term-reference {
+  margin: 0 0 1.2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032719}}
+.field-type-taxonomy-term-reference .field-label {
+  font-weight: normal;
+  margin: 0;
+  padding-right: 5px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032725}}
+.field-type-taxonomy-term-reference .field-label,
+.field-type-taxonomy-term-reference ul.links {
+  font-size: 0.8em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032729}}
+.node-teaser .field-type-taxonomy-term-reference .field-label,
+.node-teaser .field-type-taxonomy-term-reference ul.links {
+  font-size: 0.821em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032732}}
+.field-type-taxonomy-term-reference ul.links {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032737}}
+.field-type-taxonomy-term-reference ul.links li {
+  float: left;
+  /* LTR */
+  padding: 0 1em 0 0;
+  /* LTR */
+  white-space: nowrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032742}}
+.link-wrapper {
+  text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032746}}
+.field-type-image img,
+.user-picture img {
+  margin: 0 0 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032749}}
+ul.links {
+  color: #68696b;
+  font-size: 0.821em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032753}}
+.node-unpublished {
+  margin: -20px -15px 0;
+  padding: 20px 15px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032757}}
+.node-unpublished .comment-text .comment-arrow {
+  border-left: 1px solid #fff4f4;
+  border-right: 1px solid #fff4f4; }
+
+/* ----------------- Comments ----------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032764}}
+.comment h2.title {
+  margin-bottom: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032767}}
+.comment div.user-picture img {
+  margin-left: 0;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032770}}
+.comment {
+  margin-bottom: 20px;
+  display: table;
+  vertical-align: top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032775}}
+.comment .attribution {
+  display: table-cell;
+  padding: 0 30px 0 0;
+  /* LTR */
+  vertical-align: top;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032781}}
+.comment .attribution img {
+  margin: 0;
+  border: 1px solid #d3d7d9; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032785}}
+.comment .attribution .username {
+  white-space: nowrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032788}}
+.comment .submitted p {
+  margin: 4px 0;
+  font-size: 1.071em;
+  line-height: 1.2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032793}}
+.comment .submitted .comment-time {
+  font-size: 0.786em;
+  color: #68696b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032797}}
+.comment .submitted .comment-permalink {
+  font-size: 0.786em;
+  text-transform: lowercase; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032801}}
+.comment .content {
+  font-size: 0.929em;
+  line-height: 1.6; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032805}}
+.comment .comment-arrow {
+  background: url(../images/comment-arrow.gif) no-repeat 0 center transparent;
+  /* LTR */
+  border-left: 1px solid;
+  border-right: 1px solid;
+  height: 40px;
+  margin-left: -47px;
+  /* LTR */
+  margin-top: 10px;
+  position: absolute;
+  width: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032815}}
+.comment .comment-text {
+  padding: 10px 25px;
+  border: 1px solid #d3d7d9;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032823}}
+.comment .indented {
+  margin-left: 40px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032826}}
+.comment ul.links {
+  padding: 0 0 0.25em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032829}}
+.comment ul.links li {
+  padding: 0 0.5em 0 0;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032832}}
+.comment-unpublished {
+  margin-right: 5px;
+  /* LTR */
+  padding: 5px 2px 5px 5px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032836}}
+.comment-unpublished .comment-text .comment-arrow {
+  border-left: 1px solid #fff4f4;
+  border-right: 1px solid #fff4f4; }
+
+/* ------------------ Sidebar ----------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032842}}
+.sidebar .section {
+  padding-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032845}}
+.sidebar .block {
+  border: 1px solid;
+  padding: 15px 20px;
+  margin: 0 0 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032850}}
+.sidebar h2 {
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 5px;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 1.071em;
+  line-height: 1.2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032858}}
+.sidebar .block .content {
+  font-size: 0.914em;
+  line-height: 1.4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032862}}
+.sidebar tbody {
+  border: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032866}}
+.sidebar tr.even,
+.sidebar tr.odd {
+  background: none;
+  border-bottom: 1px solid #d6d6d6; }
+
+/* ----------------- Triptych ----------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032873}}
+#triptych-wrapper {
+  background-color: #f0f0f0;
+  background: rgba(30, 50, 10, 0.08);
+  border-top: 1px solid #e7e7e7; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032878}}
+#triptych h2 {
+  color: #000;
+  font-size: 1.714em;
+  margin-bottom: 0.8em;
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032886}}
+#triptych .block {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #dfdfdf;
+  line-height: 1.3; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032892}}
+#triptych .block.last {
+  border-bottom: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032896}}
+#triptych .block ul li,
+#triptych .block ol li {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032900}}
+#triptych .block ul,
+#triptych .block ol {
+  padding-left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032903}}
+#triptych #block-user-login .form-text {
+  width: 185px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032906}}
+#triptych #block-user-online p {
+  margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032909}}
+#triptych #block-node-syndicate h2 {
+  overflow: hidden;
+  width: 0;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032914}}
+#triptych-last #block-node-syndicate {
+  text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032917}}
+#triptych #block-search-form .form-type-textfield input {
+  width: 185px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032920}}
+#triptych-middle #block-system-powered-by {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032923}}
+#triptych-last #block-system-powered-by {
+  text-align: right; }
+
+/* ------------------ Footer ------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032929}}
+#footer-wrapper {
+  color: #c0c0c0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.857em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032934}}
+#footer-wrapper a {
+  color: #fcfcfc;
+  color: rgba(255, 255, 255, 0.8); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032939}}
+#footer-wrapper a:hover,
+#footer-wrapper a:focus {
+  color: #fefefe;
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: underline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032944}}
+#footer-wrapper .block {
+  margin: 20px 0;
+  border: 1px solid #444;
+  border-color: rgba(255, 255, 255, 0.1);
+  padding: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032951}}
+#footer-columns .block-menu,
+#footer .block {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032956}}
+#footer .block {
+  margin: 0.5em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032959}}
+#footer .block .content {
+  padding: 0.5em 0;
+  margin-top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032963}}
+#footer .block h2 {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032966}}
+#footer-columns h2 {
+  border-bottom: 1px solid #555;
+  border-color: rgba(255, 255, 255, 0.15);
+  font-size: 1em;
+  margin-bottom: 0;
+  padding-bottom: 3px;
+  text-transform: uppercase; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032974}}
+#footer-columns .content {
+  margin-top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032977}}
+#footer-columns p {
+  margin-top: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032980}}
+#footer-columns .content ul {
+  list-style: none;
+  padding-left: 0;
+  /* LTR */
+  margin-left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032985}}
+#footer-columns .content li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032990}}
+#footer-columns .content li a {
+  display: block;
+  border-bottom: 1px solid #555;
+  border-color: rgba(255, 255, 255, 0.15);
+  line-height: 1.2;
+  padding: 0.8em 2px 0.8em 20px;
+  /* LTR */
+  text-indent: -15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000032999}}
+#footer-columns .content li a:hover,
+#footer-columns .content li a:focus {
+  background-color: #1f1f21;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033004}}
+#footer {
+  letter-spacing: 0.2px;
+  margin-top: 30px;
+  border-top: 1px solid #555;
+  border-color: rgba(255, 255, 255, 0.15); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033010}}
+#footer .region {
+  margin-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033013}}
+#footer .block {
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033017}}
+#footer ul,
+#footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033022}}
+#footer li a {
+  float: left;
+  /* LTR */
+  padding: 0 12px;
+  display: block;
+  border-right: 1px solid #555;
+  /* LTR */
+  border-color: rgba(255, 255, 255, 0.15); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033029}}
+#footer li.first a {
+  padding-left: 0;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033032}}
+#footer li.last a {
+  padding-right: 0;
+  /* LTR */
+  border-right: none;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033036}}
+#footer-wrapper tr.odd {
+  background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033039}}
+#footer-wrapper tr.even {
+  background-color: #2c2c2c;
+  background-color: rgba(0, 0, 0, 0.15); }
+
+/* --------------- System Tabs  --------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033046}}
+.tabs {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033050}}
+.tabs ul.primary {
+  padding: 0 3px;
+  margin: 0;
+  overflow: hidden;
+  border: none;
+  background: transparent url(../images/tabs-border.png) repeat-x left bottom; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033057}}
+.tabs ul.primary li {
+  display: block;
+  float: left;
+  /* LTR */
+  vertical-align: bottom;
+  margin: 0 5px 0 0;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033063}}
+.tabs ul.primary li.active a {
+  border-bottom: 1px solid #ffffff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033066}}
+.tabs ul.primary li a {
+  color: #000;
+  background-color: #ededed;
+  height: 1.8em;
+  line-height: 1.9;
+  display: block;
+  font-size: 0.929em;
+  float: left;
+  /* not LTR */
+  padding: 0 10px 3px;
+  margin: 0;
+  text-shadow: 0 1px 0 #fff;
+  -khtml-border-radius-topleft: 6px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -khtml-border-radius-topright: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033086}}
+.tabs ul.primary li.active a {
+  background-color: #ffffff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033089}}
+.tabs ul.secondary {
+  border-bottom: none;
+  padding: 0.5em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033093}}
+.tabs ul.secondary li {
+  display: block;
+  float: left;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033097}}
+.tabs ul.secondary li:last-child {
+  border-right: none;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033100}}
+.tabs ul.secondary li:first-child {
+  padding-left: 0;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033103}}
+.tabs ul.secondary li a {
+  padding: 0.25em 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033106}}
+.tabs ul.secondary li a.active {
+  background: #f2f2f2;
+  border-bottom: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033114}}
+ul.action-links {
+  list-style: none;
+  margin: 5px;
+  padding: 0.5em 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033119}}
+ul.action-links li {
+  display: inline-block;
+  margin-left: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033123}}
+ul.action-links li a {
+  padding-left: 15px;
+  margin: 0 10px 0 0; }
+
+/* ---------------- Messages  ----------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033130}}
+#messages {
+  padding: 20px 0 5px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033134}}
+.featured #messages {
+  background: #f0f0f0;
+  background: rgba(30, 50, 10, 0.08); }
+
+/* -------------- Breadcrumbs   -------------- */
+/* -------------- User Profile   -------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033148}}
+.profile .user-picture {
+  float: none; }
+
+/* -------------- Password Meter  ------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033155}}
+.confirm-parent,
+.password-parent {
+  width: 34em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033159}}
+.password-parent,
+div.form-item div.password-suggestions {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033164}}
+.password-strength-text,
+.password-strength-title,
+div.password-confirm {
+  font-size: 0.82em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033167}}
+.password-strength-text {
+  margin-top: 0.2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033170}}
+div.password-confirm {
+  margin-top: 2.2em;
+  width: 20.73em; }
+
+/* ---------------- Buttons    ---------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033178}}
+input.form-submit,
+a.button,
+.section-picec a.button {
+  /*background: #fff url(../images/buttons.png) 0 0 repeat-x;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+  color: #3a3a3a;
+  cursor: pointer;
+  font-size: 0.929em;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-right: 0.6em; */
+  /* LTR */
+  /*padding: 4px 17px;
+  -khtml-border-radius: 15px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;*/ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033201}}
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:focus,
+a.button:active {
+  text-decoration: none;
+  color: #5a5a5a; }
+
+/* -------------- Form Elements   ------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033208}}
+fieldset {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+  margin-bottom: 32px;
+  padding: 0 0 10px;
+  position: relative;
+  top: 12px;
+  /* Offsets the negative margin of legends */
+  -khtml-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033221}}
+.fieldset-wrapper {
+  margin-top: 25px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033224}}
+.node-form .vertical-tabs .fieldset-wrapper {
+  margin-top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033227}}
+.filter-wrapper {
+  top: 0;
+  padding: 1em 0 0.2em;
+  -khtml-border-radius-topright: 0;
+  -khtml-border-radius-topleft: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033239}}
+.filter-help a {
+  font-size: 0.857em;
+  padding: 2px 20px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033243}}
+.filter-wrapper .form-item label {
+  margin-right: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033246}}
+.filter-wrapper .form-item {
+  padding: 0 0 0.5em 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033249}}
+.filter-guidelines {
+  padding: 0 1.5em 0 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033252}}
+fieldset.collapsed {
+  background: transparent;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033259}}
+fieldset legend {
+  background: #dbdbdb;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  color: #3b3b3b;
+  display: block;
+  height: 2em;
+  left: -1px;
+  /* LTR */
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  line-height: 2;
+  padding: 0;
+  position: absolute;
+  text-indent: 10px;
+  text-shadow: 0 1px 0 #fff;
+  top: -12px;
+  width: 100%;
+  -khtml-border-radius-topleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -khtml-border-radius-topright: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033284}}
+fieldset.collapsed legend {
+  -khtml-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033290}}
+fieldset legend a {
+  color: #3b3b3b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033295}}
+fieldset legend a:hover,
+fieldset legend a:focus,
+fieldset legend a:active {
+  color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033298}}
+fieldset .fieldset-wrapper {
+  padding: 0 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033301}}
+fieldset .fieldset-description {
+  margin-top: 5px;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  color: #3c3c3c;
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033308}}
+input {
+  margin: 2px 0;
+  padding: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033313}}
+input,
+textarea {
+  font-size: 0.929em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033316}}
+textarea {
+  line-height: 1.5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033320}}
+textarea.form-textarea,
+select.form-select {
+  padding: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033325}}
+input.form-text,
+textarea.form-textarea,
+select.form-select {
+  border: 1px solid #ccc; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033329}}
+input.form-submit:hover,
+input.form-submit:focus {
+  background: #dedede; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033332}}
+.password-suggestions ul li {
+  margin-left: 1.2em;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033335}}
+.form-item {
+  margin-bottom: 1em;
+  margin-top: 2px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033339}}
+.form-item label {
+  font-size: 0.929em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033343}}
+.form-type-radio label,
+.form-type-checkbox label {
+  margin-left: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033347}}
+.form-type-radio .description,
+.form-type-checkbox .description {
+  margin-left: 2px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033350}}
+.form-actions {
+  padding-top: 10px; }
+
+/* Contact Form 
+.contact-form #edit-name {
+  width: 75%;
+  -khtml-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.contact-form #edit-mail {
+  width: 75%;
+  -khtml-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.contact-form #edit-subject {
+  width: 75%;
+  -khtml-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.contact-form #edit-message {
+  width: 76.3%;
+  -khtml-border-top-left-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.contact-form .resizable-textarea .grippie {
+  width: 76%;
+  -khtml-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+*/
+/* Disabled form elements */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033406}}
+input.form-button-disabled,
+input.form-button-disabled:hover,
+input.form-button-disabled:focus,
+input.form-button-disabled:active,
+.form-disabled input,
+.form-disabled select,
+.form-disabled textarea {
+  background: #ededed;
+  border-color: #bbb;
+  color: #717171; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033411}}
+.form-disabled .grippie {
+  background-color: #ededed;
+  border-color: #bbb; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033415}}
+.form-disabled label {
+  color: #717171; }
+
+/* Animated throbber */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033420}}
+html.js input.form-autocomplete {
+  background-position: 100% 4px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033423}}
+html.js input.throbbing {
+  background-position: 100% -16px;
+  /* LTR */ }
+
+/* Comment form */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033428}}
+.comment-form label {
+  float: left;
+  /* LTR */
+  font-size: 0.929em;
+  width: 120px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033434}}
+.comment-form input,
+.comment-form .form-select {
+  margin: 0;
+  -khtml-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033441}}
+.comment-form .form-type-textarea label {
+  float: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033447}}
+.comment-form .form-item,
+.comment-form .form-radios,
+.comment-form .form-type-checkbox,
+.comment-form .form-select {
+  margin-bottom: 10px;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033452}}
+.comment-form .form-type-checkbox,
+.comment-form .form-radios {
+  margin-left: 120px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033456}}
+.comment-form .form-type-checkbox label,
+.comment-form .form-radios label {
+  float: none;
+  margin-top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033460}}
+.comment-form input.form-file {
+  width: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033463}}
+.no-sidebars .comment-form .form-text {
+  width: 800px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033466}}
+.one-sidebar .comment-form .form-text {
+  width: 500px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033469}}
+.two-sidebars .comment-form .form-text {
+  width: 320px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033472}}
+.comment-form .form-item .description {
+  font-size: 0.786em;
+  line-height: 1.2;
+  margin-left: 120px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033477}}
+#content h2.comment-form {
+  margin-bottom: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033480}}
+.comment-form .form-textarea {
+  -khtml-border-radius-topleft: 4px;
+  -khtml-border-radius-topright: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033491}}
+.comment-form fieldset.filter-wrapper .fieldset-wrapper,
+.comment-form .text-format-wrapper .form-item {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033495}}
+.filter-wrapper label {
+  width: auto;
+  float: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033499}}
+.filter-wrapper .form-select {
+  min-width: 120px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033502}}
+.comment-form fieldset.filter-wrapper .tips {
+  font-size: 0.786em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033505}}
+#comment-body-add-more-wrapper .form-type-textarea label {
+  margin-bottom: 0.4em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033508}}
+#edit-actions input {
+  margin-right: 0.6em;
+  /* LTR */ }
+
+/* -------------- Other Overrides ------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033514}}
+div.password-suggestions {
+  border: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033517}}
+.ui-widget-overlay {
+  background: #222222;
+  opacity: 0.7; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033521}}
+div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
+  padding: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033524}}
+#forum .name {
+  font-size: 1.083em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033527}}
+#forum .description {
+  font-size: 1em; }
+
+/* --------------- Search Form ---------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033533}}
+#block-search-form {
+  padding-bottom: 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033536}}
+#block-search-form .content {
+  margin-top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033540}}
+#search-form input#edit-keys,
+#block-search-form .form-item-search-block-form input {
+  float: left;
+  /* LTR */
+  font-size: 1em;
+  height: 1.143em;
+  margin-right: 5px;
+  width: 9em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033548}}
+#search-block-form input.form-submit,
+#search-form input.form-submit {
+  margin-left: 0;
+  margin-right: 0;
+  height: 25px;
+  width: 34px;
+  padding: 0;
+  cursor: pointer;
+  text-indent: -9999px;
+  border-color: #e4e4e4 #d2d2d2 #b4b4b4;
+  background: url(../images/search-button.png) no-repeat center top;
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033563}}
+#search-block-form input.form-submit:hover,
+#search-block-form input.form-submit:focus,
+#search-form input.form-submit:hover,
+#search-form input.form-submit:focus {
+  background-position: center bottom; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033566}}
+#search-form .form-item-keys label {
+  display: block; }
+
+/* --------------- Search Results ---------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033571}}
+ol.search-results {
+  padding-left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033574}}
+.search-results li {
+  border-bottom: 1px solid #d3d7d9;
+  padding-bottom: 0.4285em;
+  margin-bottom: 0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033579}}
+.search-results li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033584}}
+.search-results .search-snippet-info {
+  padding-left: 0; }
+
+/* -------------- Shortcut Links -------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033590}}
+.shortcut-wrapper {
+  margin: 2.2em 0 1.1em 0;
+  /* Same as usual h1#page-title margin. */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033593}}
+.shortcut-wrapper h1#page-title {
+  float: left;
+  /* LTR */
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033597}}
+div.add-or-remove-shortcuts {
+  padding-top: 0.9em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033600}}
+.overlay div.add-or-remove-shortcuts {
+  padding-top: 0.8em; }
+
+/* ---------- Admin-specific Theming ---------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033606}}
+.page-admin #content img {
+  margin-right: 15px;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033609}}
+.page-admin #content .simpletest-image img {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033612}}
+.page-admin-structure-block-demo .block-region {
+  background: #ffff66;
+  border: 1px dotted #9f9e00;
+  color: #000;
+  font: 90% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  text-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033622}}
+.page-admin-structure-block-demo #featured .block-region {
+  font-size: 0.55em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033625}}
+.page-admin-structure-block-demo #header .block-region {
+  width: 500px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033628}}
+.page-admin #admin-dblog img {
+  margin: 0 5px; }
+
+/* Fix spacing when Seven is used in the overlay. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033632}}
+#system-theme-settings fieldset {
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033635}}
+#system-theme-settings fieldset .fieldset-legend {
+  margin-top: 0; }
+
+/* Configuration. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033640}}
+div.admin .right,
+div.admin .left {
+  width: 49%;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033644}}
+div.admin-panel {
+  background: #fbfbfb;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 0 5px 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033650}}
+div.admin-panel h3 {
+  margin: 16px 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033653}}
+div.admin-panel dt {
+  border-top: 1px solid #ccc;
+  padding: 7px 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033657}}
+div.admin-panel dd {
+  margin: 0 0 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033660}}
+div.admin-panel .description {
+  margin: 0 0 14px 7px; }
+
+/* ---------- Overlay layout styles ----------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033667}}
+.overlay #main,
+.overlay #content {
+  width: auto;
+  float: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033671}}
+.overlay #page {
+  padding: 0 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033680}}
+.overlay .region-page-top,
+.overlay #header,
+.overlay #page-title,
+.overlay #featured,
+.overlay #sidebar-first,
+.overlay #triptych-wrapper,
+.overlay #footer-wrapper {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033683}}
+.overlay-processed .field-type-image {
+  display: block;
+  float: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033687}}
+.overlay #messages {
+  width: auto; }
+
+/* ---------- Poll ----------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033693}}
+.node .poll {
+  margin: 2em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033696}}
+.node .poll #edit-choice {
+  margin: 0 0 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033699}}
+.poll .vote-form {
+  text-align: left;
+  /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033702}}
+.poll .vote-form .choices {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033705}}
+.poll .percent {
+  font-size: 0.857em;
+  font-style: italic;
+  margin-bottom: 3em;
+  margin-top: -3.2em;
+  float: right;
+  text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033713}}
+.poll .text {
+  clear: right;
+  margin-right: 2.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033717}}
+.poll .total {
+  font-size: 0.929em;
+  font-style: italic;
+  text-align: right;
+  /* LTR */
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033723}}
+.node .poll {
+  margin: 1.8em 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033726}}
+.node .poll .text {
+  margin-right: 6.75em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033729}}
+.node .poll #edit-choice {
+  margin: 0 0 1.2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033732}}
+.poll .bar .foreground {
+  background-color: #666; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033735}}
+#footer-wrapper .poll .bar {
+  background-color: #666; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033738}}
+#footer-wrapper .poll .bar .foreground {
+  background-color: #ddd; }
+
+/*! Button styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033749}}
+.eventime_button,
+.reservation_button {
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin: auto 0px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: 999;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033785}}
+  .eventime_button a,
+  .reservation_button a {
+    padding: 10px 25px;
+    display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033796}}
+.eventime_button,
+.reservation_button {
+  overflow: hidden;
+  width: 100%;
+  -webkit-transition: border-color 0.3s, color 0.3s;
+  transition: border-color 0.3s, color 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  z-index: 9;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033828}}
+.eventime_button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s; }
+
+/*------------------------------------------------------------------
+[Color Stylesheet]
+
+Project:    Eventime
+Version:    1.0
+Last change:    --
+Assigned to:    http://themeforest.net/user/chaykovskiy
+Primary use:    Eventime HTML Template 
+-------------------------------------------------------------------*/
+/*!------------------------------ Main color of template #ff4949 ------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033938}}
+.eventime_button::before,
+.eventime_button:hover::before,
+.contact_icon:hover {
+  background: #ff4949; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000033972}}
+.eventime_button,
+.eventime_button:hover,
+.first_line,
+#sh_carousel .carousel-indicators .active,
+.tabs_about .active a,
+.tabs_about .graybtn:hover,
+.schedule_date,
+.photo_carousel_ind.active,
+.testimonials_carousel,
+.contact_icon,
+.sponsor_basic,
+.sponsor_featured,
+figure.eventime_img figcaption::before,
+.eventime_modal .contact_icon:hover,
+.center_line {
+  border-color: #ff4949; }
+
+/*!------------------------------ All light part color #fff ------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034018}}
+.navbar,
+.navbar a,
+.description h2,
+.details,
+.footer .link,
+.tab-content,
+.eventime_button,
+.tabs_about .active a,
+.mask .first_title,
+.mask .first_description,
+.photo_carousel figure h2,
+.reservation_button:hover,
+.reservation input[type=text]:focus,
+.navbar_bg_dark a,
+.buttons a.active,
+.contact_information,
+.copyright {
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034026}}
+.sponsor_basic,
+.sponsor_featured {
+  outline-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034032}}
+.speakers_row {
+  background-color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034039}}
+.tabs_about .graybtn {
+  border-color: #fff; }
+
+/*!------ SVG ------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034053}}
+.photo_carousel .right_arrow svg,
+.photo_carousel .left_arrow svg,
+#home_slider .left_arrow:hover,
+#home_slider .right_arrow:hover {
+  fill: #fff; }
+
+/*!------------------------------ Black color #000 ------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034117}}
+#preloader,
+.reservation_button:hover,
+.reservation input[type=text]:focus,
+.reservation input[type=submit]:hover,
+.navbar_bg_dark,
+.navbar-toggle .icon-bar {
+  background-color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034129}}
+.reservation .first_line,
+footer .first_line,
+.reservation input,
+.reservation_button {
+  border-color: #000; }
+
+/*!------------------------------ Gray color #838383 ------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034146}}
+.graybtn,
+.accordion_right,
+.photo_carousel_ind {
+  border-color: #838383; }
+
+/*!------ SVG ------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034159}}
+#sh_carousel .right_arrow svg,
+#sh_carousel .left_arrow svg,
+.light .right_arrow svg,
+.light .left_arrow svg {
+  fill: #838383; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034173}}
+.graytxt,
+.panel-collapse p,
+.arrow_right,
+.arrow_left,
+.navbar_bg a {
+  color: #838383; }
+
+/*!------------------------------ Background settings | Transparents in RGBA and Background images ------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034189}}
+.nav_mask,
+.footer {
+  background: rgba(0, 0, 0, 0.8); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034195}}
+.nav_mask_full {
+  background: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034201}}
+.fill_mask {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-image: url("../images/mask.svg"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034209}}
+.mask {
+  background-color: rgba(0, 0, 0, 0.77); }
+
+/*Images*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034217}}
+.speakers_image {
+  background-image: url("../images/featured_speaker.jpg"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034225}}
+.first_image:empty,
+.first_image {
+  background-image: url("../images/first.jpg"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034231}}
+.tabs_about {
+  background-image: url("../images/bg_about.jpg"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034237}}
+.speakers {
+  background-image: url("../images/bg_speakers.jpg"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034243}}
+.contact {
+  background-image: url("../images/bg_contact.jpg"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034249}}
+.btn-white {
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034253}}
+a.btn-featured {
+  text-align: center;
+  color: #ff4949; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034264}}
+.wrapper.section .eventime_button {
+  margin: auto;
+  text-align: center; }
+
+/****************************************************
+* BOOK CONTENTS
+*****************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034278}}
+.book-navigation ul.menu li {
+  list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034280}}
+  .book-navigation ul.menu li a {
+    background-color: #eee;
+    padding: 1em;
+    color: #13a9e2;
+    display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034285}}
+    .book-navigation ul.menu li a:hover {
+      background-color: #dfdfdf; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034295}}
+.book-navigation .book-navigation__links a {
+  background-color: #eee;
+  padding: 1em;
+  color: #13a9e2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/camaleon\/sass\/camaleon\.styles\.scss}line{font-family:\000034300}}
+  .book-navigation .book-navigation__links a:hover {
+    background-color: #dfdfdf; }

@@ -5,8 +5,7 @@
 /**
  * Field display.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/field\/field\.theme-rtl\.scss}line{font-family:\0000311}}
 .field--label-inline .field__label,
 .field--label-inline .field__items {
   float: right; }
-
-/*# sourceMappingURL=field.theme-rtl.css.map */
