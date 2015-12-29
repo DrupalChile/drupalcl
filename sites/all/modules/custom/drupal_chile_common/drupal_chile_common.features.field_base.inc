@@ -10,7 +10,7 @@
 function drupal_chile_common_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_name'
+  // Exported field_base: 'field_name'.
   $field_bases['field_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +31,7 @@ function drupal_chile_common_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_skype'
+  // Exported field_base: 'field_skype'.
   $field_bases['field_skype'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -52,7 +52,7 @@ function drupal_chile_common_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_telephone'
+  // Exported field_base: 'field_telephone'.
   $field_bases['field_telephone'] = array(
     'active' => 1,
     'cardinality' => 1,

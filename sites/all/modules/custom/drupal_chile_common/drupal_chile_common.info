@@ -1,7 +1,7 @@
 name = Drupal Chile Common
 core = 7.x
 package = Drupal.cl
-version = 7.x-1.0-beta1
+version = 7.x-1.0-beta2
 project = drupal_chile_common
 dependencies[] = drupalcl_showcase
 dependencies[] = flexslider_views
@@ -47,6 +47,7 @@ features[variable][] = menu_parent_banner
 features[variable][] = node_options_banner
 features[variable][] = node_preview_banner
 features[variable][] = node_submitted_banner
+features[variable][] = pathauto_node_banner_pattern
 features[views_view][] = common
 features[views_view][] = list_of_contents
 features[views_view][] = user_list

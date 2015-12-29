@@ -105,11 +105,25 @@
     </div>
   </div>
 
-  <div class="wrapper camp">
+  <div class="wrapper portafolio">
+    <div class="container">
+      <h2>Noticias</h2>
+      
+      <?php
+
+      $view = views_get_view('common');
+      $view->execute_display('panel_pane_2');
+      print $view->render();
+
+      ?>
+    </div>
+  </div>
+
+<!--   <div class="wrapper camp">
     <div class="container wow bounceInUp">
       <h1><a target="_blank" href="http://camp.drupalchile.org">DRUPALCAMP CHILE 10 - 12 DICIEMBRE 2015</a></h1>
     </div>
-  </div>
+  </div> -->
 
   <div class="wrapper section">
     <div class="container wow bounceInUp">      

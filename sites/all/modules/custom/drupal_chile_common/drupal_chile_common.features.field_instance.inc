@@ -10,7 +10,7 @@
 function drupal_chile_common_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-banner-body'
+  // Exported field_instance: 'node-banner-body'.
   $field_instances['node-banner-body'] = array(
     'bundle' => 'banner',
     'default_value' => NULL,
@@ -59,7 +59,7 @@ function drupal_chile_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-banner-field_flickr_tags'
+  // Exported field_instance: 'node-banner-field_flickr_tags'.
   $field_instances['node-banner-field_flickr_tags'] = array(
     'bundle' => 'banner',
     'default_value' => NULL,
@@ -104,7 +104,7 @@ function drupal_chile_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-banner-field_image'
+  // Exported field_instance: 'node-banner-field_image'.
   $field_instances['node-banner-field_image'] = array(
     'bundle' => 'banner',
     'deleted' => 0,
@@ -160,7 +160,7 @@ function drupal_chile_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-banner-field_tags'
+  // Exported field_instance: 'node-banner-field_tags'.
   $field_instances['node-banner-field_tags'] = array(
     'bundle' => 'banner',
     'default_value' => NULL,
@@ -206,7 +206,7 @@ function drupal_chile_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-banner-field_url'
+  // Exported field_instance: 'node-banner-field_url'.
   $field_instances['node-banner-field_url'] = array(
     'bundle' => 'banner',
     'default_value' => NULL,
@@ -251,7 +251,7 @@ function drupal_chile_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_image'
+  // Exported field_instance: 'user-user-field_image'.
   $field_instances['user-user-field_image'] = array(
     'bundle' => 'user',
     'deleted' => 0,
@@ -315,7 +315,7 @@ function drupal_chile_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_name'
+  // Exported field_instance: 'user-user-field_name'.
   $field_instances['user-user-field_name'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -363,7 +363,7 @@ function drupal_chile_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_skype'
+  // Exported field_instance: 'user-user-field_skype'.
   $field_instances['user-user-field_skype'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -408,7 +408,7 @@ function drupal_chile_common_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_telephone'
+  // Exported field_instance: 'user-user-field_telephone'.
   $field_instances['user-user-field_telephone'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
