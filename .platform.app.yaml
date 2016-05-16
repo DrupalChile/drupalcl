@@ -1,4 +1,4 @@
-s file describes an application. You can have multiple applications
+# This file describes an application. You can have multiple applications
 # in the same project.
 
 # The name of this app. Must be unique within a project.
