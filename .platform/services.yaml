@@ -1,0 +1,15 @@
+# The services of the project.
+#
+# Each service listed will be deployed
+# to power your Platform.sh project.
+
+mysql:
+    type: mysql:5.5
+    disk: 2048
+
+#redis:
+#    type: redis:2.8
+#
+#solr:
+#    type: solr:3.6
+#    disk: 1024
