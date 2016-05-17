@@ -5,14 +5,29 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
+# Venian al migrar a platform, ni idea porque’. Nahuel May 17, 2016
 sites/all/modules/custom/social_links/social_links.module
-
 sites/all/modules/custom/social_links/social_links.api.php
-
 sites/all/modules/custom/social_links/social_links.providers.js
-
 sites/all/modules/custom/social_links/social_links.js
-
 sites/all/modules/custom/social_links/README.txt
-
 sites/all/modules/custom/social_links/LICENSE.txt
+
+# https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# PHPStorm
+.idea
+.bundle
+
+# Local http server requierments 
+www
