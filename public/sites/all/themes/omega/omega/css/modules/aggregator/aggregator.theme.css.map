@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AAKA,uBAAwB;EACtB,KAAK,EAAE,KAAK;;EACZ,OAAO,EAAE,KAAK",
-"sources": ["../../../sass/modules/aggregator/aggregator.theme.scss"],
-"names": [],
-"file": "aggregator.theme.css"
-}

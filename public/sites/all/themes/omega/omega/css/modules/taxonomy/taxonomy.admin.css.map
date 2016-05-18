@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AAKA,0BAA2B;EACzB,aAAa,EAAE,IAAI;;AAErB,6BAA8B;EAC5B,UAAU,EAAE,eAAe",
-"sources": ["../../../sass/modules/taxonomy/taxonomy.admin.scss"],
-"names": [],
-"file": "taxonomy.admin.css"
-}

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;AAQA,aAAc;EACZ,WAAW,EAAE,IAAI;;AAGjB;kCACc;EACZ,KAAK,EAAE,IAAI",
-"sources": ["../../../sass/modules/field/field.theme.scss"],
-"names": [],
-"file": "field.theme.css"
-}

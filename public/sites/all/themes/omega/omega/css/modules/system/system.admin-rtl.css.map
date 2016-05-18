@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;;;AAOE,+BAAmB;EACjB,aAAa,EAAE,GAAG;;;AAMpB,YAAM;EACJ,KAAK,EAAE,KAAK;AAEd,aAAO;EACL,KAAK,EAAE,IAAI;AAEb,mBAAa;EACX,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,GAAG;EACjB,YAAY,EAAE,CAAC;EACf,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,IAAI;;;;;;;;;;ACdlB,8BAAG;EACD,KAAK,EAAE,KAAK;;;AAMd,8CAAsB;EACpB,KAAK,EAAE,IAAI;AAEb,oDAA4B;EAC1B,KAAK,EAAE,KAAK;;;AAIhB,yBAA2B;EACzB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,cAAc;;;;;;;ACtBzB,YAAa;EACX,OAAO,EAAE,cAAc;;AAEzB,iBAAkB;EAChB,UAAU,EAAE,0CAA0C;;;AAExD,wBAAyB;EACvB,UAAU,EAAE,iDAAiD;;;AAE/D,sBAAuB;EACrB,UAAU,EAAE,+CAA+C;;;;AAI7D,YAAa;EACX,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,GAAG;;;;;;AClBnB,YAAa;EACX,OAAO,EAAE,cAAc",
-"sources": ["../../../sass/modules/system/admin/adminpanel/_adminpanel.admin-rtl.scss","../../../sass/modules/system/admin/appearance/_appearance.admin-rtl.scss","../../../sass/modules/system/admin/modules/_modules.admin-rtl.scss","../../../sass/modules/system/admin/statusreport/_statusreport.admin-rtl.scss"],
-"names": [],
-"file": "system.admin-rtl.css"
-}

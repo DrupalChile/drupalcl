@@ -1,7 +1,0 @@
-/**
- * @file
- * Aggregator theme CSS for right to left languages.
- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/mampstack-5\.4\.40-0\/apache2\/htdocs\/drupalcl\/sites\/all\/themes\/omega\/omega\/sass\/modules\/aggregator\/aggregator\.theme-rtl\.scss}line{font-family:\000036}}
-.feed-source .feed-icon {
-  float: left; }

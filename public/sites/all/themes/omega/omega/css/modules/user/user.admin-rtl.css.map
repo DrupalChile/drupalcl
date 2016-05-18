@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;AAQE,mCAAY;EACV,YAAY,EAAE,CAAC;EACf,aAAa,EAAE,KAAK;;;;;;;;AAWtB,iCAAgB;EACd,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,GAAG;EAChB,YAAY,EAAE,CAAC",
-"sources": ["../../../sass/modules/user/user.admin-rtl.scss"],
-"names": [],
-"file": "user.admin-rtl.css"
-}

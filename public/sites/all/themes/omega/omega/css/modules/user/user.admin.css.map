@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;AAQE,+BAAQ;EACN,WAAW,EAAE,IAAI;AAEnB,mCAAY;EACV,YAAY,EAAE,KAAK;;AAErB,kCAAW;EACT,WAAW,EAAE,MAAM;;;;;;;;AAWrB,4BAAW;EACT,KAAK,EAAE,IAAI;AAEb,iCAAgB;EACd,KAAK,EAAE,IAAI;;EACX,YAAY,EAAE,GAAG",
-"sources": ["../../../sass/modules/user/user.admin.scss"],
-"names": [],
-"file": "user.admin.css"
-}

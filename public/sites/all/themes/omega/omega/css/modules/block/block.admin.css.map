@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AAKE,2BAAc;EACZ,WAAW,EAAE,IAAI;AAEnB,6BAAgB;EACd,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,IAAI;AAEb,+BAAkB;EAChB,OAAO,EAAE,IAAI",
-"sources": ["../../../sass/modules/block/block.admin.scss"],
-"names": [],
-"file": "block.admin.css"
-}
