@@ -5,6 +5,12 @@ api = 2
 ; Core
 projects[drupal][version] = "7.43"
 
+; By default, store all contrib modules in the "contrib" subdirectory of the
+; modules directory.
+
+defaults[projects][subdir] = "contrib"
+
+
 ; Modules
 projects[addressfield][version] = "1.2"
 projects[addressfield_staticmap][version] = "1.0"
