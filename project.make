@@ -59,6 +59,7 @@ projects[xmlsitemap][version] = "2.2"
 
 ; Themes
 projects[omega][version] = "4.4"
+projects[omega][type] = "theme"
 
 ; creo que esto era por el theme, y parece que es camaleon, si carga bien, se puede borrar este bloque
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
