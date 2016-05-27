@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AAKA,kCAAmC;EACjC,YAAY,EAAE,CAAC;EACf,aAAa,EAAE,IAAI;EACnB,mBAAmB,EAAE,SAAS;;AAGhC,eAAgB;EACd,OAAO,EAAE,WAAW;EACpB,mBAAmB,EAAE,SAAS",
-"sources": ["../../../sass/modules/openid/openid.theme-rtl.scss"],
-"names": [],
-"file": "openid.theme-rtl.css"
-}

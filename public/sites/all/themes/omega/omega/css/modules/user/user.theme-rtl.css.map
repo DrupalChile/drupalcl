@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;AAOA,kBAAmB;EACjB,KAAK,EAAE,IAAI;;AAEb,wBAAyB;EACvB,KAAK,EAAE,KAAK;;AAEd,uBAAwB;EACtB,KAAK,EAAE,IAAI;;;;;AAMb,iBAAkB;EAChB,KAAK,EAAE,IAAI;;;;;;;AAQb,sBAAuB;EACrB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,WAAW",
-"sources": ["../../../sass/modules/user/user.theme-rtl.scss"],
-"names": [],
-"file": "user.theme-rtl.css"
-}

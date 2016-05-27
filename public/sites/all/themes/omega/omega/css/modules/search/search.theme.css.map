@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;AAQA,uBAAwB;EACtB,YAAY,EAAE,GAAG;;;AAEnB,oBAAqB;EACnB,SAAS,EAAE,MAAM;;;;;AAOjB,2BAAW;EACT,KAAK,EAAE,IAAI;;EACX,YAAY,EAAE,GAAG;;AAEnB,wBAAQ;EACN,KAAK,EAAE,IAAI;;EACX,KAAK,EAAE,IAAI",
-"sources": ["../../../sass/modules/search/search.theme.scss"],
-"names": [],
-"file": "search.theme.css"
-}

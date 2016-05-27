@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;AAQA,uBAAwB;EACtB,YAAY,EAAE,CAAC;EACf,aAAa,EAAE,GAAG;;;;;AAOlB,2BAAW;EACT,KAAK,EAAE,KAAK;EACZ,YAAY,EAAE,CAAC;EACf,WAAW,EAAE,GAAG;AAElB,wBAAQ;EACN,KAAK,EAAE,KAAK;EACZ,KAAK,EAAE,KAAK",
-"sources": ["../../../sass/modules/search/search.theme-rtl.scss"],
-"names": [],
-"file": "search.theme-rtl.css"
-}

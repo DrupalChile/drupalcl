@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AAIA,0BAA2B;EACzB,KAAK,EAAE,IAAI;;EACX,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,IAAI;;;AAElB,oBAAqB;EACnB,KAAK,EAAE,IAAI;;EACX,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,MAAM;;AAEpB,sBAAuB;EACrB,KAAK,EAAE,KAAK;;EACZ,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,KAAK",
-"sources": ["../../../sass/modules/book/book.theme.scss"],
-"names": [],
-"file": "book.theme.css"
-}

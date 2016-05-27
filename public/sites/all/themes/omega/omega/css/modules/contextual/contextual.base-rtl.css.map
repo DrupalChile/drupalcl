@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;AAQA,yBAA0B;EACxB,IAAI,EAAE,GAAG;EACT,KAAK,EAAE,IAAI;;AAEb,yBAA0B;EACxB,UAAU,EAAE,IAAI",
-"sources": ["../../../sass/modules/contextual/contextual.base-rtl.scss"],
-"names": [],
-"file": "contextual.base-rtl.css"
-}

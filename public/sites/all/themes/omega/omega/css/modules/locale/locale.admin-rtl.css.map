@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AAME;;gDAEiB;EACf,KAAK,EAAE,KAAK;EACZ,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,CAAC;AAElB,6CAAc;EACZ,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,WAAW",
-"sources": ["../../../sass/modules/locale/locale.admin-rtl.scss"],
-"names": [],
-"file": "locale.admin-rtl.css"
-}

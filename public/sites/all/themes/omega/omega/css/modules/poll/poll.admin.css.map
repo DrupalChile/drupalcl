@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;AAOE,6BAAW;EACT,OAAO,EAAE,MAAM;EACf,KAAK,EAAE,IAAI;AAEb,+BAAa;EACX,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,GAAG",
-"sources": ["../../../sass/modules/poll/poll.admin.scss"],
-"names": [],
-"file": "poll.admin.css"
-}

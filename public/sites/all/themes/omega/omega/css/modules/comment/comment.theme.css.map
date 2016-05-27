@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AAKA,SAAU;EACR,WAAW,EAAE,IAAI",
-"sources": ["../../../sass/modules/comment/comment.theme.scss"],
-"names": [],
-"file": "comment.theme.css"
-}

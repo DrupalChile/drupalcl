@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;AAMA,SAAU;EACR,OAAO,EAAE,mBAAmB;EAC5B,mBAAmB,EAAE,OAAO;EAE5B,YAAG;IACD,MAAM,EAAE,SAAS",
-"sources": ["../../../sass/modules/system/system.messages.theme-rtl.scss"],
-"names": [],
-"file": "system.messages.theme-rtl.css"
-}
