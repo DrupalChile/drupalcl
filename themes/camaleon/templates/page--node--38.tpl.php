@@ -124,7 +124,7 @@
         <?php endif; ?>
 
         <div class="head">
-          <img src="sites/all/themes/camaleon/images/logo-picec-512.png" alt="" class="wow fadeInDownBig">
+          <img src="<?php print drupal_get_path('theme', 'camaleon');?>/images/logo-picec-512.png" alt="" class="wow fadeInDownBig">
           <h2>Instala y personaliza tu propia tienda en línea gratis</h2>
         </div>
         <div class="buttons">

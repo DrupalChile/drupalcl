@@ -141,7 +141,7 @@
       <h1>Comercio electrónico para Chile</h1>
       <p class="intro">Perfil de Instalación de Comercio Electrónico Chileno</p>
       <div class="eventime_button"><a href="picec" class="" role="button">Más información</a></div>
-      <img src="sites/all/themes/camaleon/images/logo-picec-512.png" class="wow bounceInDown" alt="Logo PICEC">
+      <img src="<?php print drupal_get_path('theme', 'camaleon');?>/images/logo-picec-512.png" class="wow bounceInDown" alt="Logo PICEC">
     </div>
   </div>
 
