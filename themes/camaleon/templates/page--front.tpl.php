@@ -101,7 +101,7 @@
       <h1>La comunidad de Drupal en Chile</h1>
       <p class="intro">Unete y participa en nuestros eventos.</p>
       <div class="eventime_button"><a href="la-comunidad" class="btn-white" role="button">Más información</a></div>
-      <img src="sites/all/themes/camaleon/images/logo-drupalcl-512.png" class="" alt="Logo PICEC">
+      <img src="<?php print drupal_get_path('theme', 'camaleon');?>/images/logo-drupalcl-512.png" class="" alt="Logo PICEC">
     </div>
   </div>
 
