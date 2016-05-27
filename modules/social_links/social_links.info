@@ -1,0 +1,12 @@
+name = "Social Links"
+description = "Social links for entities"
+core = "7.x"
+dependencies[] = entity
+
+
+; Information added by drupal.org packaging script on 2013-10-01
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "social_links"
+datestamp = "1380636847"
+
