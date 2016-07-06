@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Noticias feature.
- */
-
-include_once 'noticias.features.inc';
