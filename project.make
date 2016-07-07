@@ -3,7 +3,7 @@ core = 8.x
 api = 2
 
 ; Core
-projects[drupal][version] = "8.1.3"
+projects[drupal][version] = "8.1.4"
 
 ; By default, store all contrib modules in the "contrib" subdirectory of the
 ; modules directory.
@@ -13,7 +13,16 @@ defaults[projects][subdir] = "contrib"
 
 ; Modules
 projects[ctools][version] = "3.0-alpha26"
+projects[token][version] = "1.0-alpha2"
+projects[admin_toolbar][version] = "1.15"
 projects[pathauto][version] = "1.0-alpha3"
+projects[metatag][version] = "1.0-beta9"
+projects[honeypot][version] = "1.23"
+projects[google_analytics][version] = "2.0"
+
+
+
+
 
 ; Themes
 ;projects[omega][version] = "4.4"
