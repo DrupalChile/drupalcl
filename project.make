@@ -3,7 +3,7 @@ core = 8.x
 api = 2
 
 ; Core
-projects[drupal][version] = "8.1.4"
+projects[drupal][version] = "8.1.7"
 
 ; By default, store all contrib modules in the "contrib" subdirectory of the
 ; modules directory.
