@@ -1,0 +1,74 @@
+name: 'Drupal Chile'
+type: theme
+description: ''
+package: Core
+'base theme': omega_simple_starterkit
+force_export: false
+inherit_layout: true
+scss_support: true
+libraries:
+  - drupalcl/drupalcl
+regions:
+  header: Header
+  page_top: 'Page Top'
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer: Footer
+  page_bottom: 'Page Bottom'
+features:
+  logo: true
+  name: true
+  slogan: true
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  main_menu: true
+  secondary_menu: true
+version: 8.x-5.x
+core: 8.x
+project: omega
+datestamp: 1469485442
+libraries-override:
+  omega/omega_html_elements:
+    css:
+      component:
+        style/css/elements/html-elements.css: style/css/elements/html-elements.css
+  omega/omega_branding:
+    css:
+      component:
+        style/css/elements/site-branding.css: style/css/elements/site-branding.css
+  omega/omega_breadcrumbs:
+    css:
+      component:
+        style/css/elements/breadcrumbs.css: style/css/elements/breadcrumbs.css
+  omega/omega_main_menus:
+    css:
+      component:
+        style/css/elements/main-menus.css: style/css/elements/main-menus.css
+  omega/omega_messages:
+    css:
+      component:
+        style/css/elements/messages.css: style/css/elements/messages.css
+  omega/omega_pagers:
+    css:
+      component:
+        style/css/elements/pagers.css: style/css/elements/pagers.css
+  omega/omega_tabs:
+    css:
+      component:
+        style/css/elements/tabs.css: style/css/elements/tabs.css
+  omega/omega_taxonomy_terms:
+    css:
+      component:
+        style/css/elements/taxonomy-terms.css: style/css/elements/taxonomy-terms.css
+  omega/omega_forms:
+    css:
+      component:
+        style/css/elements/forms.css: style/css/elements/forms.css
+  omega_simple_starterkit/omega_simple_starterkit:
+    css:
+      theme:
+        style/css/omega_simple_starterkit.css: style/css/omega_simple_starterkit.css

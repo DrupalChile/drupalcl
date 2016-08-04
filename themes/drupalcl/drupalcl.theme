@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Contains theme level customizations for the drupalcl theme
+ */
+
+/**
+ * Implements hook_js_alter().
+ */
+function drupalcl_js_alter(&$javascript, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
+
+} // END drupalcl_js_alter
+
+/**
+ * Implements hook_css_alter().
+ */
+function drupalcl_css_alter(&$css, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
+  
+} // END drupalcl_css_alter 
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function drupalcl_page_attachments_alter (&$attachments) {
+  
+} // END drupalcl_page_attachments_alter
+
+/**
+ * Implements hook_preprocess().
+ */
+function drupalcl_preprocess(&$variables, $hook) {
+  
+} // END drupalcl_preprocess
+
+/**
+ * Implements hook_preprocess_HOOK() for html templates.
+ */
+function drupalcl_preprocess_html(&$variables) {
+  
+} // END drupalcl_preprocess_html
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function drupalcl_preprocess_page(&$variables) {
+  
+} // END drupalcl_preprocess_page
+
+/**
+ * Implements hook_preprocess_HOOK() for region templates.
+ */
+function drupalcl_preprocess_region(&$variables) {
+  
+} // END drupalcl_preprocess_region
+
+/**
+ * Implements hook_preprocess_HOOK() for node templates.
+ */
+function drupalcl_preprocess_node(&$variables) {
+  
+} // END drupalcl_preprocess_node
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function drupalcl_preprocess_block(&$variables) {
+  
+} // END drupalcl_preprocess_block
+
+/**
+ * Implements hook_preprocess_HOOK() for field templates.
+ */
+function drupalcl_preprocess_field(&$vars) {
+  
+} // END drupalcl_preprocess_field
+
+/**
+ * Implements hook_html_head_alter()
+ */
+function drupalcl_html_head_alter(&$head_elements) {
+  
+} // END drupalcl_html_head_alter
