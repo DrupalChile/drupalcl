@@ -25,8 +25,8 @@ projects[google_analytics][version] = "2.0"
 
 
 ; Themes
-;projects[omega][version] = "4.4"
-;projects[omega][type] = "theme"
+projects[omega][version] = "5.0-alpha7"
+projects[omega][type] = "theme"
 
 ; las copié feamente a mano libraries por ahora
 ; Libraries
