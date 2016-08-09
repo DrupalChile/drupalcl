@@ -56,9 +56,10 @@ mounts:
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
     build: |
-      pwd
-      ls -la
-      mv -f sites/default/config /
+      mv -f sites/default/config /app/
+      ls sites/default/config -ls
+      ls /app/config -ls
+      exit 1
     # We run deploy hook after your application has been deployed and started.
     deploy: |
       cd public
