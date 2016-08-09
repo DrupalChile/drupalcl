@@ -9,4 +9,4 @@ if (file_exists($local_settings)) {
 
 $settings['hash_salt'] = 'OHRRfs_ZfmlJh0BTNnrjE4v3hdbPuOCpAZHEa2eE_KSNRYDhjY3qTJijmuwn4UMRuFlRx5ZQbg';
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = '/config';
+$config_directories['sync'] = '/app/config';
