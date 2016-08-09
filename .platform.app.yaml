@@ -49,7 +49,7 @@ disk: 2048
 # The mounts that will be performed when the package is deployed.
 mounts:
     "/public/sites/default/files": "shared:files/files"
-    "/public/sites/default/config": "shared:files/config"
+    "/config": "shared:files/config"
     "/tmp": "shared:files/tmp"
     "/private": "shared:files/private"
 
@@ -59,3 +59,4 @@ hooks:
     deploy: |
       cd public
       drush -y updatedb
+      mv -f sites/default/config /
