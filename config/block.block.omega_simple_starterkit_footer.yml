@@ -1,0 +1,26 @@
+uuid: 18cf5ff8-23af-4692-bd25-5ed4ee11739f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - omega_simple_starterkit
+_core:
+  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
+id: omega_simple_starterkit_footer
+theme: omega_simple_starterkit
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

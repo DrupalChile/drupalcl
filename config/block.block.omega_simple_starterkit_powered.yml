@@ -1,0 +1,22 @@
+uuid: d7a96770-7d9e-4016-99d5-5a7d8b47ba0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - omega_simple_starterkit
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: omega_simple_starterkit_powered
+theme: omega_simple_starterkit
+region: header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
