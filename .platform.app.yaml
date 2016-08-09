@@ -56,7 +56,7 @@ mounts:
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
     build: |
-      mv -f sites/default/config /app/
+      mv -f config /app/
       ls -la sites/default/config
       ls -la /app/config
       exit 1
