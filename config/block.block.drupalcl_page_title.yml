@@ -1,0 +1,20 @@
+uuid: b7b9abb4-8b7b-4db6-a658-ef1dd6e85eb8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalcl
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupalcl_page_title
+theme: drupalcl
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

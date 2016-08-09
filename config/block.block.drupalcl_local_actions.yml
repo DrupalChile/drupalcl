@@ -1,0 +1,20 @@
+uuid: e35d0ff7-8d12-4d48-80ef-7d6dd24f1904
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalcl
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: drupalcl_local_actions
+theme: drupalcl
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

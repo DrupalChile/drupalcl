@@ -1,0 +1,12 @@
+uuid: 38dd17b9-8c95-4316-ae63-f113662029e3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - web@drupalchile.org
+reply: ''
+weight: 0
