@@ -57,8 +57,8 @@ mounts:
 hooks:
     build: |
       mv -f sites/default/config /app/
-      ls sites/default/config -ls
-      ls /app/config -ls
+      ls -la sites/default/config
+      ls -la /app/config
       exit 1
     # We run deploy hook after your application has been deployed and started.
     deploy: |
