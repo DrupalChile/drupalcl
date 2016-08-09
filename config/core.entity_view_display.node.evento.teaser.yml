@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.evento.body
+    - field.field.node.evento.field_date
     - node.type.evento
   module:
     - text
@@ -23,4 +24,6 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_date: true
+  langcode: true

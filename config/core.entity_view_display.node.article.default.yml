@@ -1,5 +1,5 @@
 uuid: a8e6cddc-212d-4294-b6c1-535925a75b92
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -54,3 +54,4 @@ content:
 hidden:
   field_image: true
   field_tags: true
+  langcode: true

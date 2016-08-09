@@ -1,5 +1,5 @@
 uuid: 3d61cca4-a6b5-4a07-bff2-05e78a6601b9
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -28,5 +28,10 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

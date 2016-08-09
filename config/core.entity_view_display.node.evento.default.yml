@@ -31,4 +31,5 @@ content:
     type: datetime_default
   links:
     weight: 100
-hidden: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 5bdf526a-9494-46f2-beb9-a64540c926fe
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O0NfJbzQmkMg1brwA-gUw8v59V0Ana1YKTeRfb-okGI
+id: user
+label: User
+tags:
+  title: '[user:name] | [site:name]'
+  description: '[site:name]'

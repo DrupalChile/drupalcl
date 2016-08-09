@@ -51,3 +51,4 @@ breakpoint_group_omega_front: omega.standard
 breakpoint_group_omega_node: omega.standard
 _core:
   default_config_hash: TaJ2M-UhpWmB6gWXf9BNORalCRAHyrv8PHMfjbEvWyc
+langcode: es

@@ -1,5 +1,5 @@
 uuid: 717a87cb-a921-4e61-a4d8-7efa66381307
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -25,3 +25,4 @@ hidden:
   comment: true
   field_image: true
   field_tags: true
+  langcode: true

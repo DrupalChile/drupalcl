@@ -33,6 +33,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

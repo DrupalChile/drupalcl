@@ -799,3 +799,4 @@ region_groups:
           pull: '0'
 _core:
   default_config_hash: 8XSSa5zjO6BpKvohbfO1bVJ2EkOZ7vGGcZlT6LA1nXA
+langcode: es

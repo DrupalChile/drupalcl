@@ -3,36 +3,31 @@ core = 8.x
 api = 2
 
 ; Core
-projects[drupal][version] = "8.1.7"
+projects[drupal][version] = "8.1.8"
 
 ; By default, store all contrib modules in the "contrib" subdirectory of the
 ; modules directory.
 
 defaults[projects][subdir] = "contrib"
 
-
-; Modules
+; == Modules ==
+; admin
+projects[admin_toolbar][version] = "1.16"
+projects[codesnippet][version] = "1.4"
+projects[coffee][version] = "1.0-beta1"
+; base
 projects[ctools][version] = "3.0-alpha26"
 projects[token][version] = "1.0-alpha2"
-projects[admin_toolbar][version] = "1.15"
 projects[pathauto][version] = "1.0-alpha3"
 projects[metatag][version] = "1.0-beta9"
 projects[honeypot][version] = "1.23"
 projects[google_analytics][version] = "2.0"
 
-
-
-
-
 ; Themes
 projects[omega][version] = "5.0-alpha7"
 projects[omega][type] = "theme"
 
-; las copié feamente a mano libraries por ahora
 ; Libraries
-; Please fill the following out. Type may be one of get, git, bzr or svn,
-; and url is the url of the download.
-;libraries[ckeditor][download][type] = ""
-;libraries[ckeditor][download][url] = ""
-;libraries[ckeditor][directory_name] = "ckeditor"
-;libraries[ckeditor][type] = "library"
+libraries[codesnippet][download][type] = "file"
+libraries[codesnippet][download][url] = "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.10.zip"
+libraries[codesnippet][download][md5] = "2356335f99581524c4e45f42cec9e8a2"
