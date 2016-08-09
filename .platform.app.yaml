@@ -49,12 +49,16 @@ disk: 2048
 # The mounts that will be performed when the package is deployed.
 mounts:
     "/public/sites/default/files": "shared:files/files"
+    "/config": "shared:files/config"
     "/tmp": "shared:files/tmp"
     "/private": "shared:files/private"
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
+    build: |
+      mv -f public/sites/default/config /app/
     # We run deploy hook after your application has been deployed and started.
     deploy: |
       cd public
       drush -y updatedb
+      drush -y cim
