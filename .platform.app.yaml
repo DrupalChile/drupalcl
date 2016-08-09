@@ -61,4 +61,4 @@ hooks:
     deploy: |
       cd public
       drush -y updatedb
-      drush -y cim
+      drush -y cim > /tmp/deploy.log
