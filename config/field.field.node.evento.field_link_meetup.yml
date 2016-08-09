@@ -1,0 +1,23 @@
+uuid: ac880f35-3948-4508-a20b-5ff83fc25ddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_meetup
+    - node.type.evento
+  module:
+    - link
+id: node.evento.field_link_meetup
+field_name: field_link_meetup
+entity_type: node
+bundle: evento
+label: 'Enlace meetup'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

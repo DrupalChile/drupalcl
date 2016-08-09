@@ -22,6 +22,7 @@ projects[pathauto][version] = "1.0-alpha3"
 projects[metatag][version] = "1.0-beta9"
 projects[honeypot][version] = "1.23"
 projects[google_analytics][version] = "2.0"
+projects[redirect][version] = "1.0-alpha1"
 
 ; Themes
 projects[omega][version] = "5.0-alpha7"

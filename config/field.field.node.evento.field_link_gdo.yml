@@ -1,0 +1,23 @@
+uuid: 93d61bca-9a00-4f8f-b370-1af6454c0d36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_gdo
+    - node.type.evento
+  module:
+    - link
+id: node.evento.field_link_gdo
+field_name: field_link_gdo
+entity_type: node
+bundle: evento
+label: 'Enlace GDO'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

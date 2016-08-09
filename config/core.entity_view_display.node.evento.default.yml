@@ -4,10 +4,18 @@ status: true
 dependencies:
   config:
     - field.field.node.evento.body
+    - field.field.node.evento.comment
     - field.field.node.evento.field_date
+    - field.field.node.evento.field_file
+    - field.field.node.evento.field_link_gdo
+    - field.field.node.evento.field_link_meetup
+    - field.field.node.evento.field_links
     - node.type.evento
   module:
+    - comment
     - datetime
+    - file
+    - link
     - text
     - user
 id: node.evento.default
@@ -21,6 +29,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  comment:
+    weight: 107
+    label: above
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
   field_date:
     weight: 102
     label: above
@@ -29,6 +44,45 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+  field_file:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_link_gdo:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_link_meetup:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_links:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
   links:
     weight: 100
 hidden:

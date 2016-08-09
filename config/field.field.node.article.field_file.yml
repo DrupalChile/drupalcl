@@ -1,0 +1,27 @@
+uuid: a45e7125-528c-4697-b21a-a6de52344577
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.article
+  module:
+    - file
+id: node.article.field_file
+field_name: field_file
+entity_type: node
+bundle: article
+label: 'Archivos adjuntos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt zip gz tgz pdf rar doc docx xls xlsx odt ods odp'
+  max_filesize: '50 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

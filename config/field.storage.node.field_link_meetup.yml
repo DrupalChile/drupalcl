@@ -1,0 +1,19 @@
+uuid: 000c9248-4201-4588-bad4-4c01c870792f
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_link_meetup
+field_name: field_link_meetup
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
