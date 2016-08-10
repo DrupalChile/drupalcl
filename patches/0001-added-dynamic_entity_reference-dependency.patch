@@ -1,0 +1,23 @@
+From f5ddde68fbb90f35a92d2b5909b9aafab9c9d142 Mon Sep 17 00:00:00 2001
+From: Nahuel <nahcar@gmail.com>
+Date: Tue, 9 Aug 2016 18:45:50 -0400
+Subject: [PATCH] added dynamic_entity_reference dependency
+
+---
+ badge.info.yml | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/badge.info.yml b/badge.info.yml
+index 884562c..dcc1038 100644
+--- a/badge.info.yml
++++ b/badge.info.yml
+@@ -3,3 +3,6 @@ type: module
+ description: A badge module base
+ core: 8.x
+ package: Badge
++
++dependencies:
++- dynamic_entity_reference
+-- 
+2.5.4 (Apple Git-61)
+

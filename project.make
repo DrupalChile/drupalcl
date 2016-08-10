@@ -23,6 +23,15 @@ projects[metatag][version] = "1.0-beta9"
 projects[honeypot][version] = "1.23"
 projects[google_analytics][version] = "2.0"
 projects[redirect][version] = "1.0-alpha1"
+projects[contact_storage][version] = "1.0-beta4"
+projects[dynamic_entity_reference][version] = "1.0-rc5"
+
+projects[badge][type] = "module"
+projects[badge][download][type] = "git"
+projects[badge][download][url] = "https://git.drupal.org/sandbox/mnico/2773065.git"
+projects[badge][download][branch] = "8.x-1.x"
+projects[badge][download][revision] = "eab6e0e0a6eb05ab86c5d1851d4218605dc4c75d"
+projects[badge][patch][] = "patches/0001-added-dynamic_entity_reference-dependency.patch"
 
 ; Themes
 projects[omega][version] = "5.0-alpha7"

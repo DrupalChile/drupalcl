@@ -1,0 +1,19 @@
+uuid: eb9247aa-a3ff-41e0-9436-29dd9a2d7e59
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.field_user_meetup
+field_name: field_user_meetup
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

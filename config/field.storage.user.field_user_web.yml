@@ -1,0 +1,19 @@
+uuid: 65e5b413-9dcc-43fe-bc9f-bd1cb26cd90d
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.field_user_web
+field_name: field_user_web
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

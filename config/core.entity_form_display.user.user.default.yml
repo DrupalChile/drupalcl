@@ -3,13 +3,20 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_user_bio
     - field.field.user.user.field_user_do
+    - field.field.user.user.field_user_linkedin
+    - field.field.user.user.field_user_meetup
     - field.field.user.user.field_user_name
+    - field.field.user.user.field_user_twitter
+    - field.field.user.user.field_user_web
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
+    - link
     - path
+    - text
     - user
 _core:
   default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
@@ -22,6 +29,13 @@ content:
     weight: -10
   contact:
     weight: 5
+  field_user_bio:
+    weight: 33
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
   field_user_do:
     weight: 31
     settings:
@@ -29,6 +43,20 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_user_linkedin:
+    weight: 34
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_user_meetup:
+    weight: 36
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   field_user_name:
     weight: 32
     settings:
@@ -36,6 +64,20 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_user_twitter:
+    weight: 35
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_user_web:
+    weight: 37
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   language:
     weight: 0
   path:
