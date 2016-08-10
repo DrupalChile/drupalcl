@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_image
+    - image.style.large
     - node.type.page
   module:
     - image
@@ -20,18 +21,20 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 100
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   field_image:
-    weight: 102
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
   links:
-    weight: 101
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true
