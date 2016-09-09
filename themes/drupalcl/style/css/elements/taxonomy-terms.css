@@ -23,20 +23,14 @@
     padding: 5px 8px;
     text-decoration: none;
     margin: 0.25em;
-    background: #047AAB;
+    background: #047aab;
     border: 1px solid black;
-    color: #FAFAFA;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px; }
+    color: #fafafa; }
     /* line 37, ../../scss/elements/taxonomy-terms.scss */
     .field--taxonomy-terms .taxonomy-term:hover {
       background: #035679;
       border: 1px solid black;
-      color: #FAFAFA; }
+      color: #fafafa; }
     /* line 43, ../../scss/elements/taxonomy-terms.scss */
     .field--taxonomy-terms .taxonomy-term:after {
       font-size: 0; }

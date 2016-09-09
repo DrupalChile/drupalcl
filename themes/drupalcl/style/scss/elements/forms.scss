@@ -18,8 +18,8 @@
     font-weight: normal;
     border: 2px solid $primaryColor3;
     
-    @include omegaCorners(3px);
-    @include omegaShadow();
+    // @include omegaCorners(3px);
+    // @include omegaShadow();
     &:focus {
       border: 2px solid $primaryColor1;
     }
@@ -32,8 +32,8 @@
     font-weight: normal;
     border: 2px solid $primaryColor3;
     
-    @include omegaCorners(3px);
-    @include omegaShadow();
+    // @include omegaCorners(3px);
+    // @include omegaShadow();
     &:focus {
       border: 2px solid $primaryColor1;
     }
@@ -59,8 +59,8 @@
       font-weight: normal;
       border: 2px solid $primaryColor3;
       
-      @include omegaCorners(3px);
-      @include omegaShadow();
+      // @include omegaCorners(3px);
+      // @include omegaShadow();
       &:focus {
         border: 2px solid $primaryColor1;
       }
@@ -91,8 +91,8 @@ input.button {
   font-size: 1em;
   color: $primaryColor5;
   
-  @include omegaCorners(3px);
-  @include omegaShadow();
+  // @include omegaCorners(3px);
+  // @include omegaShadow();
   
   
   &:hover,
