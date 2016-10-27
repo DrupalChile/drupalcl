@@ -26,7 +26,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 a {
   text-decoration: none;
   color: rgba($primaryColor1, 1);
-  @include omegaTransition(opacity, 0.25s, ease-in-out);
+  // @include omegaTransition(opacity, 0.25s, ease-in-out);
   &:hover {
     text-decoration: underline;
     

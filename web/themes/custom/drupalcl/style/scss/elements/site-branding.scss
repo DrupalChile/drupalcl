@@ -30,7 +30,7 @@
     height: auto;
     margin-right: 25px;
     
-    @include omegaTransition(all, 0.25s, ease-in-out);
+    // @include omegaTransition(all, 0.25s, ease-in-out);
     //@include omegaCorners(10px);
     
     //background: rgba($primaryColor3, 1);
@@ -68,7 +68,7 @@
     color: $siteTitleColor;
     
     a {
-      @include omegaTransition(all, 0.25s, ease-in-out);
+      // @include omegaTransition(all, 0.25s, ease-in-out);
       //opacity: .5;
       text-decoration: none;
       color: $siteTitleColor;

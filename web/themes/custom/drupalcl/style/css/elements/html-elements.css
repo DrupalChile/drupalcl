@@ -21,10 +21,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 /* line 26, ../../scss/elements/html-elements.scss */
 a {
   text-decoration: none;
-  color: #047aab;
-  transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -webkit-transition: opacity 0.25s ease-in-out; }
+  color: #047aab; }
   /* line 30, ../../scss/elements/html-elements.scss */
   a:hover {
     text-decoration: underline;

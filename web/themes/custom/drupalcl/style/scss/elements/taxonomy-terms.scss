@@ -31,8 +31,8 @@
     border: $taxonomy-term--border;
     color: $taxonomy-term--font-color;
     
-    @include omegaTransition(all, 0.25s, ease-in-out);
-    @include omegaCorners(2px);
+    // @include omegaTransition(all, 0.25s, ease-in-out);
+    // @include omegaCorners(2px);
     
     &:hover {
       background: $taxonomy-term--hover--background;
