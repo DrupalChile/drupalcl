@@ -1,0 +1,17 @@
+parameters:
+  # Allowed protocols for URL generation.
+  filter_protocols:
+    - http
+    - https
+    - ftp
+    - news
+    - nntp
+    - tel
+    - telnet
+    - mailto
+    - irc
+    - ssh
+    - sftp
+    - webcal
+    - rtsp
+    - magnet

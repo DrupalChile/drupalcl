@@ -1,0 +1,127 @@
+{
+    "name": "drupalchile.org",
+    "description": "Sitio web comunidad Drupal Chile",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Nahuel Sativa",
+            "role": "Jefe de piso"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url": "https://git.drupal.org/sandbox/mnico/2773065.git"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.0.20",
+        "drupal-composer/drupal-scaffold": "^2.0.1",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/core": "~8.0",
+        "drush/drush": "~8.0",
+        "drupal/console": "~1.0",
+        "drupal/admin_toolbar": "^1.16",
+        "drupal/codesnippet": "~1.5",
+        "drupal/ctools": "~3.0@alpha",
+        "drupal/pathauto": "~1.0@alpha",
+        "drupal/metatag": "1.0-beta10",
+        "drupal/honeypot": "~1.0",
+        "drupal/redirect": "~1.0@alpha",
+        "drupal/contact_storage": "~1.0@beta",
+        "drupal/r4032login": "~1.0",
+        "drupal/devel": "~1.0@alpha",
+        "drupal/coffee": "~1.0",
+        "drupal/token": "~1.0",
+        "drupal/google_analytics": "~2.1",
+        "drupal/dynamic_entity_reference": "~2.1",
+        "drupal/badge": "dev-8.x-1.x",
+        "drupal/omega": "~5.0@alpha"
+    },
+    "require-dev": {
+        "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8",
+        "drupal/drupal-extension": "~3.0",
+        "guzzlehttp/guzzle": "^6.0@dev"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "config": {
+      "bin-dir": "bin/"
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ]
+        },
+        "patches": {
+            "drupal/core": {
+                "Redirect to install.php on empty DB": "https://www.drupal.org/files/issues/drupal-redirect_to_install-728702-92.patch",
+                "Views mesing up with tranlated fields": "https://www.drupal.org/files/issues/drupal_2451657_205.patch"
+            },
+            "drupal/masonry": {
+                "Allow anonymous users to render masonry (commited to dev on 2016.05.31)": "patches/masonry_not_working_for_anonymous--2696293-5.patch"
+            },
+            "drupal/metatag": {
+                "Fix the console breakup: https://www.drupal.org/node/2786795": "https://www.drupal.org/files/issues/metatag-deactivate_drupalconsole_services_0.patch"
+            },
+            "drupal/codesnippet": {
+                "Fix an localization incopatibility":
+                "https://www.drupal.org/files/issues/2791783-3.patch"
+            },
+            "drupal/rabbit_hole": {
+                "Fix TypeError when editing content type settings":
+                "https://www.drupal.org/files/issues/typeerror-on-ct-settings-2780501-2.patch"
+            }
+        }
+    },
+    "replace": {
+        "drupal/drupal": "*"
+    }
+}
