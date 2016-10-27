@@ -84,20 +84,6 @@ web:
                 # Provide a longer TTL (2 weeks) for aggregated CSS and JS files.
                 '^/sites/default/files/(css|jss)':
                     expires: 2w
-        '/sites/default/files/archives':
-            # My archive dir
-            allow: true
-            expires: 2w
-            scripts: false
-            index:
-                - index.html
-            root: 'web/sites/default/files/archives'
-
-        '/m7':
-            allow: true
-            root: 'web/m7'
-            index:
-                - index.php
 
 
 
@@ -110,20 +96,9 @@ mounts:
     '/web/sites/default/files': 'shared:files/files'
     '/tmp': 'shared:files/tmp'
     '/private': 'shared:files/private'
-    # Piwiks'
-    '/web/m7/tmp': 'shared:files/tmp/piwik'
-    '/web/m7/config': 'shared:files/pikikConfig'
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
-    build: |
-        cd web/themes/custom/nahuelme_zen
-        npm install
-        ./node_modules/.bin/gulp styles:production
-        cd ../../../m7
-        composer install
-        wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz >/dev/null 2>&1
-        gunzip GeoLiteCity.dat.gz
-        mv GeoLiteCity.dat misc/GeoLiteCity.dat
+    build:
     # We run deploy hook after your application has been deployed and started.
     deploy: |
         cd web
