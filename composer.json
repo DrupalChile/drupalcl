@@ -41,8 +41,7 @@
         "drupal/google_analytics": "~2.1",
         "drupal/dynamic_entity_reference": "~2.1",
         "drupal/badge": "dev-8.x-1.x",
-        "drupal/omega": "~5.0@alpha",
-        "drupal/backup_migrate": "8.x-4.0-alpha1"
+        "drupal/omega": "~5.0@alpha"
     },
     "require-dev": {
         "behat/mink": "~1.7",
