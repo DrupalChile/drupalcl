@@ -1,0 +1,15 @@
+name: Comunidad Drupal Chile
+type: theme
+description: Theme for Drupal 8
+package: Other
+core: 8.x
+libraries:
+  - drupalchile/global-styling
+
+base theme: classy
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  content: Content
+  header: Header
+  footer: Footer
