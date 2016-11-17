@@ -1,0 +1,14 @@
+base:
+  version: VERSION
+  css:
+    component:
+      style/css/styles.css: {}
+
+# notosans:
+#   licence:
+#     name: Apache License, Version 2.0
+#     url: https://www.apache.org/licenses/LICENSE-2.0
+#   css:
+#     theme:
+#       //fonts.google.com/specimen/Noto+Sans: { type: external }
+#       css/styles.css {}

@@ -1,10 +1,10 @@
-miltondiaz.narrow:
+drupalchile.narrow:
   label: narrow
   mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
   weight: 1
   multipliers:
     - 1x
-miltondiaz.wide:
+drupalchile.wide:
   label: wide
   mediaQuery: 'all and (min-width: 851px)'
   weight: 1

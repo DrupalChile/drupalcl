@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
+html{
+	background-color: #fafafa;
+	font-family: "Fira Sans";
+
+}
+
+.layout-container{
+	width: 1200px;
+	padding: 0 1rem;
+	margin: auto;
+	background-color: white;
+}
+
+h1{
+	font-size: 40px;
+}
+
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.site-logo img{
+	width: 5rem;
+}
+p{
+	font-family: "Fira Mono";
+}
