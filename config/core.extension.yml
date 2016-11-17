@@ -17,6 +17,11 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  ds: 0
+  ds_devel: 0
+  ds_extras: 0
+  ds_switch_view_mode: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -29,6 +34,7 @@ module:
   honeypot: 0
   image: 0
   language: 0
+  layout_plugin: 0
   link: 0
   locale: 0
   menu_ui: 0
@@ -65,6 +71,7 @@ theme:
   omega: 0
   omega_simple_starterkit: 0
   drupalcl: 0
+  drupalchile: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 langcode: es

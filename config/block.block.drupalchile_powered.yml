@@ -1,0 +1,22 @@
+uuid: d87072a2-83a4-40fe-bf13-6ae2c1725641
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalchile
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: drupalchile_powered
+theme: drupalchile
+region: header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

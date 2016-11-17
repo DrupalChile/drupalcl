@@ -1,0 +1,22 @@
+uuid: 2e05d097-e90f-4144-b233-804e831cc2fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalchile
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalchile_messages
+theme: drupalchile
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

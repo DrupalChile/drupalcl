@@ -1,0 +1,20 @@
+uuid: 29f9c4f4-02ff-4cef-b3db-3ea6a6af6bd9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalchile
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: drupalchile_local_actions
+theme: drupalchile
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

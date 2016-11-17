@@ -1,9 +1,10 @@
-uuid: 18713ecc-55b6-4104-bd02-579317f89eee
+uuid: 070fa300-232f-4b12-9937-36fca4377369
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.full
     - field.field.node.evento.body
     - field.field.node.evento.comment
     - field.field.node.evento.field_date
@@ -19,10 +20,10 @@ dependencies:
     - link
     - text
     - user
-id: node.evento.default
+id: node.evento.full
 targetEntityType: node
 bundle: evento
-mode: default
+mode: full
 content:
   body:
     label: hidden

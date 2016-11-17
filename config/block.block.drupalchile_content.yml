@@ -1,0 +1,22 @@
+uuid: 4cfc52c6-6373-44fc-a24a-94aaef68482f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalchile
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: drupalchile_content
+theme: drupalchile
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

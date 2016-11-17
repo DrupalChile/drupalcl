@@ -1,0 +1,22 @@
+uuid: f849ae2b-44fe-4a56-b5ef-2deade22fcb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupalchile
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: drupalchile_help
+theme: drupalchile
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

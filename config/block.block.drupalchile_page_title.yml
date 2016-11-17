@@ -1,0 +1,20 @@
+uuid: 0886645c-05be-4315-97c0-a9e9d67d5c26
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalchile
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupalchile_page_title
+theme: drupalchile
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
