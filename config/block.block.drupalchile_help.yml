@@ -1,6 +1,6 @@
 uuid: f849ae2b-44fe-4a56-b5ef-2deade22fcb1
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: drupalchile_help
 theme: drupalchile
-region: content
-weight: -30
+region: '-1'
+weight: 1
 provider: null
 plugin: help_block
 settings:

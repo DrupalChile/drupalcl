@@ -11,7 +11,7 @@ _core:
 id: drupalchile_messages
 theme: drupalchile
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

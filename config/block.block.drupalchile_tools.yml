@@ -12,8 +12,8 @@ _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
 id: drupalchile_tools
 theme: drupalchile
-region: content
-weight: 0
+region: header
+weight: -3
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

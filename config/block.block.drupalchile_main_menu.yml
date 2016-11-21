@@ -13,7 +13,7 @@ _core:
 id: drupalchile_main_menu
 theme: drupalchile
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:

@@ -9,7 +9,7 @@ _core:
 id: drupalchile_local_tasks
 theme: drupalchile
 region: content
-weight: -40
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

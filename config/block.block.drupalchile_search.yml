@@ -1,6 +1,6 @@
 uuid: 678ed34b-611b-4099-a9ed-c96c4754afdb
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
@@ -10,8 +10,8 @@ _core:
   default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
 id: drupalchile_search
 theme: drupalchile
-region: content
-weight: -1
+region: '-1'
+weight: 0
 provider: null
 plugin: search_form_block
 settings:
